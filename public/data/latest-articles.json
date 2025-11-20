@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "creative-writing-therapeutic-tool",
+    "title": "Creative Writing as a Therapeutic Tool",
+    "category": "LIFESTYLE",
+    "shortdescription": "Harnessing words for emotional healing and self-discovery.",
+    "description": "Journaling and fiction unlock inner worlds, reducing anxiety by 20%. Therapists recommend it as a low-barrier path to mental clarity.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "author": "Jane Doe",
+    "authorImage": "/images/jane-doe.webp",
+    "role": "Wellness Writer",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "traveling-world-small-budget",
+    "title": "Traveling the World on a Small Budget",
+    "category": "LIFESTYLE",
+    "shortdescription": "Tips for globetrotting without breaking the bank.",
+    "description": "Hostels, street food, and off-season hacks make adventure affordable. From Bali beaches to European trains, wander wisely.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/19-696x464.jpg",
+    "author": "Jane Doe",
+    "authorImage": "/images/jane-doe.webp",
+    "role": "Wellness Writer",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "benefits-outdoor-activities",
+    "title": "The Benefits of Outdoor Activities",
+    "category": "LIFESTYLE",
+    "shortdescription": "Nature's prescription for body and mind.",
+    "description": "Hiking boosts endorphins, lowers cortisol—proven to combat urban burnout. Start small: park walks yield big wellness wins.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/18-696x464.jpg",
+    "author": "Jane Doe",
+    "authorImage": "/images/jane-doe.webp",
+    "role": "Wellness Writer",
+    "date": "November 15, 2025"
+  }
+]

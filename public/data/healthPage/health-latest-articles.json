@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "latest-health-tips-winter",
+    "title": "Latest Health Tips for Winter",
+    "category": "HEALTH",
+    "shortdescription": "Stay fit and immune during cold months.",
+    "description": "Seasonal advice for wellness and prevention.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "author": "Health Guru",
+    "authorImage": "/images/health-guru.webp",
+    "role": "Wellness Expert",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "new-fitness-trends",
+    "title": "New Fitness Trends 2025",
+    "category": "HEALTH",
+    "shortdescription": "Innovative workouts for all levels.",
+    "description": "From HIIT to yoga hybrids.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/19-696x464.jpg",
+    "author": "Health Guru",
+    "authorImage": "/images/health-guru.webp",
+    "role": "Wellness Expert",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "mental-health-updates",
+    "title": "Mental Health Updates",
+    "category": "HEALTH",
+    "shortdescription": "Recent studies on stress relief.",
+    "description": "Practical strategies for daily calm.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/18-696x464.jpg",
+    "author": "Health Guru",
+    "authorImage": "/images/health-guru.webp",
+    "role": "Wellness Expert",
+    "date": "November 15, 2025"
+  }
+]

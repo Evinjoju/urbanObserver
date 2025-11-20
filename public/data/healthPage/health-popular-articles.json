@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "popular-diet-plans",
+    "title": "Popular Diet Plans",
+    "category": "HEALTH",
+    "shortdescription": "Most followed nutrition guides.",
+    "description": "Keto, vegan, and intermittent fasting.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/17-696x464.jpg",
+    "author": "Health Guru",
+    "authorImage": "/images/health-guru.webp",
+    "role": "Wellness Expert",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "top-wellness-products",
+    "title": "Top Wellness Products",
+    "category": "HEALTH",
+    "shortdescription": "Must-have gadgets for health.",
+    "description": "Trackers and supplements reviewed.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/16-696x464.jpg",
+    "author": "Health Guru",
+    "authorImage": "/images/health-guru.webp",
+    "role": "Wellness Expert",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "viral-health-hacks",
+    "title": "Viral Health Hacks",
+    "category": "HEALTH",
+    "shortdescription": "TikTok tips that work.",
+    "description": "Quick fixes for energy and sleep.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/15-696x464.jpg",
+    "author": "Health Guru",
+    "authorImage": "/images/health-guru.webp",
+    "role": "Wellness Expert",
+    "date": "November 15, 2025"
+  }
+]

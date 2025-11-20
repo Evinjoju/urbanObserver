@@ -1,0 +1,36 @@
+
+{
+  "title": "Spotify Wrapped 2025: AI DJ, Mood Mixtapes & New Features Leaked",
+  "category": "MUSIC",
+  "shortdescription": "Your 2025 Wrapped will include AI-generated commentary, mood-based playlists, and surprise artist videos.",
+  "author": "Marcus Johnson",
+  "authorImage": "/images/Author1.webp",
+  "date": "November 17, 2025",
+  "readingTime": "5 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/AIPodcastspotify.webp"
+    },
+    {
+      "type": "heading",
+      "content": "The Biggest Wrapped Glow-Up Ever"
+    },
+    {
+      "type": "paragraph",
+      "content": "It’s about to get personal. Leaked screenshots and internal documents reveal Spotify Wrapped 2025 will feature a fully voiced AI DJ (powered by Spotify’s new DJ X technology) that narrates your entire year in music — complete with commentary, jokes, and emotional reactions to your listening habits."
+    },
+    {
+      "type": "heading",
+      "content": "The New Features"
+    },
+    {
+      "type": "paragraph",
+      "content": "• Mood Mixtapes: 12 auto-generated playlists based on your emotional journey throughout the year\n• Artist Video Messages: Top artists record personalized thank-you videos if you’re in their top 0.01%\n• Sound Town 2.0: Now with live migration stats and city vs. city battles\n• ‘Your Musical Zodiac’ – an astrology-style breakdown of your personality based on listening data"
+    },
+    {
+      "type": "paragraph",
+      "content": "Early beta testers say the AI DJ’s voice is scarily accurate — one user was told, “You really went through it in March, huh?” after a heavy Sad Girl Autumn phase."
+    }
+  ]
+}

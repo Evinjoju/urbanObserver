@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Movies",
+    "items": [
+      { "title": "Debunking Movie Myths: What Hollywood Gets Wrong", "href": "/movies/debunking-myths" },
+      { "title": "Secrets to Award-Winning Performances", "href": "/movies/award-performances" },
+      { "title": "An In-Depth Look at Animation Studios", "href": "/movies/animation-studios" },
+      { "title": "Immersive Cinema: The New Age of Movie-Going", "href": "/movies/immersive-cinema" },
+      { "title": "Why Film Scores are More Important Than You Think", "href": "/movies/film-scores" }
+    ]
+  },
+  {
+    "title": "TV Shows",
+    "items": [
+      { "title": "TV Shows That Accurately Depict Mental Health", "href": "/tv/mental-health" },
+      { "title": "Writing for Television: An Insider’s Guide", "href": "/tv/writing-guide" },
+      { "title": "Streaming Wars: Which Platform Offers More", "href": "/tv/streaming-wars" },
+      { "title": "The Art of TV Show Revivals: Hits and Misses", "href": "/tv/revivals" },
+      { "title": "Why TV Series Finales Are So Hard to Get Right", "href": "/tv/finale-difficulty" }
+    ]
+  },
+  {
+    "title": "Music",
+    "items": [
+      { "title": "Music Therapy: How It Works and Benefits", "href": "/music/therapy" },
+      { "title": "The Power of Music in Advertising", "href": "/music/advertising" },
+      { "title": "Understanding Music Royalties", "href": "/music/royalties" },
+      { "title": "Instrumental Music and Its Importance", "href": "/music/instrumental" },
+      { "title": "World Music: A Global Journey", "href": "/music/world-music" }
+    ]
+  },
+  {
+    "title": "Celebrity",
+    "items": [
+      { "title": "How Social Media Ended Careers: A Retrospective", "href": "/celebrity/social-media-falls" },
+      { "title": "Infamous Celebrity Meltdowns Caught on Camera", "href": "/celebrity/meltdowns" },
+      { "title": "Bankrupt Stars: Where Did All the Money Go?", "href": "/celebrity/bankrupt" },
+      { "title": "The Price of Fame: Celebrities and Substance Abuse", "href": "/celebrity/substance-abuse" },
+      { "title": "Exposing Fake Celebrity Philanthropy", "href": "/celebrity/fake-philanthropy" }
+    ]
+  },
+  {
+    "title": "Scandals",
+    "items": [
+      { "title": "10 Scandalous Love Triangles Captivating the Public", "href": "/scandals/love-triangles" },
+      { "title": "The Excessive Lifestyles of Cali’s Tech Moguls", "href": "/scandals/tech-moguls" },
+      { "title": "Divorce Settlements that Made Headlines", "href": "/scandals/divorce-settlements" },
+      { "title": "High Society Parties: Where Everything Goes", "href": "/scandals/high-society" },
+      { "title": "Infidelity Among the Elite: A Closer Look", "href": "/scandals/infidelity-elite" }
+    ]
+  },
+  {
+    "title": "Drama",
+    "items": [
+      { "title": "Are Relationships from TV Doomed to Fail?", "href": "/drama/tv-relationships" },
+      { "title": "When Reality TV Blurs the Line with Real Life", "href": "/drama/reality-blur" },
+      { "title": "Reality Shows Accused of Exploitation", "href": "/drama/exploitation" },
+      { "title": "The Ethical Dilemmas of Reality TV Production", "href": "/drama/ethics" },
+      { "title": "Reality Stars Who Created a Huge Empire", "href": "/drama/reality-empires" }
+    ]
+  },
+  {
+    "title": "Lifestyle",
+    "items": [
+      { "title": "Creative Writing as a Therapeutic Tool", "href": "/lifestyle/creative-writing" },
+      { "title": "Traveling the World on a Small Budget", "href": "/lifestyle/budget-travel" },
+      { "title": "The Benefits of Outdoor Activities", "href": "/lifestyle/outdoor-benefits" },
+      { "title": "Time Management Skills for Success", "href": "/lifestyle/time-management" },
+      { "title": "Home Automation for Beginners", "href": "/lifestyle/home-automation" }
+    ]
+  },
+  {
+    "title": "Health",
+    "items": [
+      { "title": "The Science of Sleep and Productivity", "href": "/health/sleep-science" },
+      { "title": "Self-Care Tips for Stressful Times", "href": "/health/self-care" },
+      { "title": "The Psychological Effects of Social Media", "href": "/health/social-media-effects" },
+      { "title": "Understanding Different Diet Trends", "href": "/health/diet-trends" },
+      { "title": "Youth Mental Health in the Digital Age", "href": "/health/youth-mental-health" }
+    ]
+  },
+  {
+    "title": "Technology",
+    "items": [
+      { "title": "Internet Privacy: Know Your Rights", "href": "/technology/privacy-rights" },
+      { "title": "Augmented Reality in Everyday Life", "href": "/technology/augmented-reality" },
+      { "title": "The Revolution of Electric Airplanes", "href": "/technology/electric-airplanes" }
+    ]
+  }
+]

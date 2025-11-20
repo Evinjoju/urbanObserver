@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "latest-tech-updates",
+    "title": "Latest Tech Updates",
+    "category": "TECHNOLOGY",
+    "shortdescription": "Breaking news in gadgets.",
+    "description": "New releases and reviews.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "author": "Tech Expert",
+    "authorImage": "/images/tech-expert.webp",
+    "role": "Gadget Reviewer",
+    "date": "November 15, 2025"
+  }
+  ,
+  {
+    "slug": "latest-tech-updates",
+    "title": "Latest Tech Updates",
+    "category": "TECHNOLOGY",
+    "shortdescription": "Breaking news in gadgets.",
+    "description": "New releases and reviews.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "author": "Tech Expert",
+    "authorImage": "/images/tech-expert.webp",
+    "role": "Gadget Reviewer",
+    "date": "November 15, 2025"
+  },
+  {
+    "slug": "latest-tech-updates",
+    "title": "Latest Tech Updates",
+    "category": "TECHNOLOGY",
+    "shortdescription": "Breaking news in gadgets.",
+    "description": "New releases and reviews.",
+    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "author": "Tech Expert",
+    "authorImage": "/images/tech-expert.webp",
+    "role": "Gadget Reviewer",
+    "date": "November 15, 2025"
+  }
+]

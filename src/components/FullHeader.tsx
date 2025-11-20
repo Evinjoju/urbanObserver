@@ -1,0 +1,71 @@
+// components/FullHeader.tsx (Ultra-Responsive – Logo vanishes on mobile)
+"use client";
+import React from "react";
+import Link from "next/link";
+
+interface FullHeaderProps {
+  currentPage?: string;
+}
+
+const FullHeader: React.FC<FullHeaderProps> = ({
+  currentPage = "entertainment",
+}) => {
+  const categories = [
+    "ENTERTAINMENT",
+    "CELEBRITY",
+    "SCANDALS",
+    "DRAMA",
+    "LIFESTYLE",
+    "TECHNOLOGY",
+    "HEALTH",
+  ];
+
+  const footerLinks = ["ABOUT", "CONTACT", "PRIVACY POLICY", "NEWSLETTER"];
+
+  return (
+    <header className="bg-gray-100 border-y border-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="py-4">
+        
+
+          {/* Navigation – Full width on mobile, right-aligned on desktop */}
+          <nav className="flex flex-col items-center lg:items-end gap-6">
+            {/* Main Categories */}
+            <div className="flex flex-wrap justify-center lg:justify-end gap-4 sm:gap-6 text-xs sm:text-sm font-bold tracking-widest uppercase">
+              {categories.map((cat) => {
+                const isActive = cat.toLowerCase() === currentPage;
+                const href = cat === "ENTERTAINMENT" ? "/" : `/${cat.toLowerCase()}`;
+                return (
+                  <Link
+                    key={cat}
+                    href={href}
+                    className={`transition-colors duration-200 ${
+                      isActive ? "text-red-600" : "text-black hover:text-red-600"
+                    }`}
+                  >
+                    {cat}
+                  </Link>
+                );
+              })}
+            </div>
+
+            {/* Footer Links */}
+            <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-xs font-bold tracking-widest uppercase text-gray-600">
+              {footerLinks.map((link) => (
+                <Link
+                  key={link}
+                  href={`/${link.toLowerCase().replace(" ", "-")}`}
+                  className="hover:text-red-600 transition-colors duration-200"
+                >
+                  {link}
+                </Link>
+              ))}
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default FullHeader;
