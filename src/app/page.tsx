@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://urbanobserver.com",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  // },
 };
 
 export default async function Home() {
