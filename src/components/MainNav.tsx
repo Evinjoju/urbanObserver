@@ -157,7 +157,7 @@ const MainNav: React.FC<MainNavProps> = ({
           <div className="lg:hidden border-t border-black bg-white absolute top-full left-0 right-0 shadow-lg z-50">
             <div className="px-6 py-6 space-y-5 text-lg font-inter font-bold tracking-widest uppercase">
               {menuItems.map((item) => {
-                const href = item === "ENTERTAINMENT" ? "/" : `/${item.toLowerCase()}`;
+                const href = item === "ENTERTAINMENT" ? "/entertainment" : `/${item.toLowerCase()}`;
                 const isActive = item.toLowerCase() === currentPage;
 
                 return (

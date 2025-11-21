@@ -151,7 +151,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       />
 
       <div className="bg-white text-black min-h-screen font-sans">
-        <div className="max-w-7xl mx-auto">
+        <div>
           <DateBar />
           <NewsletterSection />
           <MainNav

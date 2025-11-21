@@ -34,7 +34,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
             <div className="flex flex-wrap justify-center lg:justify-end gap-4 sm:gap-6 text-xs sm:text-sm font-bold tracking-widest uppercase">
               {categories.map((cat) => {
                 const isActive = cat.toLowerCase() === currentPage;
-                const href = cat === "ENTERTAINMENT" ? "/" : `/${cat.toLowerCase()}`;
+                const href = cat === "ENTERTAINMENT" ? "/entertainment" : `/${cat.toLowerCase()}`;
                 return (
                   <Link
                     key={cat}

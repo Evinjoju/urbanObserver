@@ -141,8 +141,8 @@ export default async function HomePage() {
           }),
         }}
       />
-      <div className="bg-white text-black min-h-screen font-sans">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-white text-black font-sans">
+        <div >
           <DateBar />
           <NewsletterSection />
           <MainNav

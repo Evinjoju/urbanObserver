@@ -178,8 +178,8 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         }}
       />
 
-      <div className="bg-white text-black min-h-screen font-sans">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-white text-black font-sans">
+        <div>
           <DateBar />
           <NewsletterSection />
           <MainNav

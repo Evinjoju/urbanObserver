@@ -1,39 +1,38 @@
 [
-  {
-    "slug": "latest-celeb-scoop",
-    "title": "Latest Celeb Scoop",
+   {
+    "slug": "morgan-evans-laci-kaye-booth-red-carpet-debut-cma-2025",
+    "title": "Morgan Evans Makes Red Carpet Debut With New Girlfriend After Kelsea Ballerini Divorce",
     "category": "CELEBRITY",
-    "shortdescription": "Fresh news from the stars.",
-    "description": "Just in from the grapevine.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "shortdescription": "Country singer steps out with Laci Kaye Booth at CMA Awards – ex Kelsea performing same night!",
+    "description": "Three years after his split from Kelsea Ballerini, Morgan Evans goes public with new romance at the 2025 CMA Awards.",
+    "image": "/images/morgan evans.webp",
     "author": "Gossip Guru",
     "authorImage": "/images/gossip-guru.webp",
     "role": "Scandal Reporter",
-    "date": "November 15, 2025"
-  }
-  ,
-  {
-    "slug": "latest-celeb-scoop",
-    "title": "Latest Celeb Scoop",
-    "category": "CELEBRITY",
-    "shortdescription": "Fresh news from the stars.",
-    "description": "Just in from the grapevine.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
-    "author": "Gossip Guru",
-    "authorImage": "/images/gossip-guru.webp",
-    "role": "Scandal Reporter",
-    "date": "November 15, 2025"
+    "date": "November 20, 2025"
   },
   {
-    "slug": "latest-celeb-scoop",
-    "title": "Latest Celeb Scoop",
+    "slug": "nicole-kidman-keith-urban-separation-2025",
+    "title": "Nicole Kidman & Keith Urban End 19-Year Marriage – Full Breakup Details",
     "category": "CELEBRITY",
-    "shortdescription": "Fresh news from the stars.",
-    "description": "Just in from the grapevine.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "shortdescription": "One of Hollywood's longest-lasting couples calls it quits in shocking 2025 split.",
+    "description": "After nearly two decades and two kids together, sources confirm Nicole Kidman and Keith Urban have separated.",
+    "image": "/images/Nicole Kidman & Keith Urban End 19-Year Marriage.webp",
     "author": "Gossip Guru",
     "authorImage": "/images/gossip-guru.webp",
     "role": "Scandal Reporter",
-    "date": "November 15, 2025"
+    "date": "November 19, 2025"
+  },
+  {
+    "slug": "kevin-spacey-homeless-2025-confession",
+    "title": "Kevin Spacey Admits He's Homeless After Sexual Assault Scandals",
+    "category": "CELEBRITY",
+    "shortdescription": "Disgraced actor reveals he's crashing in hotels and Airbnbs with no permanent home.",
+    "description": "In a bombshell interview, Kevin Spacey says he's lost everything and is now effectively homeless following years of allegations.",
+    "image": "/images/Kevin Spacey Admits He's Homeless After Sexual Assault Scandals.webp",
+    "author": "Gossip Guru",
+    "authorImage": "/images/gossip-guru.webp",
+    "role": "Scandal Reporter",
+    "date": "November 19, 2025"
   }
 ]

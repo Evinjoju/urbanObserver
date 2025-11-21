@@ -1,39 +1,38 @@
 [
   {
-    "slug": "latest-drama-news",
-    "title": "Latest Drama News",
+    "slug": "all-her-fault-sarah-snook-missing-child-thriller",
+    "title": "All Her Fault: Sarah Snook's Terrifying Missing Child Drama Everyone Is Bingeing",
     "category": "DRAMA",
-    "shortdescription": "Fresh updates from sets.",
-    "description": "Cast changes and plot leaks.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "shortdescription": "Succession star returns in nail-biting thriller about a playdate gone horribly wrong.",
+    "description": "Sarah Snook plays a mother whose son vanishes after a playdate – paranoia, secrets, and suburban suspicion explode in Peacock's hottest new series.",
+    "image": "/images/All Her Fault Sarah Snook's.webp",
     "author": "TV Insider",
     "authorImage": "/images/tv-insider.webp",
     "role": "Drama Correspondent",
-    "date": "November 15, 2025"
-  }
-  ,
-  {
-    "slug": "latest-drama-news",
-    "title": "Latest Drama News",
-    "category": "DRAMA",
-    "shortdescription": "Fresh updates from sets.",
-    "description": "Cast changes and plot leaks.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
-    "author": "TV Insider",
-    "authorImage": "/images/tv-insider.webp",
-    "role": "Drama Correspondent",
-    "date": "November 15, 2025"
+    "date": "November 20, 2025"
   },
   {
-    "slug": "latest-drama-news",
-    "title": "Latest Drama News",
+    "slug": "death-by-lightning-michael-shannon-assassination-drama",
+    "title": "Death By Lightning: Michael Shannon & Matthew Macfadyen in Explosive Presidential Assassination Series",
     "category": "DRAMA",
-    "shortdescription": "Fresh updates from sets.",
-    "description": "Cast changes and plot leaks.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "shortdescription": "Game of Thrones creators tackle the forgotten Garfield assassination – critics call it 'masterful'.",
+    "description": "Netflix's gripping historical thriller starring Michael Shannon as President Garfield and Matthew Macfadyen as his unhinged killer is 2025's must-watch prestige drama.",
+    "image": "/images/Death By Lightning Michael Shannon & Matthew Macfadyen in Explosive.webp",
     "author": "TV Insider",
     "authorImage": "/images/tv-insider.webp",
     "role": "Drama Correspondent",
-    "date": "November 15, 2025"
+    "date": "November 19, 2025"
+  },
+  {
+    "slug": "kim-kardashian-alls-fair-ryan-murphy-legal-drama",
+    "title": "All's Fair: Kim Kardashian & Glenn Close in Ryan Murphy's Cutthroat Divorce Lawyer Drama",
+    "category": "DRAMA",
+    "shortdescription": "Kim K goes full attorney mode in the fiercest, glossiest legal series of the year.",
+    "description": "Ryan Murphy's star-studded Hulu drama about elite LA divorce lawyers (Kim Kardashian, Glenn Close, Halle Berry) is serving scandal, secrets, and courtroom fireworks.",
+    "image": "/images/All's Fair Kim Kardashian & Glenn Close in Ryan Murphy's.webp",
+    "author": "TV Insider",
+    "authorImage": "/images/tv-insider.webp",
+    "role": "Drama Correspondent",
+    "date": "November 18, 2025"
   }
 ]

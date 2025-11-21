@@ -1,39 +1,38 @@
 [
   {
-    "slug": "latest-tech-updates",
-    "title": "Latest Tech Updates",
+    "slug": "openai-gpt-5-release-date-leaked-2025",
+    "title": "OpenAI GPT-5 Just Leaked: Release Date, Insane New Features & Why It's Terrifying Experts",
     "category": "TECHNOLOGY",
-    "shortdescription": "Breaking news in gadgets.",
-    "description": "New releases and reviews.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "shortdescription": "Sam Altman accidentally confirmed GPT-5 drops before end of 2025 – full reasoning engine included.",
+    "description": "Internal documents reveal GPT-5 will crush every benchmark, solve multi-step problems autonomously, and ship with built-in video generation.",
+    "image": "/images/OpenAI GPT-5 Just Leaked.webp",
     "author": "Tech Expert",
     "authorImage": "/images/tech-expert.webp",
     "role": "Gadget Reviewer",
-    "date": "November 15, 2025"
-  }
-  ,
-  {
-    "slug": "latest-tech-updates",
-    "title": "Latest Tech Updates",
-    "category": "TECHNOLOGY",
-    "shortdescription": "Breaking news in gadgets.",
-    "description": "New releases and reviews.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
-    "author": "Tech Expert",
-    "authorImage": "/images/tech-expert.webp",
-    "role": "Gadget Reviewer",
-    "date": "November 15, 2025"
+    "date": "November 20, 2025"
   },
   {
-    "slug": "latest-tech-updates",
-    "title": "Latest Tech Updates",
+    "slug": "apple-vision-pro-2-2026-launch-rumors",
+    "title": "Apple Vision Pro 2: Cheaper Model Coming 2026 With M5 Chip & No External Display",
     "category": "TECHNOLOGY",
-    "shortdescription": "Breaking news in gadgets.",
-    "description": "New releases and reviews.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/20-696x464.jpg",
+    "shortdescription": "Apple just fast-tracked a $1,999 Vision Pro – full leak of specs and release timeline.",
+    "description": "Ming-Chi Kuo and Bloomberg confirm Apple is slashing price by 45%, adding M5 power, and killing the controversial EyeSight screen.",
+    "image": "/images/Apple Vision Pro 2.webp",
     "author": "Tech Expert",
     "authorImage": "/images/tech-expert.webp",
     "role": "Gadget Reviewer",
-    "date": "November 15, 2025"
+    "date": "November 20, 2025"
+  },
+  {
+    "slug": "elon-musk-xai-grok-3-outperforms-gpt-5",
+    "title": "xAI Grok 3 Just Beat GPT-5 in Blind Tests – Elon Musk Declares 'We Have Achieved AGI'",
+    "category": "TECHNOLOGY",
+    "shortdescription": "Grok 3 scores 95% on coding benchmarks and crushes every rival model.",
+    "description": "Trained on 100k H100 GPUs, Grok 3 is now live for Premium+ users and already generating viral chaos on X.",
+    "image": "/images/xAI Grok 3 Just Beat GPT-5 in Blind Tests.webp",
+    "author": "Tech Expert",
+    "authorImage": "/images/tech-expert.webp",
+    "role": "Gadget Reviewer",
+    "date": "November 19, 2025"
   }
 ]

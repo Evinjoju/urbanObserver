@@ -1,39 +1,38 @@
 [
   {
-    "slug": "popular-tech-stories",
-    "title": "Popular Tech Stories",
+    "slug": "samsung-galaxy-s25-ultra-camera-leak-2025",
+    "title": "Samsung Galaxy S25 Ultra: 200MP Camera + 10x Optical Zoom Just Fully Leaked",
     "category": "TECHNOLOGY",
-    "shortdescription": "Most read innovations.",
-    "description": "Viral tech news this month.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/19-696x464.jpg",
+    "shortdescription": "First real photos and full specs – this is the phone that finally destroys iPhone.",
+    "description": "Ice Universe drops complete S25 Ultra camera array: new 200MP main sensor, upgraded ultrawide, and true 10x periscope.",
+    "image": "/images/Samsung Galaxy S25 Ultra.webp",
     "author": "Tech Expert",
     "authorImage": "/images/tech-expert.webp",
     "role": "Gadget Reviewer",
-    "date": "November 15, 2025"
+    "date": "November 20, 2025"
   },
   {
-    "slug": "popular-tech-stories",
-    "title": "Popular Tech Stories",
+    "slug": "meta-smart-glasses-ray-ban-2026-hud",
+    "title": "Meta Ray-Ban Smart Glasses 2026: Full Heads-Up Display & Live Translation Coming",
     "category": "TECHNOLOGY",
-    "shortdescription": "Most read innovations.",
-    "description": "Viral tech news this month.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/19-696x464.jpg",
+    "shortdescription": "Mark Zuckerberg confirms next-gen Ray-Bans will have actual AR display built into lenses.",
+    "description": "Leaked roadmap shows 2026 model with micro-OLED HUD, real-time translation in 50 languages, and neural wristband control.",
+    "image": "/images/Meta Ray-Ban Smart Glasses 2026.webp",
     "author": "Tech Expert",
     "authorImage": "/images/tech-expert.webp",
     "role": "Gadget Reviewer",
-    "date": "November 15, 2025"
+    "date": "November 18, 2025"
   },
   {
-    "slug": "popular-tech-stories",
-    "title": "Popular Tech Stories",
+    "slug": "best-black-friday-tech-deals-2025-live",
+    "title": "Best Black Friday Tech Deals 2025 LIVE: MacBook Air M4 $849, PS5 Pro Bundle $599 & More",
     "category": "TECHNOLOGY",
-    "shortdescription": "Most read innovations.",
-    "description": "Viral tech news this month.",
-    "image": "https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/19-696x464.jpg",
+    "shortdescription": "Early deals are insane – we’re updating every hour with the lowest prices ever seen.",
+    "description": "MacBook Air M4 hits all-time low, AirPods Pro 2 at $149, 85-inch 4K TVs under $500 – all deals verified and live right now.",
+    "image": "/images/Best Black Friday Tech Deals 2025 LIVE.webp",
     "author": "Tech Expert",
     "authorImage": "/images/tech-expert.webp",
     "role": "Gadget Reviewer",
-    "date": "November 15, 2025"
-  }
-  
+    "date": "November 20, 2025"
+  }  
 ]
