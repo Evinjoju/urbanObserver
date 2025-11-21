@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Mail } from "lucide-react";
 import NewsletterModal from "./NewsletterModal";
+import Link from "next/link";
 
 const NewsletterSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -19,8 +20,8 @@ const NewsletterSection = () => {
 
           {/* Newsletter Button - Hidden on mobile */}
           <div className="hidden sm:flex flex-col items-center group cursor-pointer">
-            <Mail 
-              className="text-4xl md:text-6xl text-black group-hover:text-red-600 transition-colors duration-300" 
+            <Mail
+              className="text-4xl md:text-6xl text-black group-hover:text-red-600 transition-colors duration-300"
             />
             <button
               onClick={() => setModalOpen(true)}
@@ -34,16 +35,18 @@ const NewsletterSection = () => {
 
           {/* Center Logo & Tagline - Always visible, scales nicely */}
           <div className="flex-1 text-center">
-           <h1
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.3em] uppercase"
-            style={{
-              WebkitTextStroke: "2.5px black",
-              color: "transparent",
-              letterSpacing: "0.0em",
-            }}
-          >
-              URBANOBSERVER
-            </h1>
+            <Link href="/" className="inline-block">
+              <h1
+                className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.3em] uppercase"
+                style={{
+                  WebkitTextStroke: "2.5px black",
+                  color: "transparent",
+                  letterSpacing: "0.0em",
+                }}
+              >
+                URBANOBSERVER
+              </h1>
+            </Link>
             <p className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest font-bold mt-2 uppercase">
               Gossip & Lifestyle Online Magazine
             </p>
