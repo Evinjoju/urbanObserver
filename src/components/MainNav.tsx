@@ -122,7 +122,7 @@ const MainNav: React.FC<MainNavProps> = ({
                 const articles = categoryArticles[item] || [];
                 const hasData = articles.length > 0 || (isEntertainment && entertainmentSubArticles);
                 const isActive = item.toLowerCase() === currentPage;
-                const href = isEntertainment ? "/" : `/${item.toLowerCase()}`;
+                const href = item === "ENTERTAINMENT" ? "/entertainment" : `/${item.toLowerCase()}`;
 
                 return (
                   <Link

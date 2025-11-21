@@ -72,9 +72,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   }
 
   const [top5Data, latestArticlesData, popularArticlesData] = await Promise.all([
-    import("../../../../public/data/top5-articles.json").then(m => m.default),
-    import("../../../../public/data/latest-articles.json").then(m => m.default),
-    import("../../../../public/data/popular-articles.json").then(m => m.default),
+    import("../../../../public/data/entertainment-top5-articles.json").then(m => m.default),
+    import("../../../../public/data/entertainment-latest-articles.json").then(m => m.default),
+    import("../../../../public/data/entertainment-popular-articles.json").then(m => m.default),
   ]);
 
   const [

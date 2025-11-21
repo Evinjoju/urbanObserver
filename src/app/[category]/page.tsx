@@ -1,6 +1,4 @@
-// app/[category]/page.tsx
-'use client';
-
+// app/[category]/page.tsx  ← ONE FILE FOR ALL CATEGORIES INCLUDING ENTERTAINMENT
 import DateBar from "../../components/DateBar";
 import NewsletterSection from "../../components/NewsletterSection";
 import MainNav from "../../components/MainNav";
@@ -10,56 +8,115 @@ import AdSection from "../../components/AdSection";
 import FeaturedGrid from "../../components/FeaturedGrid";
 import FullHeader from "../../components/FullHeader";
 import FooterSection from "../../components/FooterSection";
-import { notFound, useParams } from "next/navigation";
+import { notFound } from "next/navigation";
 
-const config = {
-  celebrity: { title: "CELEBRITY" as const, subs: ["NEWS", "GOSSIP", "FASHION"] as const, folder: "celebrityPage", slider: "/celebrity-slider.json" },
-  scandals: { title: "SCANDALS" as const, subs: ["HOLLYWOOD", "POLITICS", "BUSINESS"] as const, folder: "scandalsPage", slider: "/scandals-slider.json" },
-  drama: { title: "DRAMA" as const, subs: ["TV SERIES", "FILM PLOTS", "BEHIND SCENES"] as const, folder: "dramaPage", slider: "/drama-slider.json" },
-  lifestyle: { title: "LIFESTYLE" as const, subs: ["WELLNESS", "TRAVEL", "FOOD"] as const, folder: "lifestylePage", slider: "/lifestyle-slider.json" },
-  technology: { title: "TECHNOLOGY" as const, subs: ["GADGETS", "AI", "INNOVATIONS"] as const, folder: "technologyPage", slider: "/technology-slider.json" },
-  health: { title: "HEALTH" as const, subs: ["WELLNESS", "FITNESS", "NUTRITION"] as const, folder: "healthPage", slider: "/health-slider.json" },
+const categoryConfig = {
+  entertainment: {
+    title: "ENTERTAINMENT",
+    subs: ["MOVIES", "MUSIC", "TV SHOWS"],
+    folder: "", // uses root data
+    slider: "/entertainment-slider.json",
+  },
+  celebrity: {
+    title: "CELEBRITY",
+    subs: ["NEWS", "GOSSIP", "FASHION"],
+    folder: "celebrityPage",
+    slider: "/celebrity-slider.json",
+  },
+  scandals: {
+    title: "SCANDALS",
+    subs: ["HOLLYWOOD", "POLITICS", "BUSINESS"],
+    folder: "scandalsPage",
+    slider: "/scandals-slider.json",
+  },
+  drama: {
+    title: "DRAMA",
+    subs: ["TV SERIES", "FILM PLOTS", "BEHIND SCENES"],
+    folder: "dramaPage",
+    slider: "/drama-slider.json",
+  },
+  lifestyle: {
+    title: "LIFESTYLE",
+    subs: ["WELLNESS", "TRAVEL", "FOOD"],
+    folder: "lifestylePage",
+    slider: "/lifestyle-slider.json",
+  },
+  technology: {
+    title: "TECHNOLOGY",
+    subs: ["GADGETS", "AI", "INNOVATIONS"],
+    folder: "technologyPage",
+    slider: "/technology-slider.json",
+  },
+  health: {
+    title: "HEALTH",
+    subs: ["WELLNESS", "FITNESS", "NUTRITION"],
+    folder: "healthPage",
+    slider: "/health-slider.json",
+  },
 } as const;
 
-type Category = keyof typeof config;
+type CategoryKey = keyof typeof categoryConfig;
 
-export default function CategoryPage() {
-  const params = useParams();
-  const key = params.category as Category;
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
+  const key = category.toLowerCase() as CategoryKey;
+  const config = categoryConfig[key];
+  if (!config) notFound();
 
-  const c = config[key];
-  if (!c) notFound();
+  const folder = config.folder ? `${config.folder}/` : "";
 
-  // Load all data synchronously with dynamic imports (no async/await + useState = no loading state)
-  const grid = require(`../../../public/data/${c.folder}/${key}-grid-articles.json`);
-  const main = require(`../../../public/data/${c.folder}/${key}-main-articles.json`);
-  const top5 = require(`../../../public/data/${c.folder}/${key}-top5-articles.json`);
-  const latest = require(`../../../public/data/${c.folder}/${key}-latest-articles.json`);
-  const popular = require(`../../../public/data/${c.folder}/${key}-popular-articles.json`);
-  const currentSlider = require(`../../../public/data${c.slider}`);
+  const [
+    gridData,
+    mainData,
+    top5Data,
+    latestData,
+    popularData,
+    currentSliderData,
+    entertainmentSlider,
+    moviesSlider,
+    tvSlider,
+    musicSlider,
+    celebritySlider,
+    scandalsSlider,
+    dramaSlider,
+    lifestyleSlider,
+    technologySlider,
+    
+  ] = await Promise.all([
+    import(`../../../public/data/${folder}${key}-grid-articles.json`).then(m => m.default),
+    import(`../../../public/data/${folder}${key}-main-articles.json`).then(m => m.default),
+    import(`../../../public/data/${folder}${key}-top5-articles.json`).then(m => m.default),
+    import(`../../../public/data/${folder}${key}-latest-articles.json`).then(m => m.default),
+    import(`../../../public/data/${folder}${key}-popular-articles.json`).then(m => m.default),
+ 
 
-  // Shared sliders (only the ones you actually use)
-  const entertainmentSlider = require("../../../public/data/entertainment-slider.json");
-  const moviesSlider = require("../../../public/data/movies-slider.json");
-  const tvSlider = require("../../../public/data/tv-slider.json");
+    import("../../../public/data/entertainment-slider.json").then(m => m.default),
+    import("../../../public/data/movies-slider.json").then(m => m.default),
+    import("../../../public/data/tv-slider.json").then(m => m.default),
+    import("../../../public/data/entertainment-slider.json").then(m => m.default),
+    import("../../../public/data/celebrity-slider.json").then(m => m.default),
+    import("../../../public/data/scandals-slider.json").then(m => m.default),
+    import("../../../public/data/drama-slider.json").then(m => m.default),
+    import("../../../public/data/lifestyle-slider.json").then(m => m.default),
+    import("../../../public/data/technology-slider.json").then(m => m.default),
+    import("../../../public/data/health-slider.json").then(m => m.default),
+  ]);
 
   const categoryArticles = {
     ENTERTAINMENT: entertainmentSlider,
-    MOVIES: moviesSlider,
-    TV: tvSlider,
-    CELEBRITY: require("../../../public/data/celebrity-slider.json"),
-    SCANDALS: require("../../../public/data/scandals-slider.json"),
-    DRAMA: require("../../../public/data/drama-slider.json"),
-    LIFESTYLE: require("../../../public/data/lifestyle-slider.json"),
-    TECHNOLOGY: require("../../../public/data/technology-slider.json"),
-    HEALTH: require("../../../public/data/health-slider.json"),
-    [c.title]: currentSlider,
+    CELEBRITY: celebritySlider,
+    SCANDALS: scandalsSlider,
+    DRAMA: dramaSlider,
+    LIFESTYLE: lifestyleSlider,
+    TECHNOLOGY: technologySlider,
+    
+    [config.title]: currentSliderData,
   };
 
   const entertainmentSubArticles = {
     movies: moviesSlider,
     tv: tvSlider,
-    music: entertainmentSlider, // fallback — many sites use ENTERTAINMENT as music too
+    music: musicSlider,
   };
 
   return (
@@ -69,15 +126,15 @@ export default function CategoryPage() {
         <NewsletterSection />
         <MainNav
           categoryArticles={categoryArticles}
-          currentPage={key}
           entertainmentSubArticles={entertainmentSubArticles}
+          currentPage={key}
         />
-        <SectionTitle title={c.title} subCategories={[...c.subs]} />
-        <ArticleGrid data={grid} />
+        <SectionTitle title={config.title} subCategories={[...config.subs]} />
+        <ArticleGrid data={gridData} />
         <AdSection />
-        <FeaturedGrid mainArticles={main} top5Articles={top5} />
+        <FeaturedGrid mainArticles={mainData} top5Articles={top5Data} />
         <FullHeader currentPage={key} />
-        <FooterSection latestArticles={latest} popularArticles={popular} />
+        <FooterSection latestArticles={latestData} popularArticles={popularData} />
       </div>
     </div>
   );

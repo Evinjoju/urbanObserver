@@ -1,132 +1,120 @@
-// app/page.tsx
+// app/page.tsx — NEW HOME PAGE (Beautiful & Modern)
 import DateBar from "../components/DateBar";
 import NewsletterSection from "../components/NewsletterSection";
 import MainNav from "../components/MainNav";
-import SectionTitle from "../components/SectionTitle";
+import ArticleGridLarge from "../components/ArticleGridLarge";
 import ArticleGrid from "../components/ArticleGrid";
 import AdSection from "../components/AdSection";
-import FeaturedGrid from "../components/FeaturedGrid";
 import FullHeader from "../components/FullHeader";
 import FooterSection from "../components/FooterSection";
-import { Article, MainArticle, TopArticle } from "../types/Article";
-import type { Metadata } from "next";
+import SubscribeBanner from "../components/SubscribeBanner"; // ← ADDED
+import MainArticleGrid from "../components/MainArticleGrid";
+import MainContentWithSidebar from "../components/MainContentWithSidebar";
+import Banner from "../components/Banner";
+import FeaturedGrid from "../components/FeaturedGrid";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "UrbanObserver – Celebrity Gossip, Scandals & Lifestyle 2025",
-  description: "Latest celebrity scandals, breakups, Ozempic face fixes, Black Friday deals & trending drama – updated November 20, 2025",
-  keywords: "celebrity gossip 2025, blake lively lawsuit, ozempic face, taylor swift travis kelce, dolly parton health",
-  openGraph: {
-    title: "UrbanObserver – Celebrity Gossip, Scandals & Lifestyle 2025",
-    description: "Your #1 source for the hottest celebrity news, scandals, and lifestyle trends – updated daily November 2025",
-    images: "/images/Taylor Swift Engagement Ring Predictions.webp",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "UrbanObserver – Celebrity Gossip 2025",
-    description: "Latest scandals, breakups & trending drama – updated November 20, 2025",
-    images: "/og-home.jpg",
-  },
-  alternates: {
-    canonical: "https://urbanobserver.com",
-  },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  // },
+  description: "Latest celebrity scandals, entertainment news, music trends, and lifestyle — updated November 21, 2025",
 };
 
-export default async function Home() {
-  const gridArticlesData = (await import("../../public/data/grid-articles.json")).default;
-  const musicSliderData = (await import("../../public/data/entertainment-slider.json")).default;
-  const moviesSliderData = (await import("../../public/data/movies-slider.json")).default;
-  const tvSliderData = (await import("../../public/data/tv-slider.json")).default;
-  const celebritySliderData = (await import("../../public/data/celebrity-slider.json")).default;
-  const scandalsSliderData = (await import("../../public/data/scandals-slider.json")).default;
-  const dramaSliderData = (await import("../../public/data/drama-slider.json")).default;
-  const lifestyleSliderData = (await import("../../public/data/lifestyle-slider.json")).default;
-  const technologySliderData = (await import("../../public/data/technology-slider.json")).default;
-  const healthSliderData = (await import("../../public/data/health-slider.json")).default;
-  const mainArticlesData = (await import("../../public/data/main-articles.json")).default;
-  const top5ArticlesData = (await import("../../public/data/top5-articles.json")).default;
-  const latestArticlesData = (await import("../../public/data/latest-articles.json")).default;
-  const popularArticlesData = (await import("../../public/data/popular-articles.json")).default;
-
-  const typedMainArticles: MainArticle[] = mainArticlesData as MainArticle[];
-  const typedTop5Articles: TopArticle[] = top5ArticlesData as TopArticle[];
-  const typedGridArticles: Article[] = gridArticlesData as Article[];
-  const typedMusicArticles: Article[] = musicSliderData as Article[];
-  const typedMoviesArticles: Article[] = moviesSliderData as Article[];
-  const typedTvArticles: Article[] = tvSliderData as Article[];
-  const typedCelebrityArticles: Article[] = celebritySliderData as Article[];
-  const typedScandalsArticles: Article[] = scandalsSliderData as Article[];
-  const typedDramaArticles: Article[] = dramaSliderData as Article[];
-  const typedLifestyleArticles: Article[] = lifestyleSliderData as Article[];
-  const typedTechnologyArticles: Article[] = technologySliderData as Article[];
-  const typedHealthArticles: Article[] = healthSliderData as Article[];
+export default async function HomePage() {
+  // Load all shared data
+  const [
+    largeGridData,
+    mainArticlesData,
+    mainArticlesData2,
+    top5ArticlesData,
+    regularGridData,
+    entertainmentSlider,
+    moviesSlider,
+    tvSlider,
+    musicSlider,
+    celebritySlider,
+    scandalsSlider,
+    dramaSlider,
+    lifestyleSlider,
+    technologySlider,
+    healthSlider,
+    latestArticlesData,
+    popularArticlesData,
+  ] = await Promise.all([
+    import("../../public/data/home/home-large-grid.json").then(m => m.default),
+    import("../../public/data/home/home-main-articles.json").then(m => m.default),
+    import("../../public/data/home/home-main-articles2.json").then(m => m.default),
+    import("../../public/data/home/home-top5-articles.json").then(m => m.default),
+    import("../../public/data/home/home-grid-articles.json").then(m => m.default),
+    import("../../public/data/entertainment-slider.json").then(m => m.default),
+    import("../../public/data/movies-slider.json").then(m => m.default),
+    import("../../public/data/tv-slider.json").then(m => m.default),
+    import("../../public/data/entertainment-slider.json").then(m => m.default),
+    import("../../public/data/celebrity-slider.json").then(m => m.default),
+    import("../../public/data/scandals-slider.json").then(m => m.default),
+    import("../../public/data/drama-slider.json").then(m => m.default),
+    import("../../public/data/lifestyle-slider.json").then(m => m.default),
+    import("../../public/data/technology-slider.json").then(m => m.default),
+    import("../../public/data/health-slider.json").then(m => m.default),
+    import("../../public/data/home/home-latest-articles.json").then(m => m.default),
+    import("../../public/data/home/home-popular-articles.json").then(m => m.default),
+  ]);
 
   const categoryArticles = {
-    ENTERTAINMENT: typedMusicArticles,
-    CELEBRITY: typedCelebrityArticles,
-    SCANDALS: typedScandalsArticles,
-    DRAMA: typedDramaArticles,
-    LIFESTYLE: typedLifestyleArticles,
-    TECHNOLOGY: typedTechnologyArticles,
-    HEALTH: typedHealthArticles,
+    ENTERTAINMENT: entertainmentSlider,
+    CELEBRITY: celebritySlider,
+    SCANDALS: scandalsSlider,
+    DRAMA: dramaSlider,
+    LIFESTYLE: lifestyleSlider,
+    TECHNOLOGY: technologySlider,
+    HEALTH: healthSlider,
   };
 
   const entertainmentSubArticles = {
-    movies: typedMoviesArticles,
-    tv: typedTvArticles,
-    music: typedMusicArticles,
+    movies: moviesSlider,
+    tv: tvSlider,
+    music: musicSlider,
   };
 
   return (
-    <>
-      {/* Homepage WebSite Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "UrbanObserver",
-            url: "https://urbanobserver.com",
-            potentialAction: {
-              "@type": "SearchAction",
-              target: "https://urbanobserver.com/search?q={search_term_string}",
-              "query-input": "required name=search_term_string",
-            },
-          }),
-        }}
-      />
+    <div className="bg-white text-black min-h-screen font-sans">
+      <div className="max-w-7xl mx-auto">
+        <DateBar />
+        <NewsletterSection />
+        <MainNav
+          categoryArticles={categoryArticles}
+          entertainmentSubArticles={entertainmentSubArticles}
+          currentPage="home"
+        />
+        <AdSection />
+        {/* Hero Section — 3 Large Articles */}
 
-      <div className="bg-white text-black min-h-screen font-sans">
-        <div className="mx-auto">
-          <DateBar />
-          <NewsletterSection />
-          <MainNav 
-            categoryArticles={categoryArticles}
-            entertainmentSubArticles={entertainmentSubArticles}
-            currentPage="entertainment"
-          />
-          <SectionTitle 
-            title="ENTERTAINMENT" 
-            subCategories={["MOVIES", "MUSIC", "TV SHOWS"]} 
-          />
-          <ArticleGrid data={typedGridArticles} />
-          <AdSection />
-          <FeaturedGrid 
-            mainArticles={typedMainArticles} 
-            top5Articles={typedTop5Articles} 
-          />
-          <FullHeader currentPage="entertainment" />
-          <FooterSection 
-            latestArticles={latestArticlesData} 
-            popularArticles={popularArticlesData} 
-          />
-        </div>
+        <ArticleGridLarge data={largeGridData} />
+
+        {/* Regular Grid — 4 Small Articles */}
+        <section>
+          <ArticleGrid data={regularGridData} />
+        </section>
+        {/* ← ADDED SUBSCRIBE BANNER */}
+        <SubscribeBanner />
+
+        <MainContentWithSidebar
+          mainArticles={mainArticlesData}
+          latestArticles={latestArticlesData}
+          categoryTitle="LIFESTYLE"
+        />
+
+        <Banner text="DON'T MISS" />
+
+          <FeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
+       
+
+         <AdSection />
+
+        <FullHeader currentPage="home" />
+        <FooterSection
+          latestArticles={latestArticlesData}
+          popularArticles={popularArticlesData}
+        />
       </div>
-    </>
+    </div>
   );
 }
