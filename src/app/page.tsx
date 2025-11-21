@@ -12,10 +12,57 @@ import MainArticleGrid from "../components/MainArticleGrid";
 import MainContentWithSidebar from "../components/MainContentWithSidebar";
 import Banner from "../components/Banner";
 import FeaturedGrid from "../components/FeaturedGrid";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://urban-observer.vercel.app"),
   title: "UrbanObserver – Celebrity Gossip, Scandals & Lifestyle 2025",
-  description: "Latest celebrity scandals, entertainment news, music trends, and lifestyle — updated November 21, 2025",
+  description: "Latest celebrity scandals, Blake Lively lawsuit, Taylor Swift & Travis Kelce, Ozempic face fixes, Dolly Parton health updates – updated November 21, 2025",
+  keywords: [
+    "celebrity gossip 2025",
+    "blake lively lawsuit",
+    "taylor swift travis kelce",
+    "ozempic face",
+    "dolly parton health",
+    "black friday deals 2025",
+    "hollywood scandals",
+    "entertainment news",
+  ].join(", "),
+  openGraph: {
+    title: "UrbanObserver – Celebrity Gossip & Lifestyle 2025",
+    description: "Your #1 source for the hottest celebrity scandals, breakups & trending drama – updated daily",
+    url: "https://urban-observer.vercel.app",
+    siteName: "UrbanObserver",
+    images: [
+      {
+        url: "/og-home.jpg", // ← 1200x630 WebP
+        width: 1200,
+        height: 630,
+        alt: "UrbanObserver – Celebrity Gossip 2025",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UrbanObserver – Celebrity Gossip 2025",
+    description: "Latest scandals, lawsuits & trending drama – updated daily",
+    images: ["/og-home.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://urban-observer.vercel.app",
+  },
 };
 
 export default async function HomePage() {
@@ -75,46 +122,66 @@ export default async function HomePage() {
   };
 
   return (
-    <div className="bg-white text-black min-h-screen font-sans">
-      <div className="max-w-7xl mx-auto">
-        <DateBar />
-        <NewsletterSection />
-        <MainNav
-          categoryArticles={categoryArticles}
-          entertainmentSubArticles={entertainmentSubArticles}
-          currentPage="home"
-        />
-        <AdSection />
-        {/* Hero Section — 3 Large Articles */}
 
-        <ArticleGridLarge data={largeGridData} />
+    <>
+      {/* WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "UrbanObserver",
+            url: "https://urban-observer.vercel.app",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://urban-observer.vercel.app/search?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+      <div className="bg-white text-black min-h-screen font-sans">
+        <div className="max-w-7xl mx-auto">
+          <DateBar />
+          <NewsletterSection />
+          <MainNav
+            categoryArticles={categoryArticles}
+            entertainmentSubArticles={entertainmentSubArticles}
+            currentPage="home"
+          />
+          <AdSection />
+          {/* Hero Section — 3 Large Articles */}
 
-        {/* Regular Grid — 4 Small Articles */}
-        <section>
-          <ArticleGrid data={regularGridData} />
-        </section>
-        {/* ← ADDED SUBSCRIBE BANNER */}
-        <SubscribeBanner />
+          <ArticleGridLarge data={largeGridData} />
 
-        <MainContentWithSidebar
-          mainArticles={mainArticlesData}
-          latestArticles={latestArticlesData}
-          categoryTitle="LIFESTYLE"
-        />
+          {/* Regular Grid — 4 Small Articles */}
+          <section>
+            <ArticleGrid data={regularGridData} />
+          </section>
+          {/* ← ADDED SUBSCRIBE BANNER */}
+          <SubscribeBanner />
 
-        <Banner text="DON'T MISS" />
+          <MainContentWithSidebar
+            mainArticles={mainArticlesData}
+            latestArticles={latestArticlesData}
+            categoryTitle="LIFESTYLE"
+          />
+
+          <Banner text="DON'T MISS" />
 
           <FeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
-       
 
-         <AdSection />
 
-        <FullHeader currentPage="home" />
-        <FooterSection
-          latestArticles={latestArticlesData}
-          popularArticles={popularArticlesData}
-        />
+          <AdSection />
+
+          <FullHeader currentPage="home" />
+          <FooterSection
+            latestArticles={latestArticlesData}
+            popularArticles={popularArticlesData}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

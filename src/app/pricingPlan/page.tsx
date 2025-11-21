@@ -7,6 +7,29 @@ import FullHeader from "../../components/FullHeader";
 import FooterSection from "../../components/FooterSection";
 import { Article, MainArticle, TopArticle } from "../../types/Article";
 import PricingPlans from "@/src/components/PricingPlans";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Membership Plans – Unlimited Access | UrbanObserver 2025",
+  description: "Support independent journalism. Get full access to all premium articles, exclusive stories, and ad-free reading with UrbanObserver membership.",
+  keywords: "urbanobserver membership, subscribe, premium access, unlimited articles, support journalism 2025",
+  alternates: {
+    canonical: "https://urban-observer.vercel.app/pricingPlan",
+  },
+  openGraph: {
+    title: "Join UrbanObserver – Unlimited Access Membership",
+    description: "Support independent journalism and get full access to all premium content.",
+    url: "https://urban-observer.vercel.app/pricingPlan",
+    type: "website",
+    images: ["/images/pricing-og.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UrbanObserver Membership – Unlimited Access",
+    description: "Support journalism. Get full access to premium stories.",
+    images: ["/images/pricing-og.jpg"],
+  },
+};
 
 export default async function LifestylePage() {
   // Import lifestyle-specific JSON files (create these similar to entertainment ones)
@@ -48,28 +71,47 @@ export default async function LifestylePage() {
   };
 
   return (
-    <div className="bg-white text-black min-h-screen font-sans">
-      <div className="max-w-7xl mx-auto">
-        <DateBar />
-        <NewsletterSection />
-        <MainNav 
-          categoryArticles={categoryArticles}
-          currentPage="pricingPlan" 
-          entertainmentSubArticles={entertainmentSubArticles}
-        />
-        <SectionTitle 
-          title="Subscription Plans" 
-          subCategories={["Please consider supporting us by becoming a full access members. You get free access to all our exclusive stories!"]} 
-        /> 
-        <PricingPlans></PricingPlans>
-         <FullHeader 
-          currentPage="pricingPlan"
-        />
-        <FooterSection 
-          latestArticles={typedLatestArticles} 
-          popularArticles={typedPopularArticles} 
-        />
+    <>
+      {/* Organization Schema for Trust */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "UrbanObserver",
+            url: "https://urban-observer.vercel.app",
+            logo: "https://urban-observer.vercel.app/logo.png",
+            sameAs: [
+              "https://twitter.com/urbanobserver",
+              "https://instagram.com/urbanobserver",
+            ],
+          }),
+        }}
+      />
+      <div className="bg-white text-black min-h-screen font-sans">
+        <div className="max-w-7xl mx-auto">
+          <DateBar />
+          <NewsletterSection />
+          <MainNav
+            categoryArticles={categoryArticles}
+            currentPage="pricingPlan"
+            entertainmentSubArticles={entertainmentSubArticles}
+          />
+          <SectionTitle
+            title="Subscription Plans"
+            subCategories={["Please consider supporting us by becoming a full access members. You get free access to all our exclusive stories!"]}
+          />
+          <PricingPlans></PricingPlans>
+          <FullHeader
+            currentPage="pricingPlan"
+          />
+          <FooterSection
+            latestArticles={typedLatestArticles}
+            popularArticles={typedPopularArticles}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

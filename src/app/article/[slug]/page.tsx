@@ -1,4 +1,4 @@
-// app/article/[slug]/page.tsx   
+// app/article/[slug]/page.tsx — FINAL SEO-OPTIMIZED VERSION
 import DateBar from "../../../components/DateBar";
 import NewsletterSection from "../../../components/NewsletterSection";
 import MainNav from "../../../components/MainNav";
@@ -8,60 +8,68 @@ import ArticleWithSidebar from "../../../components/ArticleWithSidebar";
 import AdSection from "../../../components/AdSection";
 import type { ArticleData } from "../../../components/MainArticleDetail";
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ slug: string }> 
-}): Promise<Metadata> {
+interface Params {
+  slug: string;
+}
+
+// 1. PERFECT generateMetadata (Google loves this)
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
 
-  let articleData: ArticleData;
+  let article: ArticleData;
   try {
-    articleData = (await import(`../../../../public/data/articles/${slug}.json`)).default as ArticleData;
+    article = (await import(`../../../../public/data/articles/${slug}.json`)).default as ArticleData;
   } catch {
-    return { title: "Article Not Found | UrbanObserver" };
+    return {
+      title: "Article Not Found | UrbanObserver",
+      robots: { index: false, follow: false },
+    };
   }
 
+  const url = `https://urban-observer.vercel.app/article/${slug}`;
+
   return {
-    title: `${articleData.title} (2025 Update) | UrbanObserver`,
-    description: articleData.shortdescription || (articleData as any).description || articleData.title,
-    keywords: `${(articleData.category || "").toLowerCase()} 2025, celebrity gossip`,
+    title: `${article.title} | UrbanObserver 2025`,
+    description: article.shortdescription || article.title,
+    keywords: `${article.category.toLowerCase()} 2025, celebrity gossip, latest news, ${article.author}`,
+    alternates: { canonical: url },
     openGraph: {
-      title: articleData.title,
-      description: articleData.shortdescription || (articleData as any).description || articleData.title,
-      images: (articleData as any).image ? [(articleData as any).image] : [],
+      title: article.title,
+      description: article.shortdescription || article.title,
+      url,
+      siteName: "UrbanObserver",
+      images: [{ url: article.heroImage, width: 1200, height: 630, alt: article.title }],
       type: "article",
-      publishedTime: (articleData as any).date,
+      publishedTime: article.date,
+      authors: [article.author],
     },
     twitter: {
       card: "summary_large_image",
-      title: articleData.title,
-      description: articleData.shortdescription || (articleData as any).description || articleData.title,
-      images: (articleData as any).image ? [(articleData as any).image] : [],
+      title: article.title,
+      description: article.shortdescription || article.title,
+      images: [article.heroImage],
     },
-    alternates: {
-      canonical: `https://urbanobserver.com/article/${slug}`,
-    },
+    robots: { index: true, follow: true },
   };
 }
 
+// 2. generateStaticParams – pre-render all articles at build time (huge SEO + speed win)
 export async function generateStaticParams() {
   const fs = require("fs");
   const path = require("path");
-  const articlesDir = path.join(process.cwd(), "public/data/articles");
-  if (!fs.existsSync(articlesDir)) return [];
+  const dir = path.join(process.cwd(), "public/data/articles");
 
-  const files = fs.readdirSync(articlesDir);
-  return files
-    .filter((file: string) => file.endsWith(".json"))
-    .map((file: string) => ({
-      slug: file.replace(".json", ""),
-    }));
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((f: string) => f.endsWith(".json"))
+    .map((f: string) => ({ slug: f.replace(".json", "") }));
 }
 
-export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ArticlePage({ params }: { params: Promise<Params> }) {
   const { slug } = await params;
 
   let articleData: ArticleData;
@@ -71,6 +79,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     notFound();
   }
 
+  // Load shared data (same as before)
   const [top5Data, latestArticlesData, popularArticlesData] = await Promise.all([
     import("../../../../public/data/entertainment-top5-articles.json").then(m => m.default),
     import("../../../../public/data/entertainment-latest-articles.json").then(m => m.default),
@@ -109,7 +118,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
-      {/* NewsArticle Schema – safe access */}
+      {/* 3. PERFECT JSON-LD Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -117,11 +126,26 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             "@context": "https://schema.org",
             "@type": "NewsArticle",
             headline: articleData.title,
-            image: (articleData as any).image,
-            datePublished: (articleData as any).date || new Date().toISOString().split('T')[0],
-            author: { "@type": "Person", name: (articleData as any).author || "Gossip Guru" },
-            publisher: { "@type": "Organization", name: "UrbanObserver" },
-            description: articleData.shortdescription || (articleData as any).description || articleData.title,
+            description: articleData.shortdescription || articleData.title,
+            image: articleData.heroImage,
+            datePublished: articleData.date,
+            dateModified: articleData.date,
+            author: {
+              "@type": "Person",
+              name: articleData.author,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "UrbanObserver",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://urban-observer.vercel.app/logo.png",
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://urban-observer.vercel.app/article/${slug}`,
+            },
           }),
         }}
       />

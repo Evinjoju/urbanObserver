@@ -5,7 +5,7 @@ import LoginModal from "./LoginModal"; // New import
 
 const DateBar = () => {
   // Use current date: November 15, 2025 (Saturday)
-  const today = "Saturday, November 15, 2025";
+  const today = "fri, Nov 21, 2025";
   const [loginOpen, setLoginOpen] = useState(false); // Login modal state
 
   const handleLogin = (email: string, password: string) => {
