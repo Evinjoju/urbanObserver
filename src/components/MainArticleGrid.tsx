@@ -26,7 +26,8 @@ const MainArticleGrid: React.FC<MainArticleGridProps> = ({ articles, visibleCoun
               {/* Image */}
               <div className="relative w-40 h-35 shrink-0 overflow-hidden">
                 <Image
-                  src={article.image}
+                loading="lazy"
+                  src={article.image.replace(".jpg", ".webp")}
                   alt={article.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
