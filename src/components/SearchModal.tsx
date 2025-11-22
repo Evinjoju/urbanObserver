@@ -1,6 +1,6 @@
 // components/SearchModal.tsx — Search input SMALL on all screen sizes
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 
 interface SearchModalProps {
   isOpen: boolean;

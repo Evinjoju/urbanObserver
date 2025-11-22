@@ -1,6 +1,6 @@
 // components/NewsletterSection.tsx
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Mail } from "lucide-react";
 import NewsletterModal from "./NewsletterModal";
 import Link from "next/link";

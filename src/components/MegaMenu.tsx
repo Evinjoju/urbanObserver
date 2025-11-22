@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { X } from "lucide-react";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Twitter, Instagram, Linkedin } from "lucide-react";
 
 import menuData from "../../public/data/megaMenuSections.json";
 

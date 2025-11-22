@@ -1,6 +1,6 @@
 // components/DateBar.tsx (Updated - adds login modal connection)
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import LoginModal from "./LoginModal"; // New import
 
 const DateBar = () => {

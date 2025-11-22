@@ -1,6 +1,6 @@
 // components/PricingPlans.tsx
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Check, X } from "lucide-react";
 
 const PricingPlans = () => {

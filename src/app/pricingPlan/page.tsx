@@ -3,7 +3,7 @@ import DateBar from "../../components/DateBar";
 import SectionTitle from "../../components/SectionTitle";
 import FullHeader from "../../components/FullHeader";
 import FooterSection from "../../components/FooterSection";
-import { Article, MainArticle, TopArticle } from "../../types/Article";
+import { Article } from "../../types/Article";
 import PricingPlans from "@/src/components/PricingPlans";
 import HeaderClient from "../../components/HeaderClient";
 import { Metadata } from "next";

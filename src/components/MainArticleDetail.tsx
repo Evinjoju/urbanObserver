@@ -1,8 +1,6 @@
 // components/MainArticleDetail.tsx
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { ArticleData } from "../types/ArticleDetail";
 
 interface ArticleContentBlock {
