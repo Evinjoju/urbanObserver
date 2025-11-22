@@ -1,46 +1,18 @@
 // app/page.tsx — NEW HOME PAGE (Beautiful & Modern)
 import dynamic from 'next/dynamic';
+import DateBar from "../components/DateBar";
+import ArticleGridLarge from "../components/ArticleGridLarge";
+import ArticleGrid from "../components/ArticleGrid";
+import AdSection from "../components/AdSection";
+import FullHeader from "../components/FullHeader";
+import SubscribeBanner from "../components/SubscribeBanner"; // ← ADDED
+import Banner from "../components/Banner";
 import { Metadata } from "next";
 
-// Dynamically import all components for lazy loading
-const LazyDateBar = dynamic(
-  () => import("../components/DateBar"),
-  { loading: () => <p>Loading date...</p> }
-);
-
-const LazyArticleGridLarge = dynamic(
-  () => import("../components/ArticleGridLarge"),
-  { loading: () => <p>Loading hero articles...</p> }
-);
-
-const LazyArticleGrid = dynamic(
-  () => import("../components/ArticleGrid"),
-  { loading: () => <p>Loading grid articles...</p> }
-);
-
-const LazyAdSection = dynamic(
-  () => import("../components/AdSection"),
-  { loading: () => <p>Loading ads...</p> }
-);
-
-const LazyFullHeader = dynamic(
-  () => import("../components/FullHeader"),
-  { loading: () => <p>Loading full header...</p> }
-);
-
-const LazySubscribeBanner = dynamic(
-  () => import("../components/SubscribeBanner"),
-  { loading: () => <p>Loading subscribe banner...</p> }
-);
-
+// Dynamically import components below the fold for lazy loading
 const LazyMainContentWithSidebar = dynamic(
   () => import("../components/MainContentWithSidebar"),
   { loading: () => <p>Loading lifestyle content...</p> }
-);
-
-const LazyBanner = dynamic(
-  () => import("../components/Banner"),
-  { loading: () => <p>Loading banner...</p> }
 );
 
 const LazyFeaturedGrid = dynamic(
@@ -48,14 +20,14 @@ const LazyFeaturedGrid = dynamic(
   { loading: () => <p>Loading featured articles...</p> }
 );
 
-const LazyHeaderClient = dynamic(
-  () => import("../components/HeaderClient"),
-  { loading: () => <p>Loading navigation...</p> }
-);
-
 const LazyFooterSection = dynamic(
   () => import("../components/FooterSection"),
   { loading: () => <p>Loading footer...</p> }
+);
+
+const LazyHeaderClient = dynamic(
+  () => import("../components/HeaderClient"),
+  { loading: () => <p>Loading navigation...</p> }
 );
 
 export const metadata: Metadata = {
@@ -186,22 +158,22 @@ export default async function HomePage() {
       />
       <div className="bg-white text-black font-sans">
         <div >
-          <LazyDateBar />
+          <DateBar />
           <LazyHeaderClient
             categoryArticles={categoryArticles}
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage="home"
           />
-          <LazyAdSection />
+          <AdSection />
           {/* Hero Section — 3 Large Articles */}
-          <LazyArticleGridLarge data={largeGridData} />
+          <ArticleGridLarge data={largeGridData} />
 
           {/* Regular Grid — 4 Small Articles */}
           <section>
-            <LazyArticleGrid data={regularGridData} />
+            <ArticleGrid data={regularGridData} />
           </section>
           {/* ← ADDED SUBSCRIBE BANNER */}
-          <LazySubscribeBanner />
+          <SubscribeBanner />
 
           <LazyMainContentWithSidebar
             mainArticles={mainArticlesData}
@@ -209,13 +181,13 @@ export default async function HomePage() {
             categoryTitle="LIFESTYLE"
           />
 
-          <LazyBanner text="DON'T MISS" />
+          <Banner text="DON'T MISS" />
 
           <LazyFeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
 
-          <LazyAdSection />
+          <AdSection />
 
-          <LazyFullHeader currentPage="home" />
+          <FullHeader currentPage="home" />
           <LazyFooterSection
             latestArticles={latestArticlesData}
             popularArticles={popularArticlesData}
