@@ -10,7 +10,7 @@ const AdSection = () => {
                     <a href="#" className="block">
                         {/* Sample ad image from Unsplash - Fashion/lifestyle banner cropped to 728x90 */}
                         <Image
-                            priority
+                        loading="lazy"
                             width={80}
                             height={80}
                             src="https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/BlackNP.png"
