@@ -36,7 +36,7 @@ const NewsletterSection = () => {
           {/* Center Logo & Tagline - Always visible, scales nicely */}
           <div className="flex-1 text-center">
             <Link href="/" className="inline-block">
-              <h2
+              <h1
                 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.3em] uppercase"
                 style={{
                   WebkitTextStroke: "2.5px black",
@@ -45,7 +45,7 @@ const NewsletterSection = () => {
                 }}
               >
                 URBANOBSERVER
-              </h2>
+              </h1>
             </Link>
             <p className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest font-bold mt-2 uppercase">
               Gossip & Lifestyle Online Magazine
