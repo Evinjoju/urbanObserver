@@ -1,16 +1,34 @@
 // app/page.tsx — NEW HOME PAGE (Beautiful & Modern)
+import dynamic from 'next/dynamic';
 import DateBar from "../components/DateBar";
 import ArticleGridLarge from "../components/ArticleGridLarge";
 import ArticleGrid from "../components/ArticleGrid";
 import AdSection from "../components/AdSection";
 import FullHeader from "../components/FullHeader";
-import FooterSection from "../components/FooterSection";
 import SubscribeBanner from "../components/SubscribeBanner"; // ← ADDED
-import MainContentWithSidebar from "../components/MainContentWithSidebar";
 import Banner from "../components/Banner";
-import FeaturedGrid from "../components/FeaturedGrid";
-import HeaderClient from "../components/HeaderClient";
 import { Metadata } from "next";
+
+// Dynamically import components below the fold for lazy loading
+const LazyMainContentWithSidebar = dynamic(
+  () => import("../components/MainContentWithSidebar"),
+  { loading: () => <p>Loading lifestyle content...</p> }
+);
+
+const LazyFeaturedGrid = dynamic(
+  () => import("../components/FeaturedGrid"),
+  { loading: () => <p>Loading featured articles...</p> }
+);
+
+const LazyFooterSection = dynamic(
+  () => import("../components/FooterSection"),
+  { loading: () => <p>Loading footer...</p> }
+);
+
+const LazyHeaderClient = dynamic(
+  () => import("../components/HeaderClient"),
+  { loading: () => <p>Loading navigation...</p> }
+);
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://urban-observer.vercel.app"),
@@ -120,7 +138,6 @@ export default async function HomePage() {
   };
 
   return (
-
     <>
       {/* WebSite Schema */}
       <script
@@ -142,14 +159,13 @@ export default async function HomePage() {
       <div className="bg-white text-black font-sans">
         <div >
           <DateBar />
-          <HeaderClient
+          <LazyHeaderClient
             categoryArticles={categoryArticles}
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage="home"
           />
           <AdSection />
           {/* Hero Section — 3 Large Articles */}
-
           <ArticleGridLarge data={largeGridData} />
 
           {/* Regular Grid — 4 Small Articles */}
@@ -159,7 +175,7 @@ export default async function HomePage() {
           {/* ← ADDED SUBSCRIBE BANNER */}
           <SubscribeBanner />
 
-          <MainContentWithSidebar
+          <LazyMainContentWithSidebar
             mainArticles={mainArticlesData}
             latestArticles={latestArticlesData}
             categoryTitle="LIFESTYLE"
@@ -167,13 +183,12 @@ export default async function HomePage() {
 
           <Banner text="DON'T MISS" />
 
-          <FeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
-
+          <LazyFeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
 
           <AdSection />
 
           <FullHeader currentPage="home" />
-          <FooterSection
+          <LazyFooterSection
             latestArticles={latestArticlesData}
             popularArticles={popularArticlesData}
           />
