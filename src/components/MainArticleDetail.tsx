@@ -54,7 +54,7 @@ const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
                 {article.content.map((block, index) => {
                     if (block.type === "image") {
                         return (
-                            <div key={index} className="relative w-full h-96 md:h-[500px] overflow-hidden -mx-6 md:mx-0">
+                            <div key={index} className="relative w-full h-96 md:h-[500px] overflow-hidden  md:mx-0">
                                 <Image
                                     src={block.content}
                                     alt={`Article image ${index + 1}`}

@@ -18,9 +18,8 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
           return (
             <div
               key={article.slug} // Use slug as key — unique!
-              className={`relative h-64 overflow-hidden border-r ${
-                i % 4 < 3 ? "border-b border-black" : ""
-              } md:border-b-0 group cursor-pointer`}
+              className={`relative h-64 overflow-hidden border-r ${i % 4 < 3 ? "border-b border-black" : ""
+                } md:border-b-0 group cursor-pointer`}
             >
               {/* Full Card Clickable */}
               <Link href={articleUrl} className="block h-full">
