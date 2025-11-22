@@ -26,7 +26,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
                 <img
                   src={article.image}
                   alt={article.title}
-                  className="mx-auto block w-70 h-full object-cover hover:opacity-90 transition-opacity duration-200"
+                  className="mx-auto block w-full h-full object-cover hover:opacity-90 transition-opacity duration-200"
                 />
               </Link>
 
