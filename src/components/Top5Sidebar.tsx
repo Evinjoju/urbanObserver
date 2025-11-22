@@ -25,8 +25,8 @@ const Top5Sidebar: React.FC<Top5SidebarProps> = ({ articles, isSticky }) => {
                 {/* Full row clickable */}
                 <Link href={articleUrl} className="flex flex-1 items-start space-x-3 group">
                   <Image
-                    loading="lazy"
-                    width={80}
+                    priority
+                    width={800}
                     height={80}
                     src={article.image}
                     alt={article.title}

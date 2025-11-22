@@ -35,7 +35,6 @@ const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-10 text-sm uppercase tracking-wider">
                 <div className="flex items-center gap-3">
                     <Image
-                    loading="lazy"
                         src={article.authorImage}
                         alt={article.author}
                         width={40}
@@ -57,7 +56,6 @@ const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
                         return (
                             <div key={index} className="relative w-full h-96 md:h-[500px] overflow-hidden  md:mx-0">
                                 <Image
-                                loading="lazy"
                                     src={block.content}
                                     alt={`Article image ${index + 1}`}
                                     fill

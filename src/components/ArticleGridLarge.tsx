@@ -23,7 +23,6 @@ const ArticleGridLarge: React.FC<ArticleGridLargeProps> = ({ data }) => {
             >
               {/* Image */}
               <Image
-              loading="lazy"
                 src={article.image}
                 alt={article.title}
                 fill
