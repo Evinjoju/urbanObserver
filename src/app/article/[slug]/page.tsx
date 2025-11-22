@@ -1,13 +1,13 @@
 // app/article/[slug]/page.tsx — FINAL SEO-OPTIMIZED VERSION
 import DateBar from "../../../components/DateBar";
-import NewsletterSection from "../../../components/NewsletterSection";
-import MainNav from "../../../components/MainNav";
 import FullHeader from "../../../components/FullHeader";
 import FooterSection from "../../../components/FooterSection";
 import ArticleWithSidebar from "../../../components/ArticleWithSidebar";
 import AdSection from "../../../components/AdSection";
 import type { ArticleData } from "../../../components/MainArticleDetail";
 import { notFound } from "next/navigation";
+import HeaderClient from "../../../components/HeaderClient";
+
 import { Metadata } from "next";
 
 interface Params {
@@ -153,8 +153,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       <div className="bg-white text-black min-h-screen font-sans">
         <div>
           <DateBar />
-          <NewsletterSection />
-          <MainNav
+          <HeaderClient
             categoryArticles={categoryArticles}
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage={currentCategory}

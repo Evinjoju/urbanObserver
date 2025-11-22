@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { Article } from "../types/Article";
+import Image from "next/image";
 
 interface ArticleGridProps {
   data: Article[];
@@ -23,9 +24,12 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
             >
               {/* Full Card Clickable */}
               <Link href={articleUrl} className="block h-full">
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
+                  priority
+                  width={800}   
+                  height={80}              
                   className="mx-auto block w-full h-full object-cover hover:opacity-90 transition-opacity duration-200"
                 />
               </Link>

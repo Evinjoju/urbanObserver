@@ -1,7 +1,5 @@
 // app/[category]/page.tsx — FINAL SEO-PRO VERSION
 import DateBar from "../../components/DateBar";
-import NewsletterSection from "../../components/NewsletterSection";
-import MainNav from "../../components/MainNav";
 import SectionTitle from "../../components/SectionTitle";
 import ArticleGrid from "../../components/ArticleGrid";
 import AdSection from "../../components/AdSection";
@@ -9,6 +7,7 @@ import FeaturedGrid from "../../components/FeaturedGrid";
 import FullHeader from "../../components/FullHeader";
 import FooterSection from "../../components/FooterSection";
 import { notFound } from "next/navigation";
+import HeaderClient from "../../components/HeaderClient";
 import { Metadata } from "next";
 
 const categoryConfig = {
@@ -181,8 +180,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <div className="bg-white text-black font-sans">
         <div>
           <DateBar />
-          <NewsletterSection />
-          <MainNav
+          <HeaderClient
             categoryArticles={categoryArticles}
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage={key}

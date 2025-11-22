@@ -34,7 +34,7 @@ const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
             {/* Author Info */}
             <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-10 text-sm uppercase tracking-wider">
                 <div className="flex items-center gap-3">
-                    <img
+                    <Image
                         src={article.authorImage}
                         alt={article.author}
                         width={40}

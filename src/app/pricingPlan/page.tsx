@@ -1,12 +1,11 @@
 // app/lifestyle/page.tsx (New - Lifestyle page, same layout as Home)
 import DateBar from "../../components/DateBar";
-import NewsletterSection from "../../components/NewsletterSection";
-import MainNav from "../../components/MainNav";
 import SectionTitle from "../../components/SectionTitle";
 import FullHeader from "../../components/FullHeader";
 import FooterSection from "../../components/FooterSection";
 import { Article, MainArticle, TopArticle } from "../../types/Article";
 import PricingPlans from "@/src/components/PricingPlans";
+import HeaderClient from "../../components/HeaderClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -92,8 +91,7 @@ export default async function LifestylePage() {
       <div className="bg-white text-black min-h-screen font-sans">
         <div>
           <DateBar />
-          <NewsletterSection />
-          <MainNav
+          <HeaderClient
             categoryArticles={categoryArticles}
             currentPage="pricingPlan"
             entertainmentSubArticles={entertainmentSubArticles}

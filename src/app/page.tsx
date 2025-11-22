@@ -1,17 +1,15 @@
 // app/page.tsx — NEW HOME PAGE (Beautiful & Modern)
 import DateBar from "../components/DateBar";
-import NewsletterSection from "../components/NewsletterSection";
-import MainNav from "../components/MainNav";
 import ArticleGridLarge from "../components/ArticleGridLarge";
 import ArticleGrid from "../components/ArticleGrid";
 import AdSection from "../components/AdSection";
 import FullHeader from "../components/FullHeader";
 import FooterSection from "../components/FooterSection";
 import SubscribeBanner from "../components/SubscribeBanner"; // ← ADDED
-import MainArticleGrid from "../components/MainArticleGrid";
 import MainContentWithSidebar from "../components/MainContentWithSidebar";
 import Banner from "../components/Banner";
 import FeaturedGrid from "../components/FeaturedGrid";
+import HeaderClient from "../components/HeaderClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -144,8 +142,7 @@ export default async function HomePage() {
       <div className="bg-white text-black font-sans">
         <div >
           <DateBar />
-          <NewsletterSection />
-          <MainNav
+          <HeaderClient
             categoryArticles={categoryArticles}
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage="home"

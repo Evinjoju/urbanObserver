@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { TopArticle } from "../types/Article";
+import Image from "next/image";
 
 interface Top5SidebarProps {
   articles: TopArticle[];
@@ -23,7 +24,10 @@ const Top5Sidebar: React.FC<Top5SidebarProps> = ({ articles, isSticky }) => {
               <div key={article.slug} className="flex border-b pb-1 items-start space-x-3">
                 {/* Full row clickable */}
                 <Link href={articleUrl} className="flex flex-1 items-start space-x-3 group">
-                  <img
+                  <Image
+                    priority
+                    width={80}
+                    height={80}
                     src={article.image}
                     alt={article.title}
                     className="w-20 h-20 object-cover rounded shrink-0 group-hover:opacity-90 transition-opacity duration-200"
