@@ -21,7 +21,7 @@ const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
     const handleScroll = () => {
       const sidebarRect = sidebar.getBoundingClientRect();
       const articleRect = articleEnd.getBoundingClientRect();
-      setIsSticky(sidebarRect.top <= 20 && articleRect.top > window.innerHeight);
+     setIsSticky(sidebarRect.top <= 20 && articleRect.bottom > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,7 +30,7 @@ const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 px-6 py-12">
+    <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 px-4 py-4">
       {/* Left: Sticky Top 5 */}
       <aside className="lg:col-span-2">
         <div className={`sidebar-sticky ${isSticky ? "sticky top-5 z-10" : ""}`}>

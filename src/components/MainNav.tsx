@@ -88,7 +88,7 @@ const MainNav: React.FC<MainNavProps> = ({
 
   return (
     <>
-      <nav className="border-y border-black bg-white relative z-50">
+      <nav className="border-y border-black bg-white relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between py-3">
 

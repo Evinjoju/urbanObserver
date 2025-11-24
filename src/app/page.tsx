@@ -147,7 +147,6 @@ export default async function HomePage() {
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage="home"
           />
-          <AdSection />
           {/* Hero Section — 3 Large Articles */}
 
           <ArticleGridLarge data={largeGridData} />

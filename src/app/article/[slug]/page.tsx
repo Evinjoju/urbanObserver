@@ -158,8 +158,6 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             entertainmentSubArticles={entertainmentSubArticles}
             currentPage={currentCategory}
           />
-          <AdSection />
-
           <ArticleWithSidebar top5Articles={top5Data} article={articleData} />
 
           <FullHeader currentPage={currentCategory} />

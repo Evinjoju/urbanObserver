@@ -1,90 +1,68 @@
 [
   {
-    "title": "Movies",
-    "items": [
-      { "title": "Debunking Movie Myths: What Hollywood Gets Wrong", "href": "/movies/debunking-myths" },
-      { "title": "Secrets to Award-Winning Performances", "href": "/movies/award-performances" },
-      { "title": "An In-Depth Look at Animation Studios", "href": "/movies/animation-studios" },
-      { "title": "Immersive Cinema: The New Age of Movie-Going", "href": "/movies/immersive-cinema" },
-      { "title": "Why Film Scores are More Important Than You Think", "href": "/movies/film-scores" }
-    ]
-  },
-  {
-    "title": "TV Shows",
-    "items": [
-      { "title": "TV Shows That Accurately Depict Mental Health", "href": "/tv/mental-health" },
-      { "title": "Writing for Television: An Insider’s Guide", "href": "/tv/writing-guide" },
-      { "title": "Streaming Wars: Which Platform Offers More", "href": "/tv/streaming-wars" },
-      { "title": "The Art of TV Show Revivals: Hits and Misses", "href": "/tv/revivals" },
-      { "title": "Why TV Series Finales Are So Hard to Get Right", "href": "/tv/finale-difficulty" }
-    ]
-  },
-  {
-    "title": "Music",
-    "items": [
-      { "title": "Music Therapy: How It Works and Benefits", "href": "/music/therapy" },
-      { "title": "The Power of Music in Advertising", "href": "/music/advertising" },
-      { "title": "Understanding Music Royalties", "href": "/music/royalties" },
-      { "title": "Instrumental Music and Its Importance", "href": "/music/instrumental" },
-      { "title": "World Music: A Global Journey", "href": "/music/world-music" }
-    ]
-  },
-  {
-    "title": "Celebrity",
-    "items": [
-      { "title": "How Social Media Ended Careers: A Retrospective", "href": "/celebrity/social-media-falls" },
-      { "title": "Infamous Celebrity Meltdowns Caught on Camera", "href": "/celebrity/meltdowns" },
-      { "title": "Bankrupt Stars: Where Did All the Money Go?", "href": "/celebrity/bankrupt" },
-      { "title": "The Price of Fame: Celebrities and Substance Abuse", "href": "/celebrity/substance-abuse" },
-      { "title": "Exposing Fake Celebrity Philanthropy", "href": "/celebrity/fake-philanthropy" }
-    ]
-  },
-  {
-    "title": "Scandals",
-    "items": [
-      { "title": "10 Scandalous Love Triangles Captivating the Public", "href": "/scandals/love-triangles" },
-      { "title": "The Excessive Lifestyles of Cali’s Tech Moguls", "href": "/scandals/tech-moguls" },
-      { "title": "Divorce Settlements that Made Headlines", "href": "/scandals/divorce-settlements" },
-      { "title": "High Society Parties: Where Everything Goes", "href": "/scandals/high-society" },
-      { "title": "Infidelity Among the Elite: A Closer Look", "href": "/scandals/infidelity-elite" }
-    ]
-  },
-  {
-    "title": "Drama",
-    "items": [
-      { "title": "Are Relationships from TV Doomed to Fail?", "href": "/drama/tv-relationships" },
-      { "title": "When Reality TV Blurs the Line with Real Life", "href": "/drama/reality-blur" },
-      { "title": "Reality Shows Accused of Exploitation", "href": "/drama/exploitation" },
-      { "title": "The Ethical Dilemmas of Reality TV Production", "href": "/drama/ethics" },
-      { "title": "Reality Stars Who Created a Huge Empire", "href": "/drama/reality-empires" }
-    ]
-  },
-  {
-    "title": "Lifestyle",
-    "items": [
-      { "title": "Creative Writing as a Therapeutic Tool", "href": "/lifestyle/creative-writing" },
-      { "title": "Traveling the World on a Small Budget", "href": "/lifestyle/budget-travel" },
-      { "title": "The Benefits of Outdoor Activities", "href": "/lifestyle/outdoor-benefits" },
-      { "title": "Time Management Skills for Success", "href": "/lifestyle/time-management" },
-      { "title": "Home Automation for Beginners", "href": "/lifestyle/home-automation" }
-    ]
-  },
-  {
-    "title": "Health",
-    "items": [
-      { "title": "The Science of Sleep and Productivity", "href": "/health/sleep-science" },
-      { "title": "Self-Care Tips for Stressful Times", "href": "/health/self-care" },
-      { "title": "The Psychological Effects of Social Media", "href": "/health/social-media-effects" },
-      { "title": "Understanding Different Diet Trends", "href": "/health/diet-trends" },
-      { "title": "Youth Mental Health in the Digital Age", "href": "/health/youth-mental-health" }
-    ]
-  },
-  {
-    "title": "Technology",
-    "items": [
-      { "title": "Internet Privacy: Know Your Rights", "href": "/technology/privacy-rights" },
-      { "title": "Augmented Reality in Everyday Life", "href": "/technology/augmented-reality" },
-      { "title": "The Revolution of Electric Airplanes", "href": "/technology/electric-airplanes" }
-    ]
-  }
+  "title": "CELEBRITY",
+  "items": [
+    { "title": "Morgan Evans Makes Red Carpet Debut With New Girlfriend After Kelsea Ballerini Divorce", "href": "/article/morgan-evans-laci-kaye-booth-red-carpet-debut-cma-2025" },
+    { "title": "Nicole Kidman & Keith Urban End 19-Year Marriage – Full Breakup Details", "href": "/article/nicole-kidman-keith-urban-separation-2025" },
+    { "title": "Kevin Spacey Admits He's Homeless After Sexual Assault Scandals", "href": "/article/kevin-spacey-homeless-2025-confession" },
+    { "title": "Blake Lively vs Justin Baldoni: $400 Million Lawsuit Explodes Into Hollywood's Messiest Feud", "href": "/article/blake-lively-justin-baldoni-400m-lawsuit-war" },
+    { "title": "Lainey Wilson Slays as 2025 CMA Awards Host – See Her Stunning Red Carpet Transformation", "href": "/article/lainey-wilson-hosts-cma-awards-2025-red-carpet-looks" },
+    { "title": "Dolly Parton Health Scare Misses Dollywood Event", "href": "/article/dolly-parton-health-scare-forces-cancellation" }
+  ]
+},
+{
+  "title": "DRAMA",
+  "items": [
+    { "title": "All Her Fault: Sarah Snook's Terrifying Missing Child Thriller", "href": "/article/all-her-fault-sarah-snook-missing-child-thriller" },
+    { "title": "Death By Lightning: Michael Shannon & Matthew Macfadyen in Explosive Presidential Assassination Series", "href": "/article/death-by-lightning-michael-shannon-assassination-drama" },
+    { "title": "All's Fair: Kim Kardashian & Glenn Close in Ryan Murphy's Cutthroat Divorce Lawyer Drama", "href": "/article/kim-kardashian-alls-fair-ryan-murphy-legal-drama" },
+    { "title": "The Pitt: Noah Wyle's Intense ER-Style Medical Drama Is Already Renewed for Season 2", "href": "/article/the-pitt-noah-wyle-medical-drama-returns" },
+    { "title": "I Love LA: Rachel Sennott's Messy Millennial Drama Is the Funniest Show of 2025", "href": "/article/i-love-la-rachel-sennott-hilarious-dark-drama" },
+    { "title": "Stranger Things Final Season: First Explosive Teaser Drops – Hawkins Is Doomed", "href": "/article/stranger-things-final-season-first-look-teaser" }
+  ]
+},
+{
+  "title": "HEALTH",
+  "items": [
+    { "title": "Ozempic & Wegovy Linked to 50% Lower Breast Cancer Risk in New 2025 Study", "href": "/article/ozempic-breast-cancer-risk-2025-study" },
+    { "title": "Intermittent Fasting 2025: The 4 New Rules Doctors Say Actually Reverse Aging", "href": "/article/intermittent-fasting-2025-new-rules" },
+    { "title": "Berberine 'Nature's Ozempic' 2025 Warning: FDA Issues Urgent Alert Over Contaminated Supplements", "href": "/article/berberine-nature-ozempic-2025-warning" },
+    { "title": "Best Walking Pad Black Friday Deals 2025: Under-Desk Treadmills From $99 That Sell Out in Hours", "href": "/article/walking-pad-black-friday-2025-deals" },
+    { "title": "Mouth Taping for Sleep: 2025 Study Says It Cuts Snoring 80% & Adds Years to Life", "href": "/article/mouth-taping-sleep-2025-new-study" },
+    { "title": "Red Light Therapy Masks 2025: Dermatologists Say These $300 Devices Beat Botox", "href": "/article/red-light-therapy-mask-2025-benefits" }
+  ]
+},
+{
+  "title": "LIFESTYLE",
+  "items": [
+    { "title": "Ozempic Face 2025: How Celebrities Are Fixing Sunken Cheeks and Sagging Skin", "href": "/article/ozempic-face-fixes-2025-celebrity-secrets" },
+    { "title": "Best Black Friday Beauty Deals 2025: Dyson Airwrap $150 Off, Shark FlexStyle, NuFACE & More", "href": "/article/best-black-friday-beauty-deals-2025-dyson-shark-ninja" },
+    { "title": "Taylor Swift Engagement Ring Predictions: Experts Say Travis Kelce Already Picked a $1.5M Oval Diamond", "href": "/article/taylor-swift-travis-kelce-engagement-ring-predictions" },
+    { "title": "Gwyneth Paltrow's 2025 Goop Detox: The Exact 7-Day Cleanse She Swears Makes Her Look 10 Years Younger", "href": "/article/gwyneth-paltrow-goop-2025-detox-cleanse" },
+    { "title": "Quiet Luxury Handbags 2025: The Row, Loro Piana & Savette Are the New Status Bags", "href": "/article/quiet-luxury-handbags-2025-the-row-loro-piana" },
+    { "title": "Victoria Beckham's Exact 2025 Morning Routine: $2,000 Skincare, Ice Plunge & 7am Workout", "href": "/article/victoria-beckham-morning-routine-2025" }
+  ]
+},
+{
+  "title": "SCANDALS",
+  "items": [
+    { "title": "Blake Lively vs Justin Baldoni: $400M Lawsuit Turns Into Hollywood's Ugliest War", "href": "/article/blake-lively-justin-baldoni-400m-lawsuit-explosion" },
+    { "title": "Diddy Hit With Fresh 2025 Lawsuits – More Celebrities Named in Shocking Claims", "href": "/article/diddy-combs-new-2025-lawsuits-bombshells" },
+    { "title": "$260 Million Tyler Perry Assault Lawsuit Rocks Hollywood – Full Explosive Details", "href": "/article/tyler-perry-260m-sexual-assault-lawsuit" },
+    { "title": "Andrew Tate Slammed With New Assault Lawsuit From Ex-Girlfriend Brianna Stern", "href": "/article/andrew-tate-new-assault-allegations-2025" },
+    { "title": "Emilia Pérez Oscar Nom Sparks Massive Backlash Over Past Racist Remarks", "href": "/article/emilia-perez-oscar-backlash-karla-sofia-gascon" },
+    { "title": "Dolly Parton Health Crisis Forces Her to Miss Dollywood Event – Fans in Panic", "href": "/article/dolly-parton-health-scare-forces-cancellation" }
+  ]
+},
+{
+  "title": "TECHNOLOGY",
+  "items": [
+    { "title": "OpenAI GPT-5 Just Leaked: Release Date, Insane New Features & Why It's Terrifying Experts", "href": "/article/openai-gpt-5-release-date-leaked-2025" },
+    { "title": "Apple Vision Pro 2: Cheaper Model Coming 2026 With M5 Chip & No External Display", "href": "/article/apple-vision-pro-2-2026-launch-rumors" },
+    { "title": "xAI Grok 3 Just Beat GPT-5 in Blind Tests – Elon Musk Declares 'We Have Achieved AGI'", "href": "/article/elon-musk-xai-grok-3-outperforms-gpt-5" },
+    { "title": "Samsung Galaxy S25 Ultra: 200MP Camera + 10x Optical Zoom Just Fully Leaked", "href": "/article/samsung-galaxy-s25-ultra-camera-leak-2025" },
+    { "title": "Meta Ray-Ban Smart Glasses 2026: Full Heads-Up Display & Live Translation Coming", "href": "/article/meta-smart-glasses-ray-ban-2026-hud" },
+    { "title": "Best Black Friday Tech Deals 2025 LIVE: MacBook Air M4 $849, PS5 Pro Bundle $599 & More", "href": "/article/best-black-friday-tech-deals-2025-live" }
+  ]
+}
 ]
