@@ -115,51 +115,13 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     top5Data,
     latestData,
     popularData,
-    currentSliderData,
-    entertainmentSlider,
-    moviesSlider,
-    tvSlider,
-    musicSlider,
-    celebritySlider,
-    scandalsSlider,
-    dramaSlider,
-    lifestyleSlider,
-    technologySlider,
   ] = await Promise.all([
     import(`../../../public/data/${folder}${key}-grid-articles.json`).then(m => m.default),
     import(`../../../public/data/${folder}${key}-main-articles.json`).then(m => m.default),
     import(`../../../public/data/${folder}${key}-top5-articles.json`).then(m => m.default),
     import(`../../../public/data/${folder}${key}-latest-articles.json`).then(m => m.default),
     import(`../../../public/data/${folder}${key}-popular-articles.json`).then(m => m.default),
- 
-
-    import("../../../public/data/entertainment-slider.json").then(m => m.default),
-    import("../../../public/data/movies-slider.json").then(m => m.default),
-    import("../../../public/data/tv-slider.json").then(m => m.default),
-    import("../../../public/data/entertainment-slider.json").then(m => m.default),
-    import("../../../public/data/celebrity-slider.json").then(m => m.default),
-    import("../../../public/data/scandals-slider.json").then(m => m.default),
-    import("../../../public/data/drama-slider.json").then(m => m.default),
-    import("../../../public/data/lifestyle-slider.json").then(m => m.default),
-    import("../../../public/data/technology-slider.json").then(m => m.default),
-    import("../../../public/data/health-slider.json").then(m => m.default),
   ]);
-
-  const categoryArticles = {
-    ENTERTAINMENT: entertainmentSlider,
-    CELEBRITY: celebritySlider,
-    SCANDALS: scandalsSlider,
-    DRAMA: dramaSlider,
-    LIFESTYLE: lifestyleSlider,
-    TECHNOLOGY: technologySlider,   
-    [config.title]: currentSliderData,
-  };
-
-  const entertainmentSubArticles = {
-    movies: moviesSlider,
-    tv: tvSlider,
-    music: musicSlider,
-  };
 
   return (
     <>
@@ -181,8 +143,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         <div>
           <DateBar />
           <HeaderClient
-            categoryArticles={categoryArticles}
-            entertainmentSubArticles={entertainmentSubArticles}
             currentPage={key}
           />
           <SectionTitle title={config.title} subCategories={[...config.subs]} />

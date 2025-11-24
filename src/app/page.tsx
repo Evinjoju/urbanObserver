@@ -71,16 +71,6 @@ export default async function HomePage() {
     mainArticlesData2,
     top5ArticlesData,
     regularGridData,
-    entertainmentSlider,
-    moviesSlider,
-    tvSlider,
-    musicSlider,
-    celebritySlider,
-    scandalsSlider,
-    dramaSlider,
-    lifestyleSlider,
-    technologySlider,
-    healthSlider,
     latestArticlesData,
     popularArticlesData,
   ] = await Promise.all([
@@ -102,22 +92,6 @@ export default async function HomePage() {
     import("../../public/data/home/home-latest-articles.json").then(m => m.default),
     import("../../public/data/home/home-popular-articles.json").then(m => m.default),
   ]);
-
-  const categoryArticles = {
-    ENTERTAINMENT: entertainmentSlider,
-    CELEBRITY: celebritySlider,
-    SCANDALS: scandalsSlider,
-    DRAMA: dramaSlider,
-    LIFESTYLE: lifestyleSlider,
-    TECHNOLOGY: technologySlider,
-    HEALTH: healthSlider,
-  };
-
-  const entertainmentSubArticles = {
-    movies: moviesSlider,
-    tv: tvSlider,
-    music: musicSlider,
-  };
 
   return (
 
@@ -143,8 +117,6 @@ export default async function HomePage() {
         <div >
           <DateBar />
           <HeaderClient
-            categoryArticles={categoryArticles}
-            entertainmentSubArticles={entertainmentSubArticles}
             currentPage="home"
           />
           {/* Hero Section — 3 Large Articles */}

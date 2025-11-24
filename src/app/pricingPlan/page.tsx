@@ -39,35 +39,6 @@ export default async function LifestylePage() {
   const typedLatestArticles: Article[] = latestArticlesData as Article[]; // For footer
   const typedPopularArticles: Article[] = popularArticlesData as Article[]; // For footer
 
-  // For MainNav dropdown (passed from layout or parent; assuming shared via layout.tsx or prop drilling)
-  // Note: If MainNav needs category data, pass via props or global context; here assuming Home passes it, but for standalone page, import lifestyle-slider.json
-  const lifestyleSliderData = (await import("../../../public/data/lifestyle-slider.json")).default as Article[];
-  const musicSliderData = (await import("../../../public/data/entertainment-slider.json")).default; // Music for ENTERTAINMENT
-  const moviesSliderData = (await import("../../../public/data/movies-slider.json")).default; // Movies for ENTERTAINMENT sub
-  const tvSliderData = (await import("../../../public/data/tv-slider.json")).default; // TV for ENTERTAINMENT sub
-  const celebritySliderData = (await import("../../../public/data/celebrity-slider.json")).default; // For CELEBRITY
-  const scandalsSliderData = (await import("../../../public/data/scandals-slider.json")).default; // For SCANDALS
-  const dramaSliderData = (await import("../../../public/data/drama-slider.json")).default; // For DRAMA
-  const technologySliderData = (await import("../../../public/data/technology-slider.json")).default; // For TECHNOLOGY
-  const healthSliderData = (await import("../../../public/data/health-slider.json")).default;
-
-  // Category articles map (for dropdown; extend if needed)
-  const categoryArticles = {
-    LIFESTYLE: lifestyleSliderData,
-    ENTERTAINMENT: musicSliderData,
-    CELEBRITY: celebritySliderData,
-    SCANDALS: scandalsSliderData,
-    DRAMA: dramaSliderData,
-    TECHNOLOGY: technologySliderData,
-    HEALTH: healthSliderData, // Simple slider for LIFESTYLE
-    // Other categories if needed for this page
-  };
-
-  const entertainmentSubArticles = {
-    movies: moviesSliderData,
-    tv: tvSliderData,
-    music: musicSliderData,
-  };
 
   return (
     <>
@@ -92,9 +63,7 @@ export default async function LifestylePage() {
         <div>
           <DateBar />
           <HeaderClient
-            categoryArticles={categoryArticles}
             currentPage="pricingPlan"
-            entertainmentSubArticles={entertainmentSubArticles}
           />
           <SectionTitle
             title="Subscription Plans"

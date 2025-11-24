@@ -86,34 +86,6 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
     import("../../../../public/data/entertainment-popular-articles.json").then(m => m.default),
   ]);
 
-  const [
-    entertainmentSlider, moviesSlider, tvSlider, musicSlider,
-    celebritySlider, scandalsSlider, dramaSlider, lifestyleSlider,
-    technologySlider, healthSlider
-  ] = await Promise.all([
-    import("../../../../public/data/entertainment-slider.json").then(m => m.default),
-    import("../../../../public/data/movies-slider.json").then(m => m.default),
-    import("../../../../public/data/tv-slider.json").then(m => m.default),
-    import("../../../../public/data/entertainment-slider.json").then(m => m.default),
-    import("../../../../public/data/celebrity-slider.json").then(m => m.default),
-    import("../../../../public/data/scandals-slider.json").then(m => m.default),
-    import("../../../../public/data/drama-slider.json").then(m => m.default),
-    import("../../../../public/data/lifestyle-slider.json").then(m => m.default),
-    import("../../../../public/data/technology-slider.json").then(m => m.default),
-    import("../../../../public/data/health-slider.json").then(m => m.default),
-  ]);
-
-  const categoryArticles = {
-    ENTERTAINMENT: entertainmentSlider,
-    CELEBRITY: celebritySlider,
-    SCANDALS: scandalsSlider,
-    DRAMA: dramaSlider,
-    LIFESTYLE: lifestyleSlider,
-    TECHNOLOGY: technologySlider,
-    HEALTH: healthSlider,
-  };
-
-  const entertainmentSubArticles = { movies: moviesSlider, tv: tvSlider, music: musicSlider };
   const currentCategory = articleData.category?.toLowerCase() || "entertainment";
 
   return (
@@ -154,8 +126,6 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         <div>
           <DateBar />
           <HeaderClient
-            categoryArticles={categoryArticles}
-            entertainmentSubArticles={entertainmentSubArticles}
             currentPage={currentCategory}
           />
           <ArticleWithSidebar top5Articles={top5Data} article={articleData} />
