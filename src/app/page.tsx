@@ -114,9 +114,9 @@ export default async function HomePage() {
           <ArticleGridLarge data={largeGridData} />
 
           {/* Regular Grid — 4 Small Articles */}
-          <section>
-            <ArticleGrid data={regularGridData} />
-          </section>
+          
+          <ArticleGrid data={regularGridData} />
+          
           {/* ← ADDED SUBSCRIBE BANNER */}
           <SubscribeBanner />
 
