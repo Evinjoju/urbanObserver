@@ -77,6 +77,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+
+        <link rel="icon" href="/images/fin-favIcon.svg" type="image/svg+xml"></link>
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Fonts */}
         <link
@@ -90,7 +93,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+       
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
         {/* WebSite Schema */}
