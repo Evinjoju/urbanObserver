@@ -10,6 +10,19 @@ import { notFound } from "next/navigation";
 import HeaderClient from "../../components/HeaderClient";
 import { Metadata } from "next";
 
+// app/[category]/page.tsx — ADD THIS FUNCTION
+export function generateStaticParams() {
+  return [
+    { category: "entertainment" },
+    { category: "celebrity" },
+    { category: "scandals" },
+    { category: "drama" },
+    { category: "lifestyle" },
+    { category: "technology" },
+    { category: "health" },
+  ];
+}
+
 const categoryConfig = {
   entertainment: {
     title: "ENTERTAINMENT",
@@ -72,29 +85,29 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
 
   if (!config) {
     return {
-      title: "Category Not Found | UrbanObserver",
+      title: "Category Not Found | financialoutlook",
       robots: { index: false, follow: false },
     };
   }
 
-  const url = `https://urban-observer.vercel.app/${key}`;
+  const url = `https://financialoutlook.xyz/${key}`;
 
   return {
-    title: `${config.title} News & Updates 2025 | UrbanObserver`,
+    title: `${config.title} News & Updates 2025 | financialoutlook`,
     description: config.description,
     keywords: `${config.title.toLowerCase()} 2025, latest ${config.title.toLowerCase()} news, celebrity, gossip, trends`,
     alternates: { canonical: url },
     openGraph: {
-      title: `${config.title} – Latest News 2025 | UrbanObserver`,
+      title: `${config.title} – Latest News 2025 | financialoutlook`,
       description: config.description,
       url,
-      siteName: "UrbanObserver",
+      siteName: "financialoutlook",
       type: "website",
       locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${config.title} News 2025 | UrbanObserver`,
+      title: `${config.title} News 2025 | financialoutlook`,
       description: config.description,
     },
     robots: { index: true, follow: true },
@@ -132,9 +145,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: `${config.title} – UrbanObserver`,
+            name: `${config.title} – financialoutlook`,
             description: config.description,
-            url: `https://urban-observer.vercel.app/${key}`,
+            url: `https://financialoutlook.xyz/${key}`,
           }),
         }}
       />

@@ -23,15 +23,15 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     article = (await import(`../../../../public/data/articles/${slug}.json`)).default as ArticleData;
   } catch {
     return {
-      title: "Article Not Found | UrbanObserver",
+      title: "Article Not Found | financialoutlook",
       robots: { index: false, follow: false },
     };
   }
 
-  const url = `https://urban-observer.vercel.app/article/${slug}`;
+  const url = `https://financialoutlook.xyz/article/${slug}`;
 
   return {
-    title: `${article.title} | UrbanObserver 2025`,
+    title: `${article.title} | financialoutlook 2025`,
     description: article.shortdescription || article.title,
     keywords: `${article.category.toLowerCase()} 2025, celebrity gossip, latest news, ${article.author}`,
     alternates: { canonical: url },
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       title: article.title,
       description: article.shortdescription || article.title,
       url,
-      siteName: "UrbanObserver",
+      siteName: "financialoutlook",
       images: [{ url: article.heroImage, width: 1200, height: 630, alt: article.title }],
       type: "article",
       publishedTime: article.date,
@@ -108,15 +108,15 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             },
             publisher: {
               "@type": "Organization",
-              name: "UrbanObserver",
+              name: "financialoutlook",
               logo: {
                 "@type": "ImageObject",
-                url: "https://urban-observer.vercel.app/logo.png",
+                url: "https://financialoutlook.xyz/logo.png",
               },
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://urban-observer.vercel.app/article/${slug}`,
+              "@id": `https://financialoutlook.xyz/article/${slug}`,
             },
           }),
         }}

@@ -13,8 +13,8 @@ import HeaderClient from "../components/HeaderClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://urban-observer.vercel.app"),
-  title: "UrbanObserver – Celebrity Gossip, Scandals & Lifestyle 2025",
+  metadataBase: new URL("https://financialoutlook.xyz"),
+  title: "financialoutlook – Celebrity Gossip, Scandals & Lifestyle 2025",
   description: "Latest celebrity scandals, Blake Lively lawsuit, Taylor Swift & Travis Kelce, Ozempic face fixes, Dolly Parton health updates – updated November 21, 2025",
   keywords: [
     "celebrity gossip 2025",
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     "entertainment news",
   ].join(", "),
   openGraph: {
-    title: "UrbanObserver – Celebrity Gossip & Lifestyle 2025",
+    title: "financialoutlook – Celebrity Gossip & Lifestyle 2025",
     description: "Your #1 source for the hottest celebrity scandals, breakups & trending drama – updated daily",
-    url: "https://urban-observer.vercel.app",
-    siteName: "UrbanObserver",
+    url: "https://financialoutlook.xyz",
+    siteName: "financialoutlook",
     images: [
       {
         url: "/og-home.jpg", // ← 1200x630 WebP
         width: 1200,
         height: 630,
-        alt: "UrbanObserver – Celebrity Gossip 2025",
+        alt: "financialoutlook – Celebrity Gossip 2025",
       },
     ],
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UrbanObserver – Celebrity Gossip 2025",
+    title: "financialoutlook – Celebrity Gossip 2025",
     description: "Latest scandals, lawsuits & trending drama – updated daily",
     images: ["/og-home.jpg"],
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://urban-observer.vercel.app",
+    canonical: "https://financialoutlook.xyz",
   },
 };
 
@@ -93,11 +93,11 @@ export default async function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "UrbanObserver",
-            url: "https://urban-observer.vercel.app",
+            name: "financialoutlook",
+            url: "https://financialoutlook.xyz",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://urban-observer.vercel.app/search?q={search_term_string}",
+              target: "https://financialoutlook.xyz/search?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),

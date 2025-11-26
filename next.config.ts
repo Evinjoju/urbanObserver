@@ -1,25 +1,16 @@
-// next.config.js
+// next.config.js — FINAL & WORKING FOR CPANEL
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",           // ← THIS CREATES THE out/ FOLDER
+  trailingSlash: true,        // ← Makes URLs like /entertainment/ (good for cPanel)
   images: {
+    unoptimized: true,        // ← Required for static export
     remotePatterns: [
       {
         protocol: "https",
         hostname: "demo.tagdiv.com",
       },
-    ],formats: ["image/avif", "image/webp"]
-  },
-};
-
-module.exports = {
-  experimental: {
-    optimizeCss: true,
-  },
-  webpack: (config: { resolve: { fallback: { fs: boolean; }; }; }, { isServer }: any) => {
-    if (!isServer) {
-      config.resolve.fallback = { fs: false };
-    }
-    return config;
+    ],
   },
 };
 

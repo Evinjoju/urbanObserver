@@ -39,7 +39,7 @@ const NewsletterSection = () => {
             <Link href="/" className="inline-block">
               <Image
                 src="/images/fin-logo1.svg" // ← Your SVG file path
-                alt="UrbanObserver Logo"
+                alt="financialoutlook Logo"
                 width={500} // ← Adjust to your SVG width
                 height={100} // ← Adjust to your SVG height
                 className="mx-auto h-12 sm:h-16 md:h-20 lg:h-24" // ← Responsive height

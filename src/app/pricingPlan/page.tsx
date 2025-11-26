@@ -9,22 +9,22 @@ import HeaderClient from "../../components/HeaderClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Membership Plans – Unlimited Access | UrbanObserver 2025",
-  description: "Support independent journalism. Get full access to all premium articles, exclusive stories, and ad-free reading with UrbanObserver membership.",
-  keywords: "urbanobserver membership, subscribe, premium access, unlimited articles, support journalism 2025",
+  title: "Membership Plans – Unlimited Access | financialoutlook 2025",
+  description: "Support independent journalism. Get full access to all premium articles, exclusive stories, and ad-free reading with financialoutlook membership.",
+  keywords: "financialoutlook membership, subscribe, premium access, unlimited articles, support journalism 2025",
   alternates: {
-    canonical: "https://urban-observer.vercel.app/pricingPlan",
+    canonical: "https://financialoutlook.xyz/pricingPlan",
   },
   openGraph: {
-    title: "Join UrbanObserver – Unlimited Access Membership",
+    title: "Join financialoutlook – Unlimited Access Membership",
     description: "Support independent journalism and get full access to all premium content.",
-    url: "https://urban-observer.vercel.app/pricingPlan",
+    url: "https://financialoutlook.xyz/pricingPlan",
     type: "website",
     images: ["/images/pricing-og.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UrbanObserver Membership – Unlimited Access",
+    title: "financialoutlook Membership – Unlimited Access",
     description: "Support journalism. Get full access to premium stories.",
     images: ["/images/pricing-og.jpg"],
   },
@@ -49,12 +49,12 @@ export default async function LifestylePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "UrbanObserver",
-            url: "https://urban-observer.vercel.app",
-            logo: "https://urban-observer.vercel.app/logo.png",
+            name: "financialoutlook",
+            url: "https://financialoutlook.xyz",
+            logo: "https://financialoutlook.xyz/logo.png",
             sameAs: [
-              "https://twitter.com/urbanobserver",
-              "https://instagram.com/urbanobserver",
+              "https://twitter.com/financialoutlook",
+              "https://instagram.com/financialoutlook",
             ],
           }),
         }}

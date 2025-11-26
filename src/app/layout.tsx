@@ -4,10 +4,10 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://urban-observer.vercel.app"), // ← Your real domain
+  metadataBase: new URL("https://financialoutlook.xyz/"), // ← Your real domain
   title: {
-    default: "UrbanObserver – Celebrity Gossip, Scandals & Lifestyle 2025",
-    template: "%s | UrbanObserver 2025",
+    default: "financialoutlook – Celebrity Gossip, Scandals & Lifestyle 2025",
+    template: "%s | financialoutlook 2025",
   },
   description: "Latest celebrity scandals, breakups, Ozempic face fixes, Blake Lively lawsuit, Taylor Swift & Travis Kelce, Dolly Parton health updates – updated daily November 2025",
   keywords: [
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
 
   // OpenGraph (Facebook, LinkedIn, WhatsApp)
   openGraph: {
-    title: "UrbanObserver – Celebrity Gossip & Lifestyle 2025",
+    title: "FinancialOutLook – Celebrity Gossip & Lifestyle 2025",
     description: "Your #1 source for the hottest celebrity scandals, breakups & trending drama – updated daily",
-    url: "https://urban-observer.vercel.app",
-    siteName: "UrbanObserver",
+    url: "https://financialoutlook.xyz/",
+    siteName: "financialoutlook",
     images: [
       {
         url: "/og-home.jpg", // ← 1200x630 WebP (create this!)
         width: 1200,
         height: 630,
-        alt: "UrbanObserver – Celebrity Gossip 2025",
+        alt: "financialoutlook – Celebrity Gossip 2025",
       },
     ],
     locale: "en_US",
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "UrbanObserver – Celebrity Gossip 2025",
+    title: "financialoutlook – Celebrity Gossip 2025",
     description: "Latest scandals, lawsuits & trending drama – updated daily",
     images: ["/og-home.jpg"],
-    creator: "@urbanobserver", // ← Change to your real handle
+    creator: "@financialoutlook", // ← Change to your real handle
   },
 
   // Robots
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://urban-observer.vercel.app",
+    canonical: "https://financialoutlook.xyz/",
   },
 };
 
@@ -103,11 +103,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "UrbanObserver",
-              url: "https://urban-observer.vercel.app",
+              name: "financialoutlook",
+              url: "https://financialoutlook.xyz/",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://urban-observer.vercel.app/search?q={search_term_string}",
+                target: "https://financialoutlook.xyz/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
