@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AdSection = () => {
     return (
-        <section className="py-6  bg-gray-100">
+        <section className="py-6  bg-black">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex justify-center">
                     <a href="#" className="block">

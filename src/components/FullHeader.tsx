@@ -23,7 +23,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
   const footerLinks = ["ABOUT", "CONTACT", "PRIVACY POLICY", "NEWSLETTER"];
 
   return (
-    <header className="bg-gray-100 border-y border-black">
+    <header className="bg-black border-y border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="py-4">
         
@@ -40,7 +40,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
                     key={cat}
                     href={href}
                     className={`transition-colors duration-200 ${
-                      isActive ? "text-red-600" : "text-black hover:text-red-600"
+                      isActive ? "text-red-600" : "text-white hover:text-red-600"
                     }`}
                   >
                     {cat}
@@ -50,7 +50,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
             </div>
 
             {/* Footer Links */}
-            <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-xs font-bold tracking-widest uppercase text-gray-600">
+            <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-xs font-bold tracking-widest uppercase text-gray-500">
               {footerLinks.map((link) => (
                 <Link
                   key={link}

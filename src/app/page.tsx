@@ -131,8 +131,6 @@ export default async function HomePage() {
           <FeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
 
 
-          <AdSection />
-
           <FullHeader currentPage="home" />
           <FooterSection
             latestArticles={latestArticlesData}

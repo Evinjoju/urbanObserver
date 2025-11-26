@@ -12,11 +12,11 @@ interface Top5SidebarProps {
 const Top5Sidebar: React.FC<Top5SidebarProps> = ({ articles, isSticky }) => {
   return (
     <div className="lg:col-span-2 space-y-4 sidebar-sticky">
-      <div className={`h-[555px] bg-white z-10 transition-all duration-300 ${isSticky ? 'sticky top-8' : ''}`}>
+      <div className={`h-[555px] bg-black z-10 transition-all duration-300 ${isSticky ? 'sticky top-8' : ''}`}>
         <div className="bg-red-600 text-2xl text-white p-4 uppercase font-bold tracking-widest text-center border-black">
           TOP 5 THIS WEEK
         </div>
-        <div className="p-3 space-y-3 rounded-b overflow-hidden">
+        <div className="p-3 space-y-3 rounded-b overflow-hidden bg-black">
           {articles.slice(0, 5).map((article) => {
             const articleUrl = `/article/${article.slug}`;
 
@@ -36,7 +36,7 @@ const Top5Sidebar: React.FC<Top5SidebarProps> = ({ articles, isSticky }) => {
                     <span className="inline-block bg-red-600 text-white text-[12px] px-2 py-0.5 rounded font-bold mr-2">
                       {article.rank}
                     </span>
-                    <h3 className="font-semibold mb-1 line-clamp-2 text-sm text-black group-hover:text-red-600 transition-colors duration-300">
+                    <h3 className="font-semibold mb-1 line-clamp-2 text-sm text-white group-hover:text-red-600 transition-colors duration-300">
                       {article.title}
                     </h3>
                     <p className="text-gray-600 uppercase tracking-wider text-xs">

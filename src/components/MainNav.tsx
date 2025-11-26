@@ -30,7 +30,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
 
   return (
     <>
-      <nav className="border-y border-black bg-white relative z-50">
+      <nav className="border-y border-white bg-black relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between py-3">
             {/* Left: ALL Button (Large screens only) + Hamburger (Small/Medium) */}
@@ -38,7 +38,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
               {/* Desktop "ALL" Button */}
               <button
                 onClick={() => setMegaMenuOpen(true)}
-                className="hidden lg:flex items-center space-x-2 bg-black text-white px-3 py-1 hover:bg-red-600 transition-colors duration-300 font-bold uppercase tracking-widest text-sm"
+                className="hidden lg:flex items-center space-x-2 bg-white text-black px-3 py-1 hover:bg-red-600 transition-colors duration-300 font-bold uppercase tracking-widest text-sm"
               >
                 <span className="material-symbols-outlined text-base">menu</span>
                 <span>ALL</span>
@@ -47,7 +47,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
               {/* Hamburger */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden text-black hover:text-red-600 transition"
+                className="lg:hidden text-white hover:text-red-600 transition"
                 aria-label="Toggle menu"
               >
                 <span className="material-symbols-outlined text-3xl">
@@ -57,7 +57,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
             </div>
 
             {/* Center: Horizontal Menu */}
-            <div className="hidden lg:flex items-center justify-center space-x-8 text-sm font-bold tracking-widest uppercase flex-1">
+            <div className="hidden lg:flex items-center justify-center space-x-8 text-sm  tracking-widest uppercase flex-1">
               {menuItems.map((item) => {
                 const isActive = currentPage === item.toLowerCase();
                 const href = item === "ENTERTAINMENT" ? "/entertainment" : `/${item.toLowerCase()}`;
@@ -67,7 +67,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
                     key={item}
                     href={href}
                     className={`transition-colors duration-200 ${
-                      isActive ? "text-red-600" : "text-black hover:text-red-600"
+                      isActive ? "text-red-600" : "text-white hover:text-red-600"
                     }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -80,7 +80,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
             {/* Right: Search Icon */}
             <button
               onClick={() => setSearchOpen(true)}
-              className="text-black hover:text-red-600 transition-colors duration-200"
+              className="text-white hover:text-red-600 transition-colors duration-200"
               aria-label="Search"
             >
               <span className="material-symbols-outlined text-2xl">search</span>

@@ -10,8 +10,8 @@ interface ArticleGridLargeProps {
 
 const ArticleGridLarge: React.FC<ArticleGridLargeProps> = ({ data }) => {
   return (
-    <div className=" py-8 md:mx-0">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className=" py-2 md:mx-0 bg-black">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         {data.slice(0, 3).map((article, i) => {
           const articleUrl = `/article/${article.slug}`;
 

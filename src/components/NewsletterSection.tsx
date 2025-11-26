@@ -15,19 +15,19 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="border-y border-black py-4 sm:py-6 md:py-8 bg-white">
+    <section className="border-y border-black py-4 sm:py-6 md:py-8 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-row justify-between items-center gap-6">
 
           {/* Newsletter Button - Hidden on mobile */}
           <div className="hidden sm:flex flex-col items-center group cursor-pointer">
             <Mail
-              className="text-4xl md:text-6xl text-black group-hover:text-red-600 transition-colors duration-300"
+              className="text-4xl md:text-6xl text-white group-hover:text-red-600 transition-colors duration-300"
             />
             <button
               onClick={() => setModalOpen(true)}
-              className="font-extrabold tracking-widest text-xs uppercase px-4 py-3 
-                         text-black hover:text-red-600 
+              className=" tracking-widest text-xs uppercase px-4 py-3 
+                         text-white hover:text-red-600 
                          transition-all duration-300 ease-in-out mt-2"
             >
               NEWSLETTER
@@ -38,7 +38,7 @@ const NewsletterSection = () => {
           <div className="flex-1 text-center">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/fin-logo.svg" // ← Your SVG file path
+                src="/images/fin-logo1.svg" // ← Your SVG file path
                 alt="UrbanObserver Logo"
                 width={500} // ← Adjust to your SVG width
                 height={100} // ← Adjust to your SVG height
@@ -46,7 +46,7 @@ const NewsletterSection = () => {
                 priority // ← Preloads for FCP
               />
             </Link>
-            <p className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest font-bold mt-2 uppercase">
+            <p className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest   uppercase">
               Gossip & Lifestyle Online Magazine
             </p>
           </div>
@@ -55,8 +55,8 @@ const NewsletterSection = () => {
           <div className="hidden sm:block">
             <a
               href="/pricingPlan"
-              className="font-extrabold tracking-widest text-xs uppercase border-2 border-black 
-                         px-3 py-3 hover:border-red-600 hover:text-red-600 
+              className=" tracking-widest text-xs uppercase border-2 border-white 
+                         px-3 py-2 hover:border-red-600 hover:text-red-600 text-white 
                          transition-all duration-300 ease-in-out inline-block"
             >
               PRICING PLANS

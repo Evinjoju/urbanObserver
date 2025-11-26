@@ -5,7 +5,7 @@ import { ArticleData } from "../types/ArticleDetail";
 
 interface ArticleContentBlock {
     type: "heading" | "paragraph" | "image";
-    content: string; // heading text, paragraph text, or image URL
+    content: string; 
 }
 
 
@@ -15,17 +15,17 @@ interface MainArticleDetailProps {
 
 const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
     return (
-        <article className="lg:col-span-4">
+        <article className="lg:col-span-4 bg-black">
 
             {/* Title */}
-            <h1 className="text-4xl sm:text-4xl lg:text-4xl font-black leading-tight mb-3">
+            <h1 className="text-4xl sm:text-4xl lg:text-4xl text-white font-black leading-tight mb-3">
                 {article.title}
             </h1>
 
             
 
             {/* Author Info */}
-            <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-2 text-sm uppercase tracking-wider">
+            <div className="flex flex-wrap items-center gap-4 text-gray-300 mb-2 text-sm uppercase tracking-wider">
                 <div className="flex items-center gap-3">
                     <Image
                         src={article.authorImage}
@@ -49,7 +49,7 @@ const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
             </div>
 
             {/* Structured Content from JSON */}
-            <div className="prose prose-lg max-w-none space-y-4">
+            <div className="prose prose-lg max-w-none space-y-4 text-white">
                 {article.content.map((block, index) => {
                     if (block.type === "image") {
                         return (
@@ -73,7 +73,7 @@ const MainArticleDetail: React.FC<MainArticleDetailProps> = ({ article }) => {
                     }
 
                     return (
-                        <p key={index} className="text-lg leading-relaxed text-black">
+                        <p key={index} className="text-lg leading-relaxed">
                             {block.content}
                         </p>
                     );

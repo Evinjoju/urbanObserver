@@ -59,7 +59,7 @@ export default async function LifestylePage() {
           }),
         }}
       />
-      <div className="bg-white text-black min-h-screen font-sans">
+      <div className="bg-black text-gray-400 min-h-screen font-sans">
         <div>
           <DateBar />
           <HeaderClient

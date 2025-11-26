@@ -4,20 +4,20 @@ import Link from "next/link";
 
 const SubscribeBanner: React.FC = () => {
   return (
-    <section className="border m-8 border-black bg-white py-12">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="border border-white bg-black py-16">
+      <div className="max-w-6xl mx-auto px-6 text-white">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Left: Text */}
           <div className="lg:col-span-2 text-center lg:text-left">
            <h1
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.3em] uppercase"
+            className="font-display text-2xl sm:text-2xl md:text-2xl lg:text-4xl tracking-[0.3em] uppercase"
             style={{
-              WebkitTextStroke: "2.5px black",
-              color: "transparent",
-              letterSpacing: "0.0em",
+              WebkitTextStroke: "1.5px black",
+              color: "white",
+              letterSpacing: "0.1em",
             }}
           >
-              URBANOBSERVER
+              FINANCIALOUTLOOK
             </h1>
             <div className="w-24 h-1 bg-red-600 mx-auto lg:mx-0 mb-6"></div>
             <p className="text-lg md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">

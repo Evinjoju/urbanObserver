@@ -12,9 +12,9 @@ const DateBar = () => {
   };
 
   return (
-    <div className="hidden sm:flex w-full border-b border-black text-xs text-black px-6 py-2 justify-between items-center bg-white relative">
-      <span className="tracking-widest font-semibold">{today}</span>
-      <div className="flex items-center gap-4 font-bold tracking-widest">
+    <div className="hidden sm:flex w-full border-b border-white text-xs text-white px-6 py-2 justify-between items-center bg-black relative">
+      <span className="tracking-widest ">{today}</span>
+      <div className="flex items-center gap-4  tracking-widest">
         <a href="#" className="hover:text-red-600 transition-colors duration-200">ABOUT</a>
         <a href="#" className="hover:text-red-600 transition-colors duration-200">CONTACT</a>
         <span 
