@@ -30,7 +30,7 @@ const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-6 gap-2 px-2 py-4 bg-black">
+    <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 px-2 py-4 bg-black">
       {/* Left: Sticky Top 5 */}
       <aside className="lg:col-span-2">
         <div className={`sidebar-sticky ${isSticky ? "sticky top-5 z-10" : ""}`}>
