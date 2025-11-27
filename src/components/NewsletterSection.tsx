@@ -23,7 +23,7 @@ const NewsletterSection = () => {
               />
             </Link>
             <p className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest   uppercase">
-              Gossip & Lifestyle Online Magazine
+              Wealth & Markets Online Magazine
             </p>
           </div>
 

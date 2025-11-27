@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title: `${article.title} | financialoutlook 2025`,
     description: article.shortdescription || article.title,
-    keywords: `${article.category.toLowerCase()} 2025, celebrity gossip, latest news, ${article.author}`,
+    keywords: `${article.category.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth, ${article.author}`,
     alternates: { canonical: url },
     openGraph: {
       title: article.title,
@@ -81,9 +81,9 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
 
   // Load shared data (same as before)
   const [top5Data, latestArticlesData, popularArticlesData] = await Promise.all([
-    import("../../../../public/data/entertainment-top5-articles.json").then(m => m.default),
-    import("../../../../public/data/entertainment-latest-articles.json").then(m => m.default),
-    import("../../../../public/data/entertainment-popular-articles.json").then(m => m.default),
+    import("../../../../public/data/marketsPage/markets-top5-articles.json").then(m => m.default),
+    import("../../../../public/data/marketsPage/markets-latest-articles.json").then(m => m.default),
+    import("../../../../public/data/marketsPage/markets-popular-articles.json").then(m => m.default),
   ]);
 
   const currentCategory = articleData.category?.toLowerCase() || "entertainment";

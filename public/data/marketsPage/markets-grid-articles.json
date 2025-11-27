@@ -1,0 +1,50 @@
+[
+ {
+    "slug": "nvidia-stock-2025-boom-continues",
+    "title": "NVIDIA Stock Up 250% in 2025 – AI Chip Demand Explodes",
+    "category": "MARKETS",
+    "shortdescription": "NVDA hits $200/share as data center orders surge 300% year-over-year.",
+    "description": "NVIDIA's dominance in AI accelerators continues with record Q4 earnings – analysts predict $300 target by year-end amid chip shortage.",
+    "image": "/images/NVIDIA Stock Up 250  in 2025.webp",
+    "author": "Market Analyst",
+    "authorImage": "/images/market-analyst.webp",
+    "role": "Stock Market Expert",
+    "date": "November 20, 2025"
+  },
+  {
+    "slug": "federal-reserve-rate-cut-december-2025",
+    "title": "Fed Signals December Rate Cut: Markets Rally 2% on Powell's Hints",
+    "category": "MARKETS",
+    "shortdescription": "Chair Jerome Powell's dovish comments spark buying frenzy across S&P 500.",
+    "description": "FOMC minutes reveal 75% probability of 25bps cut – bonds yield drops, tech stocks lead surge as inflation cools to 2.1%.",
+    "image": "/images/Fed Signals December Rate Cut.webp",
+    "author": "Market Analyst",
+    "authorImage": "/images/market-analyst.webp",
+    "role": "Stock Market Expert",
+    "date": "November 20, 2025"
+  },
+  {
+    "slug": "tesla-q4-earnings-beat-2025",
+    "title": "Tesla Q4 Earnings Beat Expectations: Robotaxi Launch Set for June 2025",
+    "category": "MARKETS",
+    "shortdescription": "TSLA up 8% after-hours on autonomous driving breakthrough announcement.",
+    "description": "Elon Musk reveals unsupervised FSD approval imminent – Cybercab production starts Q2, shares target $400 by analysts.",
+    "image": "/images/Tesla Q4 Earnings Beat Expectations.webp",
+    "author": "Market Analyst",
+    "authorImage": "/images/market-analyst.webp",
+    "role": "Stock Market Expert",
+    "date": "November 19, 2025"
+  },
+  {
+    "slug": "amazon-prime-day-2025-record-sales",
+    "title": "Amazon Prime Day 2025 Shatters Records: $14.2B Sales in 48 Hours",
+    "category": "MARKETS",
+    "shortdescription": "E-commerce giant reports 12% YoY growth, international markets drive 40% of revenue.",
+    "description": "AWS cloud services hit $25B quarterly run-rate – retail margins improve 2.5% thanks to AI inventory optimization.",
+    "image": "/images/Amazon Prime Day 2025 Shatters Records.webp",
+    "author": "Market Analyst",
+    "authorImage": "/images/market-analyst.webp",
+    "role": "Stock Market Expert",
+    "date": "November 19, 2025"
+  }
+]

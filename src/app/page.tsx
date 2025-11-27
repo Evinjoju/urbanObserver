@@ -14,29 +14,29 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://financialoutlook.xyz"),
-  title: "financialoutlook – Celebrity Gossip, Scandals & Lifestyle 2025",
-  description: "Latest celebrity scandals, Blake Lively lawsuit, Taylor Swift & Travis Kelce, Ozempic face fixes, Dolly Parton health updates – updated November 21, 2025",
+  title: "Financial Outlook – Business, Wealth & Markets 2025",
+  description: "Latest stock market updates, billionaire moves, crypto trends, real estate deals, and wealth strategies – updated November 21, 2025",
   keywords: [
-    "celebrity gossip 2025",
-    "blake lively lawsuit",
-    "taylor swift travis kelce",
-    "ozempic face",
-    "dolly parton health",
-    "black friday deals 2025",
-    "hollywood scandals",
-    "entertainment news",
+    "stock market 2025",
+    "billionaire net worth",
+    "crypto news",
+    "real estate investment",
+    "warren buffett",
+    "blackrock bitcoin etf",
+    "federal reserve",
+    "wealth management",
   ].join(", "),
   openGraph: {
-    title: "financialoutlook – Celebrity Gossip & Lifestyle 2025",
-    description: "Your #1 source for the hottest celebrity scandals, breakups & trending drama – updated daily",
+    title: "Financial Outlook – Business, Wealth & Markets 2025",
+    description: "Your trusted source for stock market insights, billionaire moves, and global finance trends – updated daily",
     url: "https://financialoutlook.xyz",
-    siteName: "financialoutlook",
+    siteName: "Financial Outlook",
     images: [
       {
-        url: "/og-home.jpg", // ← 1200x630 WebP
+        url: "/og-financialoutlook.jpg",
         width: 1200,
         height: 630,
-        alt: "financialoutlook – Celebrity Gossip 2025",
+        alt: "Financial Outlook – Business & Markets 2025",
       },
     ],
     locale: "en_US",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "financialoutlook – Celebrity Gossip 2025",
-    description: "Latest scandals, lawsuits & trending drama – updated daily",
-    images: ["/og-home.jpg"],
+    title: "Financial Outlook – Markets & Wealth 2025",
+    description: "Stock market, crypto, billionaires, real estate – daily updates",
+    images: ["/og-financialoutlook.jpg"],
   },
   robots: {
     index: true,
@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     canonical: "https://financialoutlook.xyz",
   },
 };
+
 
 export default async function HomePage() {
   // Load all shared data

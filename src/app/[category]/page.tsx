@@ -13,65 +13,65 @@ import { Metadata } from "next";
 // app/[category]/page.tsx — ADD THIS FUNCTION
 export function generateStaticParams() {
   return [
-    { category: "entertainment" },
-    { category: "celebrity" },
-    { category: "scandals" },
-    { category: "drama" },
-    { category: "lifestyle" },
-    { category: "technology" },
-    { category: "health" },
+    { category: "markets" },
+    { category: "crypto" },
+    { category: "billionaires" },
+    { category: "investing" },
+    { category: "realestate" },
+    { category: "techfinance" },
+    { category: "economy" },
   ];
 }
 
 const categoryConfig = {
-  entertainment: {
-    title: "ENTERTAINMENT",
-    subs: ["MOVIES", "MUSIC", "TV SHOWS"],
-    folder: "",
-    slider: "/entertainment-slider.json",
-    description: "Latest movies, music releases, TV shows, celebrity interviews, and entertainment trends 2025",
+  markets: {
+    title: "MARKETS",
+    subs: ["STOCKS", "FOREX", "COMMODITIES"],
+    folder: "marketsPage",
+    slider: "/markets-slider.json",
+    description: "Real-time stock market updates, forex trends, commodities, and trading strategies for 2025",
   },
-  celebrity: {
-    title: "CELEBRITY",
-    subs: ["NEWS", "GOSSIP", "FASHION"],
-    folder: "celebrityPage",
-    slider: "/celebrity-slider.json",
-    description: "Celebrity gossip, fashion, scandals, red carpet moments and exclusive interviews 2025",
+  crypto: {
+    title: "CRYPTO",
+    subs: ["BITCOIN", "ETHEREUM", "DEFI"],
+    folder: "cryptoPage",
+    slider: "/crypto-slider.json",
+    description: "Latest Bitcoin, Ethereum, and DeFi news, price analysis, and blockchain developments 2025",
   },
-  scandals: {
-    title: "SCANDALS",
-    subs: ["HOLLYWOOD", "POLITICS", "BUSINESS"],
-    folder: "scandalsPage",
-    slider: "/scandals-slider.json",
-    description: "Biggest celebrity scandals, Hollywood drama, political controversies and business exposés 2025",
+  billionaires: {
+    title: "BILLIONAIRES",
+    subs: ["FORBES LIST", "NET WORTH", "DEALS"],
+    folder: "billionairesPage",
+    slider: "/billionaires-slider.json",
+    description: "Forbes billionaire rankings, net worth changes, luxury lifestyles and mega deals 2025",
   },
-  drama: {
-    title: "DRAMA",
-    subs: ["TV SERIES", "FILM PLOTS", "BEHIND SCENES"],
-    folder: "dramaPage",
-    slider: "/drama-slider.json",
-    description: "TV series reviews, film plot breakdowns, behind-the-scenes drama and industry secrets",
+  investing: {
+    title: "INVESTING",
+    subs: ["STOCK PICKS", "ETFs", "DIVIDENDS"],
+    folder: "investingPage",
+    slider: "/investing-slider.json",
+    description: "Best stocks to buy, ETF strategies, dividend investing and portfolio tips for 2025",
   },
-  lifestyle: {
-    title: "LIFESTYLE",
-    subs: ["WELLNESS", "TRAVEL", "FOOD"],
-    folder: "lifestylePage",
-    slider: "/lifestyle-slider.json",
-    description: "Wellness tips, luxury travel, gourmet food, fashion and modern living 2025",
+  realestate: {
+    title: "REAL ESTATE",
+    subs: ["LUXURY", "COMMERCIAL", "TRENDS"],
+    folder: "realestatePage",
+    slider: "/realestate-slider.json",
+    description: "Luxury property markets, commercial real estate, housing trends and investment opportunities 2025",
   },
-  technology: {
-    title: "TECHNOLOGY",
-    subs: ["GADGETS", "AI", "INNOVATIONS"],
-    folder: "technologyPage",
-    slider: "/technology-slider.json",
-    description: "Latest gadgets, AI breakthroughs, tech reviews and innovation news 2025",
+  techfinance: {
+    title: "TECH & FINANCE",
+    subs: ["FINTECH", "STARTUPS", "VC"],
+    folder: "techfinancePage",
+    slider: "/techfinance-slider.json",
+    description: "Fintech innovations, startup funding, venture capital deals and digital banking 2025",
   },
-  health: {
-    title: "HEALTH",
-    subs: ["WELLNESS", "FITNESS", "NUTRITION"],
-    folder: "healthPage",
-    slider: "/health-slider.json",
-    description: "Health tips, fitness routines, nutrition advice and wellness trends 2025",
+  economy: {
+    title: "ECONOMY",
+    subs: ["GDP", "INFLATION", "POLICY"],
+    folder: "economyPage",
+    slider: "/economy-slider.json",
+    description: "Global economic indicators, inflation reports, central bank policies and market forecasts 2025",
   },
 } as const;
 
@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   return {
     title: `${config.title} News & Updates 2025 | financialoutlook`,
     description: config.description,
-    keywords: `${config.title.toLowerCase()} 2025, latest ${config.title.toLowerCase()} news, celebrity, gossip, trends`,
+   keywords: `${config.title.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth`,
     alternates: { canonical: url },
     openGraph: {
       title: `${config.title} – Latest News 2025 | financialoutlook`,

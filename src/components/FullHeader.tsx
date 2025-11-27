@@ -8,16 +8,16 @@ interface FullHeaderProps {
 }
 
 const FullHeader: React.FC<FullHeaderProps> = ({
-  currentPage = "entertainment",
+  currentPage = "markets",
 }) => {
   const categories = [
-    "ENTERTAINMENT",
-    "CELEBRITY",
-    "SCANDALS",
-    "DRAMA",
-    "LIFESTYLE",
-    "TECHNOLOGY",
-    "HEALTH",
+   "MARKETS",
+    "CRYPTO",
+    "BILLIONAIRES",
+    "INVESTING",
+    "REALESTATE",
+    "TECH&FINANCE",
+    "ECONOMY",
   ];
 
   const footerLinks = ["ABOUT", "CONTACT"];
@@ -34,7 +34,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
             <div className="flex flex-wrap justify-center lg:justify-end gap-4 sm:gap-6 text-xs sm:text-sm font-bold tracking-widest uppercase">
               {categories.map((cat) => {
                 const isActive = cat.toLowerCase() === currentPage;
-                const href = cat === "ENTERTAINMENT" ? "/entertainment" : `/${cat.toLowerCase()}`;
+                const href = cat === "MARKETS" ? "/markets" : `/${cat.toLowerCase()}`;
                 return (
                   <Link
                     key={cat}

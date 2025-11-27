@@ -9,19 +9,19 @@ interface MainNavProps {
   currentPage?: string;
 }
 
-const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
+const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    "ENTERTAINMENT",
-    "CELEBRITY",
-    "SCANDALS",
-    "DRAMA",
-    "LIFESTYLE",
-    "TECHNOLOGY",
-    "HEALTH",
+    "MARKETS",
+    "CRYPTO",
+    "BILLIONAIRES",
+    "INVESTING",
+    "REALESTATE",
+    "TECHFINANCE",
+    "ECONOMY",
   ];
 
   const handleSearch = (query: string) => {
@@ -60,7 +60,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
             <div className="hidden lg:flex items-center justify-center space-x-8 text-sm  tracking-widest uppercase flex-1">
               {menuItems.map((item) => {
                 const isActive = currentPage === item.toLowerCase();
-                const href = item === "ENTERTAINMENT" ? "/entertainment" : `/${item.toLowerCase()}`;
+                const href = item === "MARKETS" ? "/markets" : `/${item.toLowerCase()}`;
 
                 return (
                   <Link
@@ -93,7 +93,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "entertainment" }) => {
           <div className="lg:hidden border-t border-black bg-white absolute top-full left-0 right-0 shadow-lg z-50">
             <div className="px-6 py-6 space-y-5 text-lg font-bold tracking-widest uppercase">
               {menuItems.map((item) => {
-                const href = item === "ENTERTAINMENT" ? "/entertainment" : `/${item.toLowerCase()}`;
+                const href = item === "MARKETS" ? "/markets" : `/${item.toLowerCase()}`;
                 const isActive = currentPage === item.toLowerCase();
 
                 return (
