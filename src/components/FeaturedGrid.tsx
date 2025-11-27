@@ -33,7 +33,7 @@ const FeaturedGrid: React.FC<FeaturedGridProps> = ({ mainArticles, top5Articles 
   };
 
   return (
-    <section className="py-8 px-6 bg-black border-black">
+    <section className="py-8 px-0 bg-black border-black">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
           <MainArticleGrid

@@ -18,7 +18,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ latestArticles, popularAr
   return (
     <footer className="bg-black border-t border-gray-300 py-6">
       <div className=" mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
           <div className="space-y-4">
             <h3 className="font-bold text-lg uppercase tracking-wider">ABOUT US</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
@@ -29,13 +29,13 @@ const FooterSection: React.FC<FooterSectionProps> = ({ latestArticles, popularAr
                 <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Facebook className="w-5 h-5 text-white" /></a>
               </div>
               <div className="bg-red-600 rounded p-1">
-              <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Twitter className="w-5 h-5 text-white" /></a>
+                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Twitter className="w-5 h-5 text-white" /></a>
               </div>
               <div className="bg-red-600 rounded p-1">
-              <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Instagram className="w-5 h-5 text-white" /></a>
+                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Instagram className="w-5 h-5 text-white" /></a>
               </div>
               <div className="bg-red-600 rounded p-1">
-              <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Youtube className="w-5 h-5 text-white" /></a>
+                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Youtube className="w-5 h-5 text-white" /></a>
               </div>
             </div>
           </div>
@@ -64,26 +64,6 @@ const FooterSection: React.FC<FooterSectionProps> = ({ latestArticles, popularAr
             ))}
           </div>
 
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg uppercase tracking-wider">SUBSCRIBE</h3>
-            <form onSubmit={handleSubscribe} className="space-y-3">
-              <input
-                type="email"
-                placeholder="Email address"
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
-              />
-              <button
-                type="submit"
-                className="w-full bg-red-600 text-white py-3 uppercase font-bold tracking-widest hover:bg-red-700 transition-colors rounded"
-              >
-                I WANT IN →
-              </button>
-              <label className="flex items-center space-x-2 text-xs text-gray-600">
-                <input type="checkbox" className="rounded text-gray-200" required />
-                <span>I've read and accept the Privacy Policy.</span>
-              </label>
-            </form>
-          </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-black-300 text-center text-sm text-gray-200">

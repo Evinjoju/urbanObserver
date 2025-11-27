@@ -20,7 +20,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
     "HEALTH",
   ];
 
-  const footerLinks = ["ABOUT", "CONTACT", "PRIVACY POLICY", "NEWSLETTER"];
+  const footerLinks = ["ABOUT", "CONTACT"];
 
   return (
     <header className="bg-black border-y border-white">

@@ -20,8 +20,6 @@ interface MenuSection {
 const companyLinks = [
     { title: "ABOUT", href: "/about" },
     { title: "CONTACT", href: "/contact" },
-    { title: "PRIVACY POLICY", href: "/privacy-policy" },
-    { title: "NEWSLETTER", href: "/newsletter" },
 ];
 
 interface MegaMenuProps {
