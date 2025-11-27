@@ -114,7 +114,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           }}
         />
       </head>
-      <body className="bg-white text-black antialiased">
+      <body className="bg-black text-white antialiased max-w-7xl mx-auto">
         {children}
       </body>
     </html>
