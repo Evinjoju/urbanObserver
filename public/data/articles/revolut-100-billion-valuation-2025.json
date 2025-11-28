@@ -1,0 +1,36 @@
+{
+  "title": "Revolut Hits $100 Billion Valuation – Europe's First Tech Centicorn",
+  "category": "TECH & FINANCE",
+  "shortdescription": "UK neobank now worth more than Barclays + Lloyds combined.",
+  "author": "Gwen John",
+  "authorImage": "/images/Author6.webp",
+  "role": "Tech Finance Analyst",
+  "date": "November 20, 2025",
+  "readingTime": "10 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/Revolut $100 Billion Valuation 2025.webp"
+    },
+    {
+      "type": "heading",
+      "content": "Europe's Fintech Unicorn"
+    },
+    {
+      "type": "paragraph",
+      "content": "Revolut has achieved a historic milestone, reaching a $100 billion valuation after receiving its full UK banking license and launching a crypto exchange with zero fees. The UK-based neobank is now worth more than traditional high street banks like Barclays and Lloyds combined, making it Europe's first 'tech centicorn.' The valuation reflects Revolut's transformation from a simple currency exchange app to a full-service financial superapp serving 45 million customers across 38 countries."
+    },
+    {
+      "type": "paragraph",
+      "content": "The company's revenue has exploded to $4.2 billion annually, driven by a diverse mix of trading fees, crypto spreads, lending, and premium subscriptions. Revolut's banking license allows it to offer savings accounts with 5.5% APY and business loans at rates 40% lower than traditional banks. The launch of Revolut Crypto with zero trading fees has captured 25% of the European market, positioning the company as a serious competitor to Binance and Coinbase."
+    },
+    {
+      "type": "heading",
+      "content": "The Banking License Advantage"
+    },
+    {
+      "type": "paragraph",
+      "content": "The full banking license gives Revolut access to customer deposits, which it can now use to fund lending and investments while paying depositors competitive interest rates. This creates a powerful flywheel effect where customer growth generates more deposits, which fund more lending, which generates more revenue. Traditional banks took decades to build this infrastructure — Revolut achieved it in eight years through aggressive technology investment and regulatory navigation."
+    }
+  ]
+}

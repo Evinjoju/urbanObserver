@@ -1,4 +1,4 @@
-// app/article/[slug]/page.tsx — FINAL SEO-OPTIMIZED VERSION
+// app/article/[slug]/page.tsx 
 import DateBar from "../../../components/DateBar";
 import FullHeader from "../../../components/FullHeader";
 import FooterSection from "../../../components/FooterSection";

@@ -1,4 +1,4 @@
-// components/FullHeader.tsx (Ultra-Responsive – Logo vanishes on mobile)
+// components/FullHeader.tsx 
 "use client";
 import React from "react";
 import Link from "next/link";
@@ -16,7 +16,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
     "BILLIONAIRES",
     "INVESTING",
     "REALESTATE",
-    "TECH&FINANCE",
+    "TECHFINANCE",
     "ECONOMY",
   ];
 

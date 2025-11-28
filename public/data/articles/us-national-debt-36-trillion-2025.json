@@ -1,0 +1,36 @@
+{
+  "title": "U.S. National Debt Hits $36 Trillion – Interest Payments Now Larger Than Defense Budget",
+  "category": "ECONOMY",
+  "shortdescription": "Interest on debt exceeds $1.2T annually – bigger than entire military spending.",
+  "author": "Macro Anton",
+  "authorImage": "/images/Author7.webp",
+  "role": "Chief Economist",
+  "date": "November 19, 2025",
+  "readingTime": "10 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/US Debt $36 Trillion 2025.webp"
+    },
+    {
+      "type": "heading",
+      "content": "The $36 Trillion Milestone"
+    },
+    {
+      "type": "paragraph",
+      "content": "The U.S. national debt has officially crossed $36 trillion — a milestone that has triggered alarm across Wall Street and Washington. Annual interest payments now exceed $1.2 trillion, surpassing the entire defense budget and becoming the largest single line item in federal spending after Social Security. The Congressional Budget Office warns that debt-to-GDP ratio will hit 130% by 2030 under current policies, with interest costs potentially reaching $2 trillion annually by 2032."
+    },
+    {
+      "type": "paragraph",
+      "content": "The rapid debt accumulation has been driven by pandemic spending, tax cuts, and rising entitlement costs. Foreign investors, who once absorbed 50% of new Treasury issuance, now purchase less than 30% as countries like China and Japan diversify reserves. The Treasury has been forced to rely increasingly on domestic buyers and the Federal Reserve, which now holds $6 trillion in Treasuries — up from $2.5 trillion pre-pandemic."
+    },
+    {
+      "type": "heading",
+      "content": "The Interest Rate Trap"
+    },
+    {
+      "type": "paragraph",
+      "content": "The most concerning development is that interest payments are growing faster than any other budget category. Even with rates expected to fall, the sheer size of the debt means payments will continue rising. The average interest rate on outstanding debt has increased from 1.6% in 2021 to 3.8% today, adding hundreds of billions to annual costs. This creates a vicious cycle where more borrowing is needed just to pay interest on existing debt."
+    }
+  ]
+}

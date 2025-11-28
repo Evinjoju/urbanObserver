@@ -1,0 +1,32 @@
+{
+  "title": "Amazon Prime Day 2025 Shatters Records: $14.2B Sales in 48 Hours",
+  "category": "MARKETS",
+  "shortdescription": "E-commerce giant reports 12% YoY growth, international markets drive 40% of revenue.",
+  "author": "Henry Willy",
+  "authorImage": "/images/Author1.webp",
+  "role": "Stock Market Expert",
+  "date": "November 19, 2025",
+  "readingTime": "10 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/Amazon Prime Day 2025 Shatters Records.webp"
+    },
+    {
+      "type": "heading",
+      "content": "The Biggest Shopping Event Ever"
+    },
+    {
+      "type": "paragraph",
+      "content": "Amazon's 2025 Prime Day has officially become the largest shopping event in history, generating $14.2 billion in just 48 hours — surpassing last year's record by 18%. For the first time, international markets accounted for over 40% of total sales, with India, Brazil, and the Middle East showing triple-digit growth. The company's AI-powered recommendation engine contributed to a 35% increase in average order value. Electronics remained the top category, but surprisingly, grocery and everyday essentials saw 250% growth thanks to same-day delivery expansion now covering 90% of U.S. households. Amazon also revealed that 68% of purchases were made through voice commands via Alexa — up from 42% last year."
+    },
+    {
+      "type": "heading",
+      "content": "AWS Sets New Records"
+    },
+    {
+      "type": "paragraph",
+      "content": "AWS announced record $25 billion quarterly revenue during the same week, proving Amazon's dual engine of e-commerce and cloud computing remains unmatched. The cloud division now represents 18% of total revenue but over 60% of operating profit. Prime membership grew to 300 million worldwide, with the average member spending $1,800 annually — up 22% from 2024. The company's logistics network handled 8 billion packages during Prime Day week alone, demonstrating the power of its vertical integration from warehouses to delivery vans. Despite inflation concerns, consumer spending remains resilient, particularly among higher-income households who make up 80% of Prime members."
+    }
+  ]
+}

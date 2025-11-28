@@ -1,0 +1,32 @@
+{
+  "title": "S&P 500 Hits New All-Time High: Tech Stocks Drive 18% YTD Gains",
+  "category": "MARKETS",
+  "shortdescription": "Magnificent 7 leads rally as Fed cut expectations reach 95% probability.",
+  "author": "Henry Willy",
+  "authorImage": "/images/Author1.webp",
+  "role": "Stock Market Expert",
+  "date": "November 16, 2025",
+  "readingTime": "10 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/S&P 500 Hits New All-Time High.webp"
+    },
+    {
+      "type": "heading",
+      "content": "The Best Year Since 1997"
+    },
+    {
+      "type": "paragraph",
+      "content": "The S&P 500 closed at another record high today, capping its best year since 1997 with 18% gains. The 'Magnificent 7' technology stocks — Apple, Microsoft, NVIDIA, Amazon, Meta, Tesla, and Alphabet — now account for 35% of the index's market cap, the highest concentration since the 1960s. NVIDIA alone has contributed nearly 25% of the index's total return. Small cap stocks have finally joined the party with the Russell 2000 up 28% in the past three months as investors rotate into value and cyclicals ahead of expected rate cuts."
+    },
+    {
+      "type": "heading",
+      "content": "Earnings Justify the Rally"
+    },
+    {
+      "type": "paragraph",
+      "content": "Corporate earnings growth of 15% has justified much of the rally, with particular strength in AI-related companies and financials benefiting from higher interest rates. The VIX fear index has dropped to 12.5, its lowest level since before the pandemic. Forward earnings estimates continue to rise, with analysts now expecting 14% growth in 2026. The combination of falling interest rates, strong corporate profits, and AI productivity gains has created the perfect environment for risk assets. Even traditionally defensive sectors like utilities and consumer staples have participated due to their high dividend yields becoming attractive in a lower rate environment."
+    }
+  ]
+}

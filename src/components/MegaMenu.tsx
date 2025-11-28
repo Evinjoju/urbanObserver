@@ -59,7 +59,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                                     {section.items.map((item) => (
                                         <li key={item.href}>
                                             <Link
-                                                href={`/article${item.href}`} // ← FIXED: Prepend /article to connect to article pages
+                                                href={`${item.href}`} // ← FIXED: Prepend /article to connect to article pages
                                                 onClick={onClose}
                                                 className="block text-sm text-gray-700 hover:text-red-600 transition-colors duration-200 line-clamp-2 leading-tight"
                                             >

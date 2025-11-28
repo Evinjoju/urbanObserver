@@ -1,0 +1,36 @@
+{
+  "title": "Data Centers Are 2025’s Hottest Real Estate – $1M Per Acre in Virginia",
+  "category": "REAL ESTATE",
+  "shortdescription": "Amazon, Microsoft, Google pay record prices for land near power stations.",
+  "author": "Jonathan Gill",
+  "authorImage": "/images/Author5.webp",
+  "role": "Luxury Real Estate Analyst",
+  "date": "November 19, 2025",
+  "readingTime": "10 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/Data Centers 2025 Hottest Real Estate.webp"
+    },
+    {
+      "type": "heading",
+      "content": "The New Gold Rush: Data Center Land"
+    },
+    {
+      "type": "paragraph",
+      "content": "Northern Virginia has become the most expensive real estate market in America — not for homes, but for data center land. Prime parcels near power substations now command $1 million per acre as hyperscalers race to secure locations for AI training facilities. The region already hosts 70% of the world's internet traffic, and demand shows no signs of slowing. Amazon, Microsoft, and Google have been paying premiums of 300–500% above traditional commercial land values."
+    },
+    {
+      "type": "paragraph",
+      "content": "The data center boom has created an entirely new real estate asset class. These facilities require massive power availability (100+ MW per campus), fiber optic connectivity, and cooling water access — making location more important than ever. Traditional farmland that sold for $20,000 per acre five years ago now trades for $1.2 million when located near transmission lines. Data center REITs like Digital Realty and Equinix have seen their stock prices surge 80% year-to-date."
+    },
+    {
+      "type": "heading",
+      "content": "The Power Problem"
+    },
+    {
+      "type": "paragraph",
+      "content": "The biggest constraint is no longer land but electricity. Each new facility requires power equivalent to a small city. Utilities are struggling to keep pace, with some projects delayed years waiting for grid connections. Developers are now partnering directly with power companies and even building their own substations. The race for data center space has become as much about energy infrastructure as physical real estate, creating unprecedented opportunities for landowners near existing power corridors."
+    }
+  ]
+}

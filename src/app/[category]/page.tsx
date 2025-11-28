@@ -1,4 +1,4 @@
-// app/[category]/page.tsx — FINAL SEO-PRO VERSION
+// app/[category]/page.tsx 
 import DateBar from "../../components/DateBar";
 import SectionTitle from "../../components/SectionTitle";
 import ArticleGrid from "../../components/ArticleGrid";

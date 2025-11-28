@@ -1,0 +1,36 @@
+{
+  "title": "Germany Officially Enters Recession – Worst Since 2009",
+  "category": "ECONOMY",
+  "shortdescription": "Two consecutive quarters of contraction confirmed – energy crisis and China slowdown blamed.",
+  "author": "Macro Anton",
+  "authorImage": "/images/Author7.webp",
+  "role": "Chief Economist",
+  "date": "November 20, 2025",
+  "readingTime": "10 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/Germany Enters Recession 2025.webp"
+    },
+    {
+      "type": "heading",
+      "content": "Europe's Economic Engine Stalls"
+    },
+    {
+      "type": "paragraph",
+      "content": "Germany has officially entered recession after reporting two consecutive quarters of negative growth — the worst performance since the 2009 financial crisis. GDP contracted 0.4% in Q4 following a 0.3% decline in Q3, confirming fears that Europe's largest economy is in serious trouble. The manufacturing sector, once the backbone of German prosperity, has been particularly hard hit with the PMI falling to 38 — its lowest reading since the pandemic."
+    },
+    {
+      "type": "paragraph",
+      "content": "The perfect storm of factors has overwhelmed Europe's industrial champion: the loss of cheap Russian gas, weakening Chinese demand for German exports, and aggressive U.S. tariffs on European cars have combined to create a toxic mix. German automakers are facing existential threats as Chinese EV makers flood the market with vehicles 40% cheaper while offering superior technology. The energy crisis has made German manufacturing uncompetitive, with electricity prices triple those in the United States."
+    },
+    {
+      "type": "heading",
+      "content": "The Deindustrialization Crisis"
+    },
+    {
+      "type": "paragraph",
+      "content": "Major companies like Volkswagen and Siemens Energy have announced massive job cuts and factory closures. BASF has moved significant production to China and the U.S. to escape high energy costs. The German government faces increasing pressure to abandon its debt brake and launch a massive stimulus program, but political gridlock has paralyzed decision-making. The euro has fallen below parity against the dollar for the first time since 2022, reflecting growing concerns about Europe's economic future."
+    }
+  ]
+}

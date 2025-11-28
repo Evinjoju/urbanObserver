@@ -1,4 +1,4 @@
-// components/MainNav.tsx (No Dropdown Sliders)
+// components/MainNav.tsx 
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -117,7 +117,6 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
       <SearchModal
         isOpen={searchOpen}
         onClose={() => setSearchOpen(false)}
-        onSubmit={handleSearch}
       />
     </>
   );

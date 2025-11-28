@@ -1,11 +1,10 @@
-// app/page.tsx — NEW HOME PAGE (Beautiful & Modern)
+// app/page.tsx 
 import DateBar from "../components/DateBar";
 import ArticleGridLarge from "../components/ArticleGridLarge";
 import ArticleGrid from "../components/ArticleGrid";
 import AdSection from "../components/AdSection";
 import FullHeader from "../components/FullHeader";
 import FooterSection from "../components/FooterSection";
-import SubscribeBanner from "../components/SubscribeBanner"; // ← ADDED
 import MainContentWithSidebar from "../components/MainContentWithSidebar";
 import Banner from "../components/Banner";
 import FeaturedGrid from "../components/FeaturedGrid";
@@ -104,7 +103,7 @@ export default async function HomePage() {
           }),
         }}
       />
-      <div className="bg-white text-black font-sans">
+      <div className="bg-black text-white font-sans">
         <div >
           <DateBar />
           <HeaderClient
@@ -115,17 +114,16 @@ export default async function HomePage() {
           <ArticleGridLarge data={largeGridData} />
 
           {/* Regular Grid — 4 Small Articles */}
-          
-          <ArticleGrid data={regularGridData} />
-          
-          {/* ← ADDED SUBSCRIBE BANNER */}
-          <SubscribeBanner />
 
-          <MainContentWithSidebar
-            mainArticles={mainArticlesData}
-            latestArticles={latestArticlesData}
-            categoryTitle="LIFESTYLE"
-          />
+          <ArticleGrid data={regularGridData} />
+
+          <section  className="mt-6">
+            <MainContentWithSidebar
+              mainArticles={mainArticlesData}
+              latestArticles={latestArticlesData}
+              categoryTitle="LIFESTYLE"
+            />
+          </section>
 
           <Banner text="DON'T MISS" />
 

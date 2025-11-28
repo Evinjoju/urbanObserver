@@ -1,0 +1,36 @@
+{
+  "title": "Plaid Files for $50 Billion IPO – The 'Pipe' of Banking Goes Public",
+  "category": "TECH & FINANCE",
+  "shortdescription": "Company that connects your bank to Venmo, CashApp, Robinhood finally IPOs.",
+  "author": "Gwen John",
+  "authorImage": "/images/Author6.webp",
+  "role": "Tech Finance Analyst",
+  "date": "November 19, 2025",
+  "readingTime": "9 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/Plaid $50 Billion IPO 2025.webp"
+    },
+    {
+      "type": "heading",
+      "content": "The Invisible Fintech Giant"
+    },
+    {
+      "type": "paragraph",
+      "content": "Plaid, the financial connectivity platform that powers 80% of U.S. fintech apps, has confidentially filed for an IPO that could value the company at $50 billion — surpassing SoFi, Chime, and Robinhood combined. The S-1 filing reveals Plaid processed 12 billion API calls in 2025, connecting 17,000 financial institutions to 8,000 companies including Venmo, Cash App, and Robinhood. The company's revenue has grown 85% year-over-year to $1.2 billion, primarily from transaction fees and enterprise licensing."
+    },
+    {
+      "type": "paragraph",
+      "content": "Plaid's value proposition is simple but revolutionary: it provides secure, instant access to bank account data and balances without requiring users to share credentials. The platform's 99.99% uptime and bank-grade security have made it the de facto standard for financial connectivity. The company's expansion into Europe and Asia has been particularly successful, with partnerships like Revolut and N26 driving 150% growth in international revenue."
+    },
+    {
+      "type": "heading",
+      "content": "The Network Effect"
+    },
+    {
+      "type": "paragraph",
+      "content": "Plaid's moat is its network effect. Every new bank connection increases the value for all fintech customers, while every new fintech partner increases the value for banks. The company now supports 90% of U.S. bank accounts and has become essential infrastructure for the digital economy. The IPO provides the capital needed to accelerate global expansion and invest in AI-driven fraud detection and personalized financial insights."
+    }
+  ]
+}

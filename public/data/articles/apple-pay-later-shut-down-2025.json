@@ -1,0 +1,36 @@
+{
+  "title": "Apple Shuts Down Apple Pay Later After $8 Billion Losses – Affirm Stock Up 60%",
+  "category": "TECH & FINANCE",
+  "shortdescription": "Apple admits defeat in BNPL war — exits consumer lending entirely.",
+  "author": "Gwen John",
+  "authorImage": "/images/Author6.webp",
+  "role": "Tech Finance Analyst",
+  "date": "November 20, 2025",
+  "readingTime": "9 min read",
+  "content": [
+    {
+      "type": "image",
+      "content": "/images/Apple Pay Later Shut Down 2025.webp"
+    },
+    {
+      "type": "heading",
+      "content": "Apple's BNPL Debacle"
+    },
+    {
+      "type": "paragraph",
+      "content": "Apple has quietly shut down its Apple Pay Later service after losing $8 billion in the short-lived foray into buy-now-pay-later lending. The decision marks a rare admission of defeat for the tech giant and represents the largest write-off in its consumer finance history. Launched with fanfare in 2023, the service struggled to gain traction amid fierce competition from Affirm, Klarna, and Afterpay, which had years of experience in the space."
+    },
+    {
+      "type": "paragraph",
+      "content": "The service's high default rates and operational costs proved insurmountable. Apple Pay Later users will be transitioned to Affirm and Klarna partnerships, while the company's focus returns to its core competencies. The shutdown triggered a 60% surge in Affirm's stock price, as investors bet on consolidation in the fragmented BNPL market. Apple executives cited the company's lack of lending expertise and the regulatory complexity as primary reasons for the exit."
+    },
+    {
+      "type": "heading",
+      "content": "Lessons for Tech Giants"
+    },
+    {
+      "type": "paragraph",
+      "content": "The failure serves as a cautionary tale for tech companies venturing into regulated financial services. Apple's deep pockets and brand recognition were not enough to overcome the specialized knowledge required in consumer lending. The episode also highlights the challenges of scaling financial products globally, where regulatory requirements vary dramatically by jurisdiction. Moving forward, Apple will focus on facilitating payments rather than originating credit, allowing partners like Affirm and Klarna to handle the risky lending side of the business."
+    }
+  ]
+}

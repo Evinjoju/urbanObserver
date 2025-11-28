@@ -1,75 +1,69 @@
-// app/layout.tsx — FINAL SEO-PRO VERSION
+// app/layout.tsx 
 import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://financialoutlook.xyz/"), // ← Your real domain
+  metadataBase: new URL("https://financialoutlook.xyz"),
   title: {
-    default: "financialoutlook – Celebrity Gossip, Scandals & Lifestyle 2025",
-    template: "%s | financialoutlook 2025",
+    default: "Financial Outlook – Business, Wealth & Markets 2025",
+    template: "%s | Financial Outlook 2025",
   },
-  description: "Latest celebrity scandals, breakups, Ozempic face fixes, Blake Lively lawsuit, Taylor Swift & Travis Kelce, Dolly Parton health updates – updated daily November 2025",
+  description: "Latest stock market updates, billionaire net worth, crypto news, real estate deals, investing strategies, and global finance trends – updated daily November 2025",
   keywords: [
-    "celebrity gossip 2025",
-    "blake lively lawsuit",
-    "taylor swift travis kelce",
-    "ozempic face",
-    "dolly parton health",
-    "black friday deals",
-    "entertainment news",
-    "hollywood scandals",
+    "stock market 2025",
+    "billionaire net worth",
+    "crypto news",
+    "real estate investment",
+    "warren buffett",
+    "federal reserve",
+    "blackrock bitcoin",
+    "wealth management",
+    "financial news",
+    "investing 2025",
   ].join(", "),
 
-  // OpenGraph (Facebook, LinkedIn, WhatsApp)
   openGraph: {
-    title: "FinancialOutLook – Celebrity Gossip & Lifestyle 2025",
-    description: "Your #1 source for the hottest celebrity scandals, breakups & trending drama – updated daily",
-    url: "https://financialoutlook.xyz/",
-    siteName: "financialoutlook",
+    title: "Financial Outlook – Business, Wealth & Markets 2025",
+    description: "Your trusted source for stock market insights, billionaire moves, and global finance trends – updated daily",
+    url: "https://financialoutlook.xyz",
+    siteName: "Financial Outlook",
     images: [
       {
-        url: "/og-home.jpg", // ← 1200x630 WebP (create this!)
+        url: "/og-financialoutlook.jpg",
         width: 1200,
         height: 630,
-        alt: "financialoutlook – Celebrity Gossip 2025",
+        alt: "Financial Outlook – Business & Markets 2025",
       },
     ],
     locale: "en_US",
     type: "website",
   },
 
-  // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "financialoutlook – Celebrity Gossip 2025",
-    description: "Latest scandals, lawsuits & trending drama – updated daily",
-    images: ["/og-home.jpg"],
-    creator: "@financialoutlook", // ← Change to your real handle
+    title: "Financial Outlook – Markets & Wealth 2025",
+    description: "Stock market, crypto, billionaires, real estate – daily updates",
+    images: ["/og-financialoutlook.jpg"],
   },
 
-  // Robots
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
 
-  // Verification
-  verification: {
-    google: "your-google-site-verification-code", // ← Add from Google Search Console
-    // yandex: "...",
-    // bing: "...",
+  alternates: {
+    canonical: "https://financialoutlook.xyz",
   },
 
-  alternates: {
-    canonical: "https://financialoutlook.xyz/",
+  verification: {
+    google: "your-google-site-verification-code", // ← Add from Google Search Console
   },
 };
 
