@@ -14,7 +14,7 @@ const NewsletterSection = () => {
           <div className="flex-1 text-center">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/fin-logo1.svg" // ← Your SVG file path
+                src="/images/fin-LOGO2.svg" // ← Your SVG file path
                 alt="financialoutlook Logo"
                 width={500} // ← Adjust to your SVG width
                 height={100} // ← Adjust to your SVG height

@@ -31,6 +31,12 @@ const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 px-2 py-4 bg-black">
+
+       {/* Right: Article + End Marker */}
+      <div className="lg:col-span-4">
+        <MainArticleDetail article={article} />
+        <div className="article-end h-1"></div> {/* Invisible marker */}
+      </div>
       {/* Left: Sticky Top 5 */}
       <aside className="lg:col-span-2">
         <div className={`sidebar-sticky ${isSticky ? "sticky top-5 z-10" : ""}`}>
@@ -38,11 +44,7 @@ const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
         </div>
       </aside>
 
-      {/* Right: Article + End Marker */}
-      <div className="lg:col-span-4">
-        <MainArticleDetail article={article} />
-        <div className="article-end h-1"></div> {/* Invisible marker */}
-      </div>
+     
     </div>
   );
 };
