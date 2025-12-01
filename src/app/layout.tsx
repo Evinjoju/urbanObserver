@@ -61,10 +61,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://financialoutlook.xyz",
   },
-
-  verification: {
-    google: "your-google-site-verification-code", // ← Add from Google Search Console
-  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -72,9 +68,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
 
+        <meta name="google-site-verification" content="bR-eiO8rI3epTbJIowoHjcJcjkDw-65UGbGr6deTk_0" />
+
         <link rel="icon" href="/images/fin-favIcon.svg" type="image/svg+xml"></link>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Fonts */}
         <link
           href="https://fonts.googleapis.com/css2?family=YourFont&display=swap"
