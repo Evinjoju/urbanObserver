@@ -12,9 +12,9 @@ const AdSection = () => {
                             priority
                             width={80}
                             height={80}
-                            src="https://demo.tagdiv.com/newspaper_urban_observer_pro/wp-content/uploads/2023/09/BlackNP.png"
+                            src="/images/intelADD4.webp"
                             alt="Sponsored Fashion & Lifestyle Ad - Discover Latest Trends"
-                            className="w-full max-w-[850px] h-[90px] object-cover border hover:opacity-90 transition-opacity duration-200"
+                            className="w-full max-w-[1050px] h-[100px] object-cover border hover:opacity-90 transition-opacity duration-200"
                         />
                     </a>
                 </div>
