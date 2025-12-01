@@ -51,7 +51,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                             <div 
                                 key={section.title} 
                             >
-                                <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+                                <h3 className="text-lg text-black font-bold mb-4 flex items-center gap-2">
                                     <span className="text-black">›</span>
                                     {section.title}
                                 </h3>
@@ -73,7 +73,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                     </div>
 
                     {/* Right Sidebar - unchanged */}
-                    <div className="w-full max-w-xs text-black/60 bg-gray-50 border-l border-gray-200 p-8 flex flex-col justify-between">
+                    <div className="w-full max-w-xs text-black/90 bg-gray-50 border-l border-gray-200 p-8 flex flex-col justify-between">
                         <div>
                             <div className="flex items-center justify-between mb-8">
                                 <h3 className="text-xl font-bold">FINANCIALOUTLOOK</h3>
