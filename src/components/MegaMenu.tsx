@@ -90,7 +90,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                                     <li key={link.href}>
                                         <Link
                                             href={link.href}
-                                           
+                                            title={link.title}
                                             className="block text-lg font-bold uppercase tracking-widest hover:text-red-600 transition-colors duration-200"
                                         >
                                             {link.title}
