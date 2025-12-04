@@ -69,9 +69,39 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
 
+        <style dangerouslySetInnerHTML={{
+          __html: `
+  /* Critical above-the-fold styles */
+  .font-loaded { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Anton', sans-serif; }
+  .bg-black { background: #000; color: #fff; }
+  .text-red-600 { color: #dc2626; }
+  /* Add your most used classes here */
+` }} />
+
         <meta name="google-site-verification" content="bR-eiO8rI3epTbJIowoHjcJcjkDw-65UGbGr6deTk_0" />
 
         <link rel="icon" href="/images/fin-favIcon.svg" type="image/svg+xml"></link>
+
+
+        {/* Critical performance boosts */}
+        <link rel="preconnect" href="https://financialoutlook.xyz" />
+        <link rel="dns-prefetch" href="//financialoutlook.xyz" />
+
+        {/* Fast font loading */}
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Anton&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Anton&display=swap"
+          media="print"
+        />
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Anton&display=swap" rel="stylesheet" />
+        </noscript>
 
         {/* Fonts */}
         <link
@@ -85,8 +115,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
         {/* Favicon */}
-       
+
         <link rel="apple-touch-icon" href="/images/fin-favIcon.svg" />
+
+        <script defer src="https://your-analytics.com/script.js" />
 
         {/* WebSite Schema */}
         <script
