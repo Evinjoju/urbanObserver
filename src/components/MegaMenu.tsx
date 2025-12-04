@@ -77,7 +77,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                     <div className="w-full max-w-xs text-black/90 bg-gray-50 border-l border-gray-200 p-8 flex flex-col justify-between">
                         <div>
                             <div className="flex items-center justify-between mb-8">
-                                <div className="text-xl font-bold">FINANCIAL OUTLOOK</div>
+                                <h1 className="text-xl font-bold">FINANCIAL OUTLOOK</h1>
                                 <button
                                     onClick={onClose}
                                     className="text-gray-500 hover:text-red-600 transition-colors"

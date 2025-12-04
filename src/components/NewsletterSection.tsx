@@ -22,9 +22,9 @@ const NewsletterSection = () => {
                 priority // ← Preloads for FCP
               />
             </Link>
-            <h1 className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest   uppercase">
-              Financial Wealth & Markets Online Magazine
-            </h1>
+            <p className="text-red-600 text-xs sm:text-sm md:text-base tracking-widest   uppercase">
+              Wealth & Markets Online Magazine
+            </p>
           </div>
 
         </div>
