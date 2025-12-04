@@ -23,7 +23,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
                 } md:border-b-0 group cursor-pointer`}
             >
               {/* Full Card Clickable */}
-              <Link href={articleUrl} className="block h-full">
+              <Link href={articleUrl}  title={`${article.title} – ${article.category} News`} className="block h-full">
                 <Image
                   src={article.image}
                   alt={article.title}
@@ -39,6 +39,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
                 <div className="text-center mb-1">
                   <Link
                     href={articleUrl}
+                    title={`${article.title} – ${article.category} News`}
                     className="block font-bold text-xs sm:text-sm md:text-sm lg:text-1xl leading-tight line-clamp-2 text-white hover:text-red-600 transition-colors duration-300"
                   >
                     {article.title}

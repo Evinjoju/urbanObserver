@@ -18,8 +18,9 @@ interface MenuSection {
 }
 
 const companyLinks = [
+     { title: "TERMS & CONDITIONS", href: "/terms" },
+    { title: "PRIVACY POLICY", href: "/privacy" },
     { title: "ABOUT", href: "/about" },
-    { title: "CONTACT", href: "/contact" },
 ];
 
 interface MegaMenuProps {

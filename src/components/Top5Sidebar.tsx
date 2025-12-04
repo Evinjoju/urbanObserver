@@ -23,7 +23,7 @@ const Top5Sidebar: React.FC<Top5SidebarProps> = ({ articles, isSticky }) => {
             return (
               <div key={article.slug} className="flex border-b pb-1 items-start space-x-3">
                 {/* Full row clickable */}
-                <Link href={articleUrl} className="flex flex-1 items-start space-x-3 group">
+                <Link href={articleUrl}  title={`${article.title} – ${article.category} News`} className="flex flex-1 items-start space-x-3 group">
                   <Image
                     priority
                     width={800}

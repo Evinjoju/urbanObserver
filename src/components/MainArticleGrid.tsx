@@ -21,6 +21,7 @@ const MainArticleGrid: React.FC<MainArticleGridProps> = ({ articles, visibleCoun
             <Link
               key={`mainArticleGrid_${article.slug+index}`}
               href={articleUrl}
+              title={`${article.title} – ${article.category} News`}
               className="group flex border-b pb-5 border-black overflow-hidden bg-black transition-colors duration-200"
             >
               {/* Image */}

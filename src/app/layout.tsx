@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "business news 2025",
     "wealth management",
     "stock market",
+    "financialoutlook",
     "crypto news",
     "billionaires",
     "investing",

@@ -22,9 +22,9 @@ const LatestArticlesSidebar: React.FC<LatestArticlesSidebarProps> = ({
     <aside className="border-l border-white bg-black">
       {/* Red Category Header */}
       <div className="bg-red-600 text-white px-6 py-3">
-        <h3 className="text-xl font-black tracking-widest uppercase">
+        <div className="text-xl font-black tracking-widest uppercase">
           {categoryTitle}
-        </h3>
+        </div>
       </div>
 
       {/* Articles List */}
@@ -33,6 +33,7 @@ const LatestArticlesSidebar: React.FC<LatestArticlesSidebarProps> = ({
           <Link
             key={article.slug+index}
             href={`/article/${article.slug}`}
+            title={`${article.title} – ${article.category} News`}
             className="block p-6 transition-colors duration-200"
           >
             <h4 className="font-black text-lg text-white leading-tight mb-2 line-clamp-3 hover:text-red-600 transition-colors">

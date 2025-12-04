@@ -97,6 +97,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
               <Link
                 key={article.slug}
                 href={`/article/${article.slug}`}
+                title={`${article.title} – ${article.category} News`}
                 onClick={onClose}
                 className="block p-4 hover:bg-gray-900 border-b border-gray-200 transition"
               >
