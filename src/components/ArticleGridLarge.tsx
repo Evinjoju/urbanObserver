@@ -24,9 +24,11 @@ const ArticleGridLarge: React.FC<ArticleGridLargeProps> = ({ data }) => {
             >
               {/* Image */}
               <Image
+                loading="lazy"
                 src={article.image}
                 alt={article.title}
                 fill
+                priority={i === 0}
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
