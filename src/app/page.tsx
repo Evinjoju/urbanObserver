@@ -122,7 +122,7 @@ export default async function HomePage() {
             <MainContentWithSidebar
               mainArticles={mainArticlesData}
               latestArticles={latestArticlesData}
-              categoryTitle="LIFESTYLE"
+              categoryTitle="FINANCIAL OUTLOOK"
             />
           </section>
 
