@@ -104,6 +104,7 @@ export default async function HomePage() {
         }}
       />
       <div className="bg-black text-white font-sans">
+        <div className="hidden">Financial Outlook – Business & Markets 2025</div>
         <div >
           <DateBar />
           <HeaderClient

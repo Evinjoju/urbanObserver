@@ -101,9 +101,9 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                 onClick={onClose}
                 className="block p-4 hover:bg-gray-900 border-b border-gray-200 transition"
               >
-                <h4 className="font-bold text-sm text-red-600 mb-1">
+                <div className="font-bold text-sm text-red-600 mb-1">
                   {article.title}
-                </h4>
+                </div>
                 <p className="text-xs text-gray-600 line-clamp-2">
                   {article.shortdescription}
                 </p>
