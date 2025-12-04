@@ -11,7 +11,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
   currentPage = "markets",
 }) => {
   const categories = [
-   "MARKETS",
+    "MARKETS",
     "CRYPTO",
     "BILLIONAIRES",
     "INVESTING",
@@ -20,13 +20,11 @@ const FullHeader: React.FC<FullHeaderProps> = ({
     "ECONOMY",
   ];
 
-  const footerLinks = ["ABOUT", "CONTACT"];
-
   return (
     <header className="bg-black border-y border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="py-4">
-        
+
 
           {/* Navigation – Full width on mobile, right-aligned on desktop */}
           <nav className="flex flex-col items-center lg:items-end gap-6">
@@ -39,9 +37,8 @@ const FullHeader: React.FC<FullHeaderProps> = ({
                   <Link
                     key={cat}
                     href={href}
-                    className={`transition-colors duration-200 ${
-                      isActive ? "text-red-600" : "text-white hover:text-red-600"
-                    }`}
+                    className={`transition-colors duration-200 ${isActive ? "text-red-600" : "text-white hover:text-red-600"
+                      }`}
                   >
                     {cat}
                   </Link>
@@ -51,15 +48,17 @@ const FullHeader: React.FC<FullHeaderProps> = ({
 
             {/* Footer Links */}
             <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-xs font-bold tracking-widest uppercase text-gray-500">
-              {footerLinks.map((link) => (
-                <Link
-                  key={link}
-                  href={`/${link.toLowerCase().replace(" ", "-")}`}
-                  className="hover:text-red-600 transition-colors duration-200"
-                >
-                  {link}
-                </Link>
-              ))}
+                            
+                <a href="/terms" className="hover:text-red-600 transition-colors duration-200">
+                  TERMS & CONDITIONS
+                </a>
+                <a href="/privacy" className="hover:text-red-600 transition-colors duration-200">
+                  PRIVACY POLICY
+                </a>
+                <a href="/about" className="hover:text-red-600 transition-colors duration-200">
+                  ABOUT
+                </a>
+
             </div>
           </nav>
         </div>

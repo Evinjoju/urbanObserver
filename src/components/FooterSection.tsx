@@ -22,8 +22,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ latestArticles, popularAr
           <div className="space-y-4">
             <h3 className="font-bold text-lg uppercase tracking-wider">ABOUT US</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Each template in our ever growing studio library can be added and moved around within any page effortlessly with one click.
-            </p>
+             Founded in 2025, our news organization was born from a simple yet powerful belief: that quality journalism matters.</p>
             <div className="flex space-x-2">
               <div className="bg-red-600 rounded p-1">
                 <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Facebook className="w-5 h-5 text-white" /></a>
@@ -67,7 +66,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ latestArticles, popularAr
         </div>
 
         <div className="mt-12 pt-8 border-t border-black-300 text-center text-sm text-gray-200">
-          <p>&copy; FINANCIALOUTLOOK. All rights reserved. Made with Next.js.</p>
+          <p>&copy; Copyright ©2025 Financial Outlook</p>
         </div>
       </div>
     </footer>

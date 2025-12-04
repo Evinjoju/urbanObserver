@@ -51,10 +51,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                             <div 
                                 key={section.title} 
                             >
-                                <h3 className="text-lg text-black font-bold mb-4 flex items-center gap-2">
+                                <h1 className="text-lg text-black font-bold mb-4 flex items-center gap-2">
                                     <span className="text-black">›</span>
                                     {section.title}
-                                </h3>
+                                </h1>
                                 <ul className="space-y-3">
                                     {section.items.map((item) => (
                                         <li key={item.href}>
@@ -76,7 +76,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                     <div className="w-full max-w-xs text-black/90 bg-gray-50 border-l border-gray-200 p-8 flex flex-col justify-between">
                         <div>
                             <div className="flex items-center justify-between mb-8">
-                                <h3 className="text-xl font-bold">FINANCIALOUTLOOK</h3>
+                                <h1 className="text-xl font-bold">FINANCIALOUTLOOK</h1>
                                 <button
                                     onClick={onClose}
                                     className="text-gray-500 hover:text-red-600 transition-colors"

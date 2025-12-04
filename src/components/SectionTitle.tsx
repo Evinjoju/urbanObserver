@@ -14,9 +14,9 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   return (
     <section className="py-6 sm:py-4 md:py-6 border-b border-t-2 px-4 sm:px-6 bg-black">
       <div className="text-center">
-        <h2 className="font-display text-2xl sm:text-2xl md:text-3xl tracking-widest uppercase text-white mb-3 sm:mb-3">
+        <h1 className="font-display text-2xl sm:text-2xl md:text-3xl tracking-widest uppercase text-white mb-3 sm:mb-3">
           {title}
-        </h2>
+        </h1>
         <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-6 text-xs sm:text-sm font-bold tracking-widest text-white">
           {subCategories.map((cat) => (
             <a key={cat} href="#" className="hover:text-red-600 transition-colors duration-200">

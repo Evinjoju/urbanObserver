@@ -36,14 +36,14 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
 
               {/* Overlay */}
               <div className="absolute inset-x-0 bottom-0 p-3 bg-black/60  to-transparent max-w-2xl">
-                <h3 className="text-center mb-1">
+                <h1 className="text-center mb-1">
                   <Link
                     href={articleUrl}
                     className="block font-bold text-xs sm:text-sm md:text-sm lg:text-1xl leading-tight line-clamp-2 text-white hover:text-red-600 transition-colors duration-300"
                   >
                     {article.title}
                   </Link>
-                </h3>
+                </h1>
 
                 <p className="text-xs text-white opacity-90 text-center">
                   <span className="text-red-600 font-bold border-x-2 border-red-600 px-1 mr-2">

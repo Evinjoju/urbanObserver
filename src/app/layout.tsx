@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* Favicon */}
        
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/images/fin-favIcon.svg" />
 
         {/* WebSite Schema */}
         <script

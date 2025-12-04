@@ -1,44 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://financialoutlook.xyz/</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Category Pages -->
   <url>
     <loc>https://financialoutlook.xyz/markets</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://financialoutlook.xyz/crypto</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://financialoutlook.xyz/billionaires</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://financialoutlook.xyz/investing</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://financialoutlook.xyz/realestate</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://financialoutlook.xyz/tech-finance</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://financialoutlook.xyz/economy</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- All 64 Articles (from your current content) -->
+  <!-- MARKETS -->
+  <url><loc>https://financialoutlook.xyz/article/nvidia-stock-2025-boom-continues</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/federal-reserve-rate-cut-december-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/tesla-q4-earnings-beat-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/amazon-prime-day-2025-record-sales</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/gold-price-all-time-high-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/apple-stock-downgrade-2025-iphone-sales</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/oil-prices-crash-2025-opec-cuts</loc><lastmod>2025-11-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/sp-500-new-record-high-2025</loc><lastmod>2025-11-16</lastmod><priority>0.7</priority></url>
+
+  <!-- CRYPTO -->
+  <url><loc>https://financialoutlook.xyz/article/bitcoin-etf-inflows-2025-record</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/ethereum-pectra-upgrade-success-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/solana-mobile-2-sold-out-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/coinbase-sec-settlement-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/ripple-xrp-sec-case-dismissed-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/binance-cz-released-prison-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/donald-trump-crypto-reserve-announcement-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/circle-ipo-2025-50-billion-valuation</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+
+  <!-- BILLIONAIRES -->
+  <url><loc>https://financialoutlook.xyz/article/elon-musk-net-worth-500-billion-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/jeff-bezos-sells-10-billion-amazon-stock-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/bernard-arnault-lvmh-300-billion-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/mark-zuckerberg-meta-ai-valuation-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/jensen-huang-nvidia-200-billion-net-worth</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/mukesh-ambani-200-billion-net-worth-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/forbes-billionaires-list-2025-biggest-gainers</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/larry-ellison-oracle-200-billion-club-2025</loc><lastmod>2025-11-17</lastmod><priority>0.7</priority></url>
+
+  <!-- INVESTING -->
+  <url><loc>https://financialoutlook.xyz/article/warren-buffett-dumps-apple-buys-10-billion-treasury-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/best-dividend-stocks-2025-8-percent-yield</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/vanguard-total-stock-market-etf-vti-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/roaring-kitty-returns-2025-gamestop-2-0</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/real-estate-investment-trusts-reits-2025-crash</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/gold-etf-vs-physical-gold-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/charlie-munger-successor-2025-revealed</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/best-roth-ira-investments-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+
+  <!-- REAL ESTATE -->
+  <url><loc>https://financialoutlook.xyz/article/dubai-luxury-real-estate-record-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/tokyo-apartment-prices-all-time-high-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/miami-condo-bubble-2025-crash-warning</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/blackrock-buys-100000-homes-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/data-center-real-estate-boom-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/singapore-property-tax-2025-wealth-tax</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/co-living-spaces-2025-trend</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/texas-housing-boom-2025-austin-dallas</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+
+  <!-- TECH & FINANCE -->
+  <url><loc>https://financialoutlook.xyz/article/openai-5-trillion-valuation-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/robinhood-crypto-wallet-1-billion-users-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/apple-pay-later-shut-down-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/revolut-100-billion-valuation-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/blockchain-real-world-assets-1-trillion-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/plaid-50-billion-ipo-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/paypal-stablecoin-pyrusd-2025-dominance</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/wise-10-billion-profit-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+
+  <!-- ECONOMY -->
+  <url><loc>https://financialoutlook.xyz/article/federal-reserve-cuts-rates-december-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/china-stimulus-2-trillion-2025</loc><lastmod>2025-11-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/germany-recession-2025-official</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/india-gdp-8-percent-2025</loc><lastmod>2025-11-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/us-national-debt-36-trillion-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/saudi-arabia-vision-2030-success-2025</loc><lastmod>2025-11-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/uk-inflation-negative-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://financialoutlook.xyz/article/brazil-new-economic-miracle-2025</loc><lastmod>2025-11-18</lastmod><priority>0.7</priority></url>
 </urlset>
