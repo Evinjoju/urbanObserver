@@ -19,6 +19,7 @@ const ArticleGridLarge: React.FC<ArticleGridLargeProps> = ({ data }) => {
             <Link
               key={article.slug}
               href={articleUrl}
+              title={`${article.title} – ${article.category} News`}
               className="group relative h-80 md:h-96 overflow-hidden hover:opacity-95 transition-all duration-300"
             >
               {/* Image */}
@@ -35,9 +36,9 @@ const ArticleGridLarge: React.FC<ArticleGridLargeProps> = ({ data }) => {
 
               {/* Content */}
               <div className="absolute bg-black/40 inset-x-0 bottom-0 p-2 text-white">
-                <h1 className="font-black text-2xl md:text-2xl lg:text-2xl leading-tight line-clamp-3 mb-3 group-hover:text-red-400 transition-colors duration-300">
+                <div className="font-black text-2xl md:text-2xl lg:text-2xl leading-tight line-clamp-3 mb-3 group-hover:text-red-400 transition-colors duration-300">
                   {article.title}
-                </h1>
+                </div>
                 <p className="text-sm uppercase tracking-wider opacity-90">
                   <span className="text-red-400 font-bold border-x-2 border-red-400 px-2 mr-3">
                     {article.category}

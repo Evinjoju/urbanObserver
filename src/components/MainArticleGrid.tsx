@@ -36,9 +36,9 @@ const MainArticleGrid: React.FC<MainArticleGridProps> = ({ articles, visibleCoun
 
               {/* Content */}
               <div className="p-3 flex-1">
-                <h1 className="font-bold md:text-2xl text-white text-base leading-tight mb-1 line-clamp-2 group-hover:text-red-600 transition-colors duration-300">
+                <div className="font-bold md:text-2xl text-white text-base leading-tight mb-1 line-clamp-2 group-hover:text-red-600 transition-colors duration-300">
                   {article.title}
-                </h1>
+                </div>
                 <p className="text-sm text-gray-600 uppercase tracking-wider">
                   <span className="text-red-600 font-semibold border-x-2 border-red-600 px-1 mr-2">
                     {article.category}

@@ -6,26 +6,26 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://financialoutlook.xyz"),
   title: {
-    default: "Financial Outlook – Business, Wealth & Markets 2025",
-    template: "%s | Financial Outlook 2025",
+    default: "Financial Outlook – Business, Wealth & Markets News 2025",
+    template: "%s | Financial Outlook – Business & Wealth Insights",
   },
-  description: "Latest stock market updates, billionaire net worth, crypto news, real estate deals, investing strategies, and global finance trends – updated daily November 2025",
+  description: "Financial Outlook delivers trusted business and wealth news: stock markets, crypto, billionaire moves, investing strategies, real estate, fintech, and global economy – updated daily 2025.",
   keywords: [
-    "stock market 2025",
-    "billionaire net worth",
-    "crypto news",
-    "real estate investment",
-    "warren buffett",
-    "federal reserve",
-    "blackrock bitcoin",
+    "financial outlook",
+    "business news 2025",
     "wealth management",
-    "financial news",
-    "investing 2025",
+    "stock market",
+    "crypto news",
+    "billionaires",
+    "investing",
+    "real estate",
+    "fintech",
+    "economy",
   ].join(", "),
 
   openGraph: {
-    title: "Financial Outlook – Business, Wealth & Markets 2025",
-    description: "Your trusted source for stock market insights, billionaire moves, and global finance trends – updated daily",
+    title: "Financial Outlook – Business & Wealth News 2025",
+    description: "Your #1 source for financial markets, business trends, and wealth creation strategies – updated daily.",
     url: "https://financialoutlook.xyz",
     siteName: "Financial Outlook",
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/og-financialoutlook.jpg",
         width: 1200,
         height: 630,
-        alt: "Financial Outlook – Business & Markets 2025",
+        alt: "Financial Outlook – Business, Wealth & Markets 2025",
       },
     ],
     locale: "en_US",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Financial Outlook – Markets & Wealth 2025",
-    description: "Stock market, crypto, billionaires, real estate – daily updates",
+    title: "Financial Outlook – Business & Wealth News",
+    description: "Markets, crypto, billionaires, investing – your daily financial advantage.",
     images: ["/og-financialoutlook.jpg"],
   },
 

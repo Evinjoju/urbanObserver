@@ -36,9 +36,9 @@ const Top5Sidebar: React.FC<Top5SidebarProps> = ({ articles, isSticky }) => {
                     <span className="inline-block bg-red-600 text-white text-[12px] px-2 py-0.5 rounded font-bold mr-2">
                       {article.rank}
                     </span>
-                    <h3 className="font-semibold mb-1 line-clamp-2 text-sm text-white group-hover:text-red-600 transition-colors duration-300">
+                    <div className="font-semibold mb-1 line-clamp-2 text-sm text-white group-hover:text-red-600 transition-colors duration-300">
                       {article.title}
-                    </h3>
+                    </div>
                     <p className="text-gray-600 uppercase tracking-wider text-xs">
                       <span className="text-red-600 font-semibold border-x-2 px-1 me-2">
                         {article.category}

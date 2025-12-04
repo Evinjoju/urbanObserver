@@ -15,13 +15,13 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    "MARKETS",
-    "CRYPTO",
-    "BILLIONAIRES",
-    "INVESTING",
-    "REALESTATE",
-    "TECHFINANCE",
-    "ECONOMY",
+    { name: "MARKETS", href: "/markets", title: "Markets – Stock Market News & Analysis 2025" },
+    { name: "CRYPTO", href: "/crypto", title: "Crypto – Bitcoin, Ethereum & Blockchain News 2025" },
+    { name: "BILLIONAIRES", href: "/billionaires", title: "Billionaires – Net Worth, Forbes List & Wealth News" },
+    { name: "INVESTING", href: "/investing", title: "Investing – Stocks, ETFs & Strategies 2025" },
+    { name: "REAL ESTATE", href: "/realestate", title: "Real Estate – Property Markets & Investment Trends" },
+    { name: "TECH & FINANCE", href: "/tech-finance", title: "Tech & Finance – Fintech, Startups & VC News" },
+    { name: "ECONOMY", href: "/economy", title: "Economy – GDP, Inflation & Global Markets" },
   ];
 
   const handleSearch = (query: string) => {
@@ -59,19 +59,19 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
             {/* Center: Horizontal Menu */}
             <div className="hidden lg:flex items-center justify-center space-x-8 text-sm  tracking-widest uppercase flex-1">
               {menuItems.map((item) => {
-                const isActive = currentPage === item.toLowerCase();
-                const href = item === "MARKETS" ? "/markets" : `/${item.toLowerCase()}`;
+                const isActive = currentPage === item.href.slice(1);
 
                 return (
                   <Link
-                    key={item}
-                    href={href}
+                   key={item.name}
+                    href={item.href}
+                    title={item.title}
                     className={`transition-colors duration-200 ${
                       isActive ? "text-red-600" : "text-white hover:text-red-600"
                     }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 );
               })}
@@ -92,18 +92,18 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-black bg-red-900 absolute top-full left-0 right-0 shadow-lg z-50">
             <div className="px-6 py-6 space-y-5 tracking-widest uppercase">
-              {menuItems.map((item) => {
-                const href = item === "MARKETS" ? "/markets" : `/${item.toLowerCase()}`;
-                const isActive = currentPage === item.toLowerCase();
+             {menuItems.map((item) => {
+                const isActive = currentPage === item.href.slice(1);
 
                 return (
                   <Link
-                    key={item}
-                    href={href}
+                   key={item.name}
+                    href={item.href}
+                    title={item.title}
                     className={`block transition ${isActive ? "text-red-400" : "text-white hover:text-red-600"}`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 );
               })}
