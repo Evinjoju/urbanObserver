@@ -36,9 +36,9 @@ const LatestArticlesSidebar: React.FC<LatestArticlesSidebarProps> = ({
             title={`${article.title} – ${article.category} News`}
             className="block p-6 transition-colors duration-200"
           >
-            <h4 className="font-black text-lg text-white leading-tight mb-2 line-clamp-3 hover:text-red-600 transition-colors">
+            <h3 className="font-black text-lg text-white leading-tight mb-2 line-clamp-3 hover:text-red-600 transition-colors">
               {article.title}
-            </h4>
+            </h3>
             <p className="text-sm text-gray-600 uppercase tracking-wider">
               {article.date}
             </p>
