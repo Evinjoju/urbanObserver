@@ -126,7 +126,7 @@ export default async function HomePage() {
             />
           </section>
 
-          <Banner text="WEALTH, MARKET & FINANCIAL MOVES" />
+          <Banner text="WEALTH , MARKET & FINANCIAL MOVES" />
 
           <FeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
 
