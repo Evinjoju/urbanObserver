@@ -123,6 +123,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       />
 
       <div className="bg-white text-black min-h-screen font-sans">
+         <div className="hidden">Financial Outlook – Business & Markets 2025</div>
         <div>
           <DateBar />
           <HeaderClient

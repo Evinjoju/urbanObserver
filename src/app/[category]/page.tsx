@@ -9,6 +9,11 @@ import FooterSection from "../../components/FooterSection";
 import { notFound } from "next/navigation";
 import HeaderClient from "../../components/HeaderClient";
 import { Metadata } from "next";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const Banner = dynamic(() => import("../../components/Banner"),);
+
 
 // app/[category]/page.tsx — ADD THIS FUNCTION
 export function generateStaticParams() {
@@ -93,9 +98,9 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const url = `https://financialoutlook.xyz/${key}`;
 
   return {
-    title: `${config.title} News & Updates 2025 | financialoutlook`,
+    title: `${config.title} News & Updates 2025`,
     description: config.description,
-   keywords: `${config.title.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth`,
+    keywords: `${config.title.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth`,
     alternates: { canonical: url },
     openGraph: {
       title: `${config.title} – Latest News 2025 | financialoutlook`,
@@ -107,7 +112,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     },
     twitter: {
       card: "summary_large_image",
-      title: `${config.title} News 2025 | financialoutlook`,
+      title: `${config.title} News 2025`,
       description: config.description,
     },
     robots: { index: true, follow: true },
@@ -153,6 +158,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       />
 
       <div className="bg-white text-black font-sans">
+        <div className="hidden">Financial Outlook News & Updates 2025</div>
         <div>
           <DateBar />
           <HeaderClient
@@ -161,6 +167,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           <SectionTitle title={config.title} subCategories={[...config.subs]} />
           <ArticleGrid data={gridData} />
           <AdSection />
+          <Suspense fallback={null}>
+            <Banner text="WEALTH , MARKET & FINANCIAL MOVES" />
+          </Suspense>
           <FeaturedGrid mainArticles={mainData} top5Articles={top5Data} />
           <FullHeader currentPage={key} />
           <FooterSection latestArticles={latestData} popularArticles={popularData} />

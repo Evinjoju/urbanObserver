@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://financialoutlook.xyz"),
   title: {
     default: "Financial Outlook – Business, Wealth & Markets News 2025",
-    template: "%s | Financial Outlook – Business & Wealth Insights",
+    template: "%s – Business & Wealth Insights",
   },
   description: "Financial Outlook delivers trusted business and wealth news: stock markets, crypto, billionaire moves, investing strategies, real estate, fintech, and global economy – updated daily 2025.",
   keywords: [
@@ -68,6 +68,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+
+
+
         <meta name="google-site-verification" content="bR-eiO8rI3epTbJIowoHjcJcjkDw-65UGbGr6deTk_0" />
         <link rel="icon" href="/images/fin-favIcon.svg" type="image/svg+xml"></link>
 
