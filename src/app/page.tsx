@@ -90,6 +90,7 @@ export default async function HomePage() {
   return (
     <>
       <div className="bg-black text-white min-h-screen font-sans">
+         <div className="hidden">Financial Outlook – Business & Markets 2025</div>
         <div className="max-w-7xl mx-auto">
           <DateBar />
           <HeaderClient currentPage="home" />
