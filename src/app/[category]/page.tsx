@@ -34,49 +34,49 @@ const categoryConfig = {
     subs: ["STOCKS", "FOREX", "COMMODITIES"],
     folder: "marketsPage",
     slider: "/markets-slider.json",
-    description: "Real-time stock market updates, forex trends, commodities, and trading strategies for 2025",
+    description: "Real-time stock market updates, insights, forex trends, commodities, and trading strategies for 2025",
   },
   crypto: {
     title: "CRYPTO",
     subs: ["BITCOIN", "ETHEREUM", "DEFI"],
     folder: "cryptoPage",
     slider: "/crypto-slider.json",
-    description: "Latest Bitcoin, Ethereum, and DeFi news, price analysis, and blockchain developments 2025",
+    description: "Latest Bitcoin, Ethereum, insights, and DeFi news, price analysis, and blockchain developments 2025",
   },
   billionaires: {
     title: "BILLIONAIRES",
     subs: ["FORBES LIST", "NET WORTH", "DEALS"],
     folder: "billionairesPage",
     slider: "/billionaires-slider.json",
-    description: "Forbes billionaire rankings, net worth changes, luxury lifestyles and mega deals 2025",
+    description: "Forbes billionaire rankings, insights, net worth changes, luxury lifestyles and mega deals 2025",
   },
   investing: {
     title: "INVESTING",
     subs: ["STOCK PICKS", "ETFs", "DIVIDENDS"],
     folder: "investingPage",
     slider: "/investing-slider.json",
-    description: "Best stocks to buy, ETF strategies, dividend investing and portfolio tips for 2025",
+    description: "Best stocks to buy, ETF strategies,insights,  dividend investing and portfolio tips for 2025",
   },
   realestate: {
     title: "REAL ESTATE",
     subs: ["LUXURY", "COMMERCIAL", "TRENDS"],
     folder: "realestatePage",
     slider: "/realestate-slider.json",
-    description: "Luxury property markets, commercial real estate, housing trends and investment opportunities 2025",
+    description: "Luxury property markets, commercial real estate,insights,  housing trends and investment opportunities 2025",
   },
   techfinance: {
     title: "TECH & FINANCE",
     subs: ["FINTECH", "STARTUPS", "VC"],
     folder: "techfinancePage",
     slider: "/techfinance-slider.json",
-    description: "Fintech innovations, startup funding, venture capital deals and digital banking 2025",
+    description: "Fintech innovations, startup funding,insights,  venture capital deals and digital banking 2025",
   },
   economy: {
     title: "ECONOMY",
     subs: ["GDP", "INFLATION", "POLICY"],
     folder: "economyPage",
     slider: "/economy-slider.json",
-    description: "Global economic indicators, inflation reports, central bank policies and market forecasts 2025",
+    description: "Global economic indicators, inflation reports,insights,  central bank policies and market forecasts 2025",
   },
 } as const;
 
@@ -98,7 +98,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const url = `https://financialoutlook.xyz/${key}`;
 
   return {
-    title: `${config.title} News & Updates 2025`,
+    title: `${config.title} | financialoutlook 2025`,
     description: config.description,
     keywords: `${config.title.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth`,
     alternates: { canonical: url },
@@ -158,7 +158,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       />
 
       <div className="bg-white text-black font-sans">
-        <div className="hidden">Financial Outlook News & Updates 2025</div>
+        <div className="hidden">Financial Outlook wealth, business 2025</div>
         <div>
           <DateBar />
           <HeaderClient
