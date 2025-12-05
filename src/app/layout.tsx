@@ -74,31 +74,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/images/fin-favIcon.svg" type="image/svg+xml"></link>
 
 
-        {/* Critical performance boosts */}
-        <link rel="preconnect" href="https://financialoutlook.xyz" />
-        <link rel="dns-prefetch" href="//financialoutlook.xyz" />
-       
+
+
         {/* Favicon */}
 
         <link rel="apple-touch-icon" href="/images/fin-favIcon.svg" />
 
-        {/* WebSite Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "financialoutlook",
-              url: "https://financialoutlook.xyz/",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "https://financialoutlook.xyz/search?q={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
+
       </head>
       <body className="bg-black text-white antialiased max-w-7xl mx-auto">
         {children}
