@@ -31,6 +31,24 @@ export default async function HomePage() {
 
   return (
 
+    <>
+      {/* WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "financialoutlook",
+            url: "https://financialoutlook.xyz",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://financialoutlook.xyz/search?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
       <div className="bg-black text-white font-sans">
         <div className="hidden">Financial Outlook – Business & Markets 2025</div>
         <div >
@@ -66,5 +84,6 @@ export default async function HomePage() {
           />
         </div>
       </div>
+    </>
   );
 }
