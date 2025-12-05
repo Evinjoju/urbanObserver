@@ -27,8 +27,7 @@ const ArticleGridLarge: React.FC<ArticleGridLargeProps> = ({ data }) => {
                 src={article.image}
                 alt={article.title}
                 fill
-               priority={i === 0 || i === 1}
-               fetchPriority={i === 0 || i === 1 ? "high" : "auto"}
+                loading="lazy"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
