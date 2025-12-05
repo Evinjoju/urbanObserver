@@ -112,6 +112,8 @@ export default async function HomePage() {
           <DateBar />
           <HeaderClient currentPage="home" />
 
+           <Banner text="Financial Outlook – Business & Markets 2025" />
+
           {/* Hero — Critical, loads first */}
           <Suspense fallback={<Skeleton />}>
             <ArticleGridLarge data={largeGridData} />

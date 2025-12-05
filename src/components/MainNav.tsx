@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import SearchModal from "./SearchModal";
 import MegaMenu from "./MegaMenu";
-import { Menu, Search } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 
 interface MainNavProps {
   currentPage?: string;
@@ -51,7 +51,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
                 aria-label="Toggle menu"
               >
                 <span className="material-symbols-outlined text-3xl">
-                  {mobileMenuOpen ? "close" : "menu"}
+                  {mobileMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white" />}
                 </span>
               </button>
             </div>
