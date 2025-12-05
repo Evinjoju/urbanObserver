@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import SearchModal from "./SearchModal";
 import MegaMenu from "./MegaMenu";
+import { Menu, Search } from "lucide-react";
 
 interface MainNavProps {
   currentPage?: string;
@@ -40,8 +41,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
                 onClick={() => setMegaMenuOpen(true)}
                 className="hidden lg:flex items-center space-x-2 bg-white text-black px-3 py-1 hover:bg-red-600 transition-colors duration-300 font-bold uppercase tracking-widest text-sm"
               >
-                <span className="material-symbols-outlined text-base">menu</span>
-                <span>ALL</span>
+                <Menu className="w-5 h-5 text-black" />ALL
               </button>
 
               {/* Hamburger */}
@@ -83,7 +83,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
               className="text-white hover:text-red-600 transition-colors duration-200"
               aria-label="Search"
             >
-              <span className="material-symbols-outlined text-2xl">search</span>
+               <Search className="w-5 h-5 text-white  hover:text-red-600 transition-colors duration-200" />
             </button>
           </div>
         </div>

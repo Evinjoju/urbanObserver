@@ -19,7 +19,7 @@ const Skeleton = () => <div className="h-96 bg-gray-900 animate-pulse rounded-lg
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://financialoutlook.xyz"),
-  title: "Financial Outlook – Business, Wealth & Markets 2025",
+  title: "Financial Outlook – Business & Markets 2025",
   description: "Latest stock market updates, billionaire moves, crypto trends, real estate deals, and wealth strategies – updated November 21, 2025",
   keywords: [
     "stock market 2025",
@@ -89,6 +89,23 @@ export default async function HomePage() {
 
   return (
     <>
+      {/* WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "financialoutlook",
+            url: "https://financialoutlook.xyz",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://financialoutlook.xyz/search?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
       <div className="bg-black text-white min-h-screen font-sans">
          <div className="hidden">Financial Outlook – Business & Markets 2025</div>
         <div className="max-w-7xl mx-auto">
