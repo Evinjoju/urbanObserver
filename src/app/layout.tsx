@@ -87,33 +87,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Critical performance boosts */}
         <link rel="preconnect" href="https://financialoutlook.xyz" />
         <link rel="dns-prefetch" href="//financialoutlook.xyz" />
-
-        {/* Fast font loading */}
-        <link
-          rel="preload"
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Anton&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Anton&display=swap"
-          media="print"
-        />
-        <noscript>
-          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Anton&display=swap" rel="stylesheet" />
-        </noscript>
-
-        {/* Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=YourFont&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
+       
         {/* Favicon */}
 
         <link rel="apple-touch-icon" href="/images/fin-favIcon.svg" />
