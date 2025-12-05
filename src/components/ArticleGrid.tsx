@@ -27,7 +27,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ data }) => {
                 <Image
                   src={article.image}
                   alt={article.title}
-                  priority
+                  loading="lazy"
                   width={800}   
                   height={80}              
                   className="mx-auto block w-full h-full object-cover hover:opacity-90 transition-opacity duration-200"
