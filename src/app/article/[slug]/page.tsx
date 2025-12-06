@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const url = `https://financialoutlook.xyz/article/${slug}`;
 
   return {
-    title: `${article.title} | financialoutlook 2025`,
+    title: `${article.title} | financial outlook 2025`,
     description: article.shortdescription || article.title,
     keywords: `${article.category.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth, ${article.author}`,
     alternates: { canonical: url },
