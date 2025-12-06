@@ -106,7 +106,7 @@ export default async function HomePage() {
           }),
         }}
       />
-      <div className="bg-black text-white min-h-screen font-sans">
+      <div className="bg-black text-white font-sans">
          <div className="hidden">Financial Outlook – Business & Markets 2025</div>
         <div className="max-w-7xl mx-auto">
           <DateBar />
@@ -133,9 +133,9 @@ export default async function HomePage() {
             <Banner text="WEALTH , MARKET & FINANCIAL MOVES" />
           </Suspense>
 
-          <Suspense fallback={<Skeleton />}>
+          
             <FeaturedGrid mainArticles={mainArticlesData2} top5Articles={top5ArticlesData} />
-          </Suspense>
+         
 
           <FullHeader currentPage="home" />
           

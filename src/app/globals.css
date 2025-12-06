@@ -11,7 +11,3 @@
 .article-end {
   min-height: 1px;
 }
-
-.sidebar-sticky > div {
-  min-height: 600px; /* Prevents jump when sticky */
-}

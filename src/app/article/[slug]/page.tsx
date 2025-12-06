@@ -9,6 +9,9 @@ import { notFound } from "next/navigation";
 import HeaderClient from "../../../components/HeaderClient";
 
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
+
+const Banner = dynamic(() => import("../../../components/Banner"),);
 
 interface Params {
   slug: string;
@@ -130,6 +133,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             currentPage={currentCategory}
           />
           <ArticleWithSidebar top5Articles={top5Data} article={articleData} />
+           <Banner text="Wealth, Financial Outlook & Market moves " />
 
           <FullHeader currentPage={currentCategory} />
           <FooterSection latestArticles={latestArticlesData} popularArticles={popularArticlesData} />

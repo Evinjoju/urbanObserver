@@ -98,7 +98,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const url = `https://financialoutlook.xyz/${key}`;
 
   return {
-    title: `${config.title} | financialoutlook 2025`,
+    title: `${config.title} | financial outlook 2025`,
     description: config.description,
     keywords: `${config.title.toLowerCase()} 2025, stock market, crypto, billionaires, investing, wealth`,
     alternates: { canonical: url },
@@ -168,7 +168,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           <ArticleGrid data={gridData} />
           <AdSection />
           <Suspense fallback={null}>
-            <Banner text="WEALTH , MARKET & FINANCIAL MOVES" />
+            <Banner text="Wealth, Financial Outlook & Market moves " />
           </Suspense>
           <FeaturedGrid mainArticles={mainData} top5Articles={top5Data} />
           <FullHeader currentPage={key} />

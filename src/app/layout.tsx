@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://financialoutlook.xyz"),
   title: {
     default: "Financial Outlook – Business, Wealth & Markets News 2025",
-    template: "%s – Business & Wealth Insights",
+    template: "%s – Business & Wealth Markets",
   },
   description: "Financial Outlook delivers trusted business and wealth news: stock markets, crypto, billionaire moves, investing strategies, real estate, fintech, and global economy – updated daily 2025.",
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "business news 2025",
     "wealth management",
     "stock market",
-    "financialoutlook",
+    "financial outlook",
     "crypto news",
     "billionaires",
     "investing",

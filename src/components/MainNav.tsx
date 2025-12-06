@@ -21,7 +21,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "markets" }) => {
     { name: "BILLIONAIRES", href: "/billionaires", title: "Billionaires – Net Worth, Forbes List & Wealth News" },
     { name: "INVESTING", href: "/investing", title: "Investing – Stocks, ETFs & Strategies 2025" },
     { name: "REAL ESTATE", href: "/realestate", title: "Real Estate – Property Markets & Investment Trends" },
-    { name: "TECH & FINANCE", href: "/tech-finance", title: "Tech & Finance – Fintech, Startups & VC News" },
+    { name: "TECH & FINANCE", href: "/techfinance", title: "Tech & Finance – Fintech, Startups & VC News" },
     { name: "ECONOMY", href: "/economy", title: "Economy – GDP, Inflation & Global Markets" },
   ];
 

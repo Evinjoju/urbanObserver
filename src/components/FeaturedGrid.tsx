@@ -21,7 +21,7 @@ const FeaturedGrid: React.FC<FeaturedGridProps> = ({ mainArticles, top5Articles 
       const handleScroll = () => {
         const sidebarRect = sidebar.getBoundingClientRect();
         const mainRect = mainGrid.getBoundingClientRect();
-        setIsSticky(sidebarRect.top <= 8 && mainRect.bottom > 0);
+        setIsSticky(sidebarRect.top <= 2 && mainRect.bottom > 0);
       };
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
@@ -41,7 +41,7 @@ const FeaturedGrid: React.FC<FeaturedGridProps> = ({ mainArticles, top5Articles 
             visibleCount={visibleCount}
             onLoadMore={loadMore}
           />
-          <Top5Sidebar articles={top5Articles} isSticky={isSticky} />
+          <Top5Sidebar articles={top5Articles} isSticky={true} />
         </div>
       </div>
     </section>
