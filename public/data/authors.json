@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Rob Lewis",
+    "title": "Senior Financial Writer",
+    "bio": "Rob is a senior writer at Financial Outlook, with more than 10 years of experience in business and wealth journalism. Passionate and detail-oriented, he has a proven track record of reliability and fairness that sets him apart from others. Always looking for the next big story!",
+    "photo": "/images/authors/rob-lewis.jpg",
+    "email": "/images/Author7.webp",
+    "website": "https://financialoutlook.xyz"
+  },
+  {
+    "name": "Sarah Chen",
+    "title": "Chief Market Analyst",
+    "bio": "Sarah brings 15 years of Wall Street experience, specializing in macroeconomic trends and wealth management strategies. Former Goldman Sachs analyst turned independent voice.",
+    "photo": "/images/Author7.webp",
+    "email": "sarah.chen@financialoutlook.xyz"
+  },
+  {
+    "name": "Marcus Rodriguez",
+    "title": "Crypto & Blockchain Editor",
+    "bio": "Marcus has been covering cryptocurrency since 2017. He predicted the 2021 bull run and now helps readers navigate the next wave of digital assets and DeFi.",
+    "photo": "/images/Author7.webp",
+    "email": "marcus@financialoutlook.xyz"
+  }
+]
