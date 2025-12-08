@@ -14,11 +14,11 @@ interface Author {
 
 const AuthorCard: React.FC<{ author: Author }> = ({ author }) => {
   return (
-    <div className="max-w-6xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-2xl">
+    <div className="max-w-6xl mx-auto bg-black border rounded-lg overflow-hidden shadow-2xl">
       <div className="md:flex">
         {/* Left: Text */}
         <div className="md:w-2/3 p-10 md:p-16">
-          <h1 className="text-5xl md:text-6xl font-black tracking-widest mb-6">
+          <h1 className="text-3xl md:text-4xl text-white font-black tracking-widest mb-6">
             {author.name.toUpperCase()}
           </h1>
 
@@ -33,7 +33,7 @@ const AuthorCard: React.FC<{ author: Author }> = ({ author }) => {
             </a>
           </div>
 
-          <p className="text-lg leading-relaxed text-gray-700 mb-6">
+          <p className="text-lg leading-relaxed text-white mb-6">
             {author.bio}
           </p>
 
@@ -53,7 +53,7 @@ const AuthorCard: React.FC<{ author: Author }> = ({ author }) => {
             alt={`${author.name} – Financial Outlook Author`}
             fill
             priority
-            className="object-cover rounded-full md:rounded-none md:rounded-r-lg shadow-2xl"
+            className="object-cover md:rounded-none md:rounded-r-lg shadow-2xl"
           />
         </div>
       </div>

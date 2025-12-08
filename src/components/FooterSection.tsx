@@ -1,7 +1,7 @@
 // components/FooterSection.tsx
 "use client";
 import React from "react";
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube, } from "lucide-react";
 import { Article } from "../types/Article";
 
 interface FooterSectionProps {
@@ -22,19 +22,29 @@ const FooterSection: React.FC<FooterSectionProps> = ({ latestArticles, popularAr
           <div className="space-y-4">
             <h3 className="font-bold text-lg uppercase tracking-wider">ABOUT US</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
-             Founded in 2025, our news organization was born from a simple yet powerful belief: that quality journalism matters.</p>
+              Founded in 2025, our news organization was born from a simple yet powerful belief: that quality journalism matters.</p>
             <div className="flex space-x-2">
-              <div className="bg-red-600 rounded p-1">
-                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Facebook className="w-5 h-5 text-white" /></a>
+              <div className="bg-gray-900 rounded p-1">
+                <a href="https://www.facebook.com/financialoutlook" className="text-blue-600 text-3xl hover:scale-110 transition-transform"><Facebook className="w-5 h-5 text-blue-600" /></a>
               </div>
-              <div className="bg-red-600 rounded p-1">
-                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Twitter className="w-5 h-5 text-white" /></a>
+
+              <div className="bg-gray-900 rounded p-1 transition-colors">
+                <a
+                  href="https://substack.com/@financialoutlook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:scale-110 transition-transform"
+                >
+                  <img
+                    src="/images/substack.webp"
+                    alt="Substack"
+                    className="w-5 h-5 object-contain"
+                  />
+                </a>
               </div>
-              <div className="bg-red-600 rounded p-1">
-                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Instagram className="w-5 h-5 text-white" /></a>
-              </div>
-              <div className="bg-red-600 rounded p-1">
-                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Youtube className="w-5 h-5 text-white" /></a>
+              
+              <div className="bg-gray-900 rounded p-1">
+                <a href="https://www.youtube.com/@financialoutlook-m9i" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Youtube className="w-5 h-5 text-red-700" /></a>
               </div>
             </div>
           </div>

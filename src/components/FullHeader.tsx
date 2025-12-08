@@ -10,7 +10,7 @@ interface FullHeaderProps {
 const FullHeader: React.FC<FullHeaderProps> = ({
   currentPage = "markets",
 }) => {
- const categories = [
+  const categories = [
     { name: "MARKETS", href: "/markets", title: "Markets – Stock Market News & Analysis 2025" },
     { name: "CRYPTO", href: "/crypto", title: "Crypto – Bitcoin, Ethereum & Blockchain News 2025" },
     { name: "BILLIONAIRES", href: "/billionaires", title: "Billionaires – Net Worth, Forbes List & Wealth News" },
@@ -34,7 +34,7 @@ const FullHeader: React.FC<FullHeaderProps> = ({
                 const isActive = currentPage === cat.href.slice(1);
                 return (
                   <Link
-                   key={cat.name}
+                    key={cat.name}
                     href={cat.href}
                     title={cat.title}
                     className={`transition-colors duration-200 ${isActive ? "text-red-600" : "text-white hover:text-red-600"
@@ -48,16 +48,18 @@ const FullHeader: React.FC<FullHeaderProps> = ({
 
             {/* Footer Links */}
             <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-xs font-bold tracking-widest uppercase text-gray-500">
-
-                <a href="/terms" title="Terms & Conditions – Legal Agreement" className="hover:text-red-600 transition-colors duration-200">
-                  TERMS & CONDITIONS
-                </a>
-                <a href="/privacy" title="Privacy Policy – How We Protect Your Data" className="hover:text-red-600 transition-colors duration-200">
-                  PRIVACY POLICY
-                </a>
-                <a href="/about" title="About Us – Financial Outlook Team & Mission" className="hover:text-red-600 transition-colors duration-200">
-                  ABOUT
-                </a>
+              <a href="/authors" title="Terms & Conditions – Legal Agreement" className="hover:text-red-600 transition-colors duration-200">
+                OUR AUTHORS
+              </a>
+              <a href="/terms" title="Terms & Conditions – Legal Agreement" className="hover:text-red-600 transition-colors duration-200">
+                TERMS & CONDITIONS
+              </a>
+              <a href="/privacy" title="Privacy Policy – How We Protect Your Data" className="hover:text-red-600 transition-colors duration-200">
+                PRIVACY POLICY
+              </a>
+              <a href="/about" title="About Us – Financial Outlook Team & Mission" className="hover:text-red-600 transition-colors duration-200">
+                ABOUT
+              </a>
 
             </div>
           </nav>

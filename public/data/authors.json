@@ -1,24 +1,52 @@
 [
   {
-    "name": "Rob Lewis",
-    "title": "Senior Financial Writer",
-    "bio": "Rob is a senior writer at Financial Outlook, with more than 10 years of experience in business and wealth journalism. Passionate and detail-oriented, he has a proven track record of reliability and fairness that sets him apart from others. Always looking for the next big story!",
-    "photo": "/images/Author7.webp",
-    "email": "rob.lewis@financialoutlook.xyz",
+    "name": "Henry Willy",
+    "title": "Markets Editor",
+    "bio": "Henry Willy is our lead Markets Editor with over 12 years of experience covering global stock markets, commodities, and forex. Known for his sharp analysis and timely insights, Henry keeps readers ahead of major market moves.",
+    "photo": "/images/Author1.webp",
+    "email": "henry.willy@financialoutlook.xyz",
     "website": "https://financialoutlook.xyz"
   },
   {
-    "name": "Sarah Chen",
-    "title": "Chief Market Analyst",
-    "bio": "Sarah brings 15 years of Wall Street experience, specializing in macroeconomic trends and wealth management strategies. Former Goldman Sachs analyst turned independent voice.",
-    "photo": "/images/Author7.webp",
-    "email": "sarah.chen@financialoutlook.xyz"
+    "name": "Emma Chen",
+    "title": "Crypto Editor",
+    "bio": "Emma Chen is a leading voice in cryptocurrency and blockchain technology. With a background in computer science and finance, she breaks down complex DeFi, Bitcoin, and altcoin trends for our readers.",
+    "photo": "/images/Author2.webp",
+    "email": "emma.chen@financialoutlook.xyz"
   },
   {
-    "name": "Marcus Rodriguez",
-    "title": "Crypto & Blockchain Editor",
-    "bio": "Marcus has been covering cryptocurrency since 2017. He predicted the 2021 bull run and now helps readers navigate the next wave of digital assets and DeFi.",
+    "name": "Wade Jenner",
+    "title": "Billionaires & Wealth Editor",
+    "bio": "Wade Jenner tracks the world's richest individuals, Forbes lists, net worth changes, luxury deals, and the strategies behind mega-wealth. If it moves the billionaire index — Wade covers it.",
+    "photo": "/images/Author3.webp",
+    "email": "wade.jenner@financialoutlook.xyz"
+  },
+  {
+    "name": "Mark Blaze",
+    "title": "Investing Editor",
+    "bio": "Mark Blaze delivers actionable investing strategies, stock picks, ETF analysis, dividend plays, and portfolio advice. A former hedge fund analyst turned educator, Mark helps readers build real wealth.",
+    "photo": "/images/Author4.webp",
+    "email": "mark.blaze@financialoutlook.xyz"
+  },
+  {
+    "name": "Jonathan Gill",
+    "title": "Real Estate Editor",
+    "bio": "Jonathan Gill covers luxury real estate, commercial property markets, housing trends, REITs, and investment opportunities worldwide. From Manhattan penthouses to emerging markets — he knows the terrain.",
+    "photo": "/images/Author5.webp",
+    "email": "jonathan.gill@financialoutlook.xyz"
+  },
+  {
+    "name": "Gwen John",
+    "title": "Tech & Finance Editor",
+    "bio": "Gwen John specializes in the intersection of technology and finance — fintech startups, AI in banking, venture capital deals, digital payments, and the future of money.",
+    "photo": "/images/Author6.webp",
+    "email": "gwen.john@financialoutlook.xyz"
+  },
+  {
+    "name": "Marco Anton",
+    "title": "Economy Editor",
+    "bio": "Marco Anton delivers expert analysis on GDP, inflation, central bank policy, interest rates, and global economic indicators. His forecasts have been cited by major institutions worldwide.",
     "photo": "/images/Author7.webp",
-    "email": "marcus@financialoutlook.xyz"
+    "email": "marco.anton@financialoutlook.xyz"
   }
 ]

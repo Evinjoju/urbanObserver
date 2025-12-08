@@ -18,6 +18,7 @@ interface MenuSection {
 }
 
 const companyLinks = [
+     { title: "OUR AUTHORS", href: "/authors" },
      { title: "TERMS & CONDITIONS", href: "/terms" },
     { title: "PRIVACY POLICY", href: "/privacy" },
     { title: "ABOUT", href: "/about" },

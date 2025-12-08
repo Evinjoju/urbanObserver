@@ -13,10 +13,15 @@ export const metadata = {
 
 export default async function AuthorsPage() {
   const authors = await import("../../../public/data/authors.json").then(m => m.default);
+  
+  const [latestArticlesData, popularArticlesData] = await Promise.all([
+        import("../../../public/data/home/home-latest-articles.json").then(m => m.default),
+        import("../../../public/data/home/home-popular-articles.json").then(m => m.default),
+    ]);
 
   return (
     <>
-      <div className="bg-white text-black min-h-screen font-sans">
+      <div className="bg-black text-white min-h-screen font-sans">
         <div className="max-w-7xl mx-auto">
           <DateBar />
           <HeaderClient currentPage="authors" />
@@ -33,7 +38,7 @@ export default async function AuthorsPage() {
           </section>
 
           <FullHeader currentPage="authors" />
-          <FooterSection latestArticles={[]} popularArticles={[]} />
+          <FooterSection latestArticles={latestArticlesData} popularArticles={popularArticlesData}/>
         </div>
       </div>
     </>

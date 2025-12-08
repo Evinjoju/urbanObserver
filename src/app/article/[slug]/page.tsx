@@ -84,9 +84,9 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
 
   // Load shared data (same as before)
   const [top5Data, latestArticlesData, popularArticlesData] = await Promise.all([
-    import("../../../../public/data/marketsPage/markets-top5-articles.json").then(m => m.default),
-    import("../../../../public/data/marketsPage/markets-latest-articles.json").then(m => m.default),
-    import("../../../../public/data/marketsPage/markets-popular-articles.json").then(m => m.default),
+    import("../../../../public/data/home/home-top5-articles.json").then(m => m.default),
+    import("../../../../public/data/home/home-latest-articles.json").then(m => m.default),
+    import("../../../../public/data/home/home-popular-articles.json").then(m => m.default),
   ]);
 
   const currentCategory = articleData.category?.toLowerCase() || "entertainment";
