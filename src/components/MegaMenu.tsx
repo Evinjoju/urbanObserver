@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { X } from "lucide-react";
-import { Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 
 import menuData from "../../public/data/megaMenuSections.json";
 
@@ -18,8 +18,8 @@ interface MenuSection {
 }
 
 const companyLinks = [
-     { title: "OUR AUTHORS", href: "/authors" },
-     { title: "TERMS & CONDITIONS", href: "/terms" },
+    { title: "OUR AUTHORS", href: "/authors" },
+    { title: "TERMS & CONDITIONS", href: "/terms" },
     { title: "PRIVACY POLICY", href: "/privacy" },
     { title: "ABOUT", href: "/about" },
 ];
@@ -50,8 +50,8 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                     {/* Main Menu Grid — Fixed: each column grows independently */}
                     <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-8 overflow-y-auto max-h-screen scrollbar-hide [-ms-overflow-style:none] [scrollbar-width:none]">
                         {menuData.map((section: MenuSection) => (
-                            <div 
-                                key={section.title} 
+                            <div
+                                key={section.title}
                             >
                                 <div className="text-lg text-black font-bold mb-4 flex items-center gap-2">
                                     <span className="text-black">›</span>
@@ -102,9 +102,42 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                             </ul>
 
                             <div className="flex gap-6 mt-12">
-                                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Linkedin className="w-5 h-5 text-red" /></a>
-                                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Twitter className="w-5 h-5 text-red" /></a>
-                                <a href="#" className="text-red-600 text-3xl hover:scale-110 transition-transform"><Instagram className="w-5 h-5 text-red" /></a>
+                                {/* Facebook */}
+                                <a
+                                    href="https://www.facebook.com/financialoutlook"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-gray-200 p-3 rounded-lg hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-red-600/20"
+                                    aria-label="Follow Financial Outlook on Facebook"
+                                >
+                                    <Facebook className="w-6 h-6 text-blue-600" />
+                                </a>
+
+                                {/* Substack */}
+                                <a
+                                    href="https://substack.com/@financialoutlook"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-gray-200 p-3 rounded-lg hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-orange-500/20"
+                                    aria-label="Subscribe to Financial Outlook on Substack"
+                                >
+                                    <img
+                                        src="/images/substack.webp"
+                                        alt="Substack"
+                                        className="w-6 h-6 object-contain"
+                                    />
+                                </a>
+
+                                {/* YouTube */}
+                                <a
+                                    href="https://www.youtube.com/@financialoutlook-m9i"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-gray-200 p-3 rounded-lg hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-red-600/30"
+                                    aria-label="Subscribe to Financial Outlook on YouTube"
+                                >
+                                    <Youtube className="w-6 h-6 text-red-600" />
+                                </a>
                             </div>
                         </div>
                     </div>
