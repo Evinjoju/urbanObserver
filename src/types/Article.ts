@@ -10,6 +10,7 @@ export interface Article {
   authorImage: string;
   role: string;
   date: string;
+  julio?: boolean;
 }
 
 // Add this new interface for structured articles

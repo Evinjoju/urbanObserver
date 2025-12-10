@@ -9,7 +9,7 @@ interface Props {
   article: any;
 }
 
-const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
+const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {  
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const ArticleWithSidebar: React.FC<Props> = ({ top5Articles, article }) => {
       {/* Left: Sticky Top 5 */}
       <aside className="lg:col-span-2">
         <div className={`sidebar-sticky ${isSticky ? "sticky top-5 z-10" : ""}`}>
-          <Top5Sidebar articles={top5Articles} isSticky={isSticky} />
+          <Top5Sidebar articles={top5Articles} isSticky={isSticky} isjulio={article.julio} />
         </div>
       </aside>
 
