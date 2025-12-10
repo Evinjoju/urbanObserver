@@ -72,10 +72,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
 
         <meta name="google-site-verification" content="bR-eiO8rI3epTbJIowoHjcJcjkDw-65UGbGr6deTk_0" />
-        <link rel="icon" href="/images/fin-favIcon.svg" type="image/svg+xml"></link>
+        <link rel="icon" href="/images/fin-favIcon2.svg" type="image/svg+xml"></link>
 
         {/* Favicon */}
-        <link rel="apple-touch-icon" href="/images/fin-favIcon.svg" />
+        <link rel="apple-touch-icon" href="/images/fin-favIcon2.svg" />
+
+        <link rel="icon" href="/images/fin-favIcon2.svg" />
+        <link rel="shortcut icon" href="/images/fin-favIcon2.svg" />
+
       </head>
       <body className="bg-black text-white antialiased max-w-7xl mx-auto">
         {children}

@@ -11,6 +11,20 @@ export interface Article {
   role: string;
   date: string;
   julio?: boolean;
+  julioData?: {
+    slug: string;
+    title: string;
+    category: string;
+    shortdescription: string;
+    description: string;
+    image: string;
+    author: string;
+    authorImage: string;
+    role: string;
+    date: string;
+    julio?: boolean;
+  }
+  rank?: number;
 }
 
 // Add this new interface for structured articles
@@ -29,7 +43,7 @@ export interface StructuredArticle {
   }[];
 }
 
-export interface MainArticle extends Article {}
+export interface MainArticle extends Article { }
 export interface TopArticle extends Article {
   rank: number;
 }
