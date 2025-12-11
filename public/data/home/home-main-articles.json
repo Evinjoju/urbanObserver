@@ -36,29 +36,18 @@
     "date": "November 19, 2025"
   },
   {
-    "slug": "mark-zuckerberg-meta-ai-valuation-2025",
-    "title": "Mark Zuckerberg Reclaims #3 Spot as Meta AI Valuation Hits $1.6 Trillion",
+    "slug": "elon-musk-net-worth-500-billion-2025",
+    "title": "Elon Musk Becomes First Person Worth $500 Billion in 2025",
     "category": "BILLIONAIRES",
-    "shortdescription": "Meta AI assistant becomes most-used globally — stock up 120% YTD.",
-    "description": "Reality Labs reports first profitable quarter ever thanks to AI glasses and Llama 4 enterprise deals.",
-    "image": "/images/Mark Zuckerberg Reclaims 3 Spot 2025.webp",
+    "shortdescription": "Tesla + SpaceX + xAI valuation surge pushes Musk past half-trillion milestone.",
+    "description": "Tesla hits $1.8T market cap, SpaceX valued at $350B after Starship success, and xAI raises at $120B — combined wealth now exceeds GDP of most countries.",
+    "image": "/images/Elon Musk First 500 Billion Net Worth 2025.webp",
     "author": "Wade Jenner",
     "authorImage": "/images/Author3.webp",
     "role": "Billionaire Analyst",
-    "date": "November 19, 2025"
-  }, 
-  {
-    "slug": "co-living-spaces-2025-trend",
-    "title": "Co-Living Explodes in 2025: $500K/Unit Profits for Developers in Major Cities",
-    "category": "REAL ESTATE",
-    "shortdescription": "Gen Z pays $2,500/month for 120 sqft micro-studios with rooftop pools.",
-    "description": "Companies like Common and Ollie report 95% occupancy — new developments pre-leased before construction finishes.",
-    "image": "/images/Co-Living Explodes 2025 $500K Per Unit Profits.webp",
-    "author": "jonathan Gill",
-    "authorImage": "/images/Author5.webp",
-    "role": "Luxury Real Estate Analyst",
-    "date": "November 18, 2025"
-  },
+    "date": "November 21, 2025"
+  }
+  ,
   {
     "slug": "jensen-huang-nvidia-200-billion-net-worth",
     "title": "NVIDIA CEO Jensen Huang Joins $200 Billion Club After AI Chip Boom",
@@ -70,5 +59,17 @@
     "authorImage": "/images/Author3.webp",
     "role": "Billionaire Analyst",
     "date": "November 19, 2025"
+  },
+  {
+    "slug": "co-living-spaces-2025-trend",
+    "title": "Co-Living Explodes in 2025: $500K/Unit Profits for Developers in Major Cities",
+    "category": "REAL ESTATE",
+    "shortdescription": "Gen Z pays $2,500/month for 120 sqft micro-studios with rooftop pools.",
+    "description": "Companies like Common and Ollie report 95% occupancy — new developments pre-leased before construction finishes.",
+    "image": "/images/Co-Living Explodes 2025 $500K Per Unit Profits.webp",
+    "author": "jonathan Gill",
+    "authorImage": "/images/Author5.webp",
+    "role": "Luxury Real Estate Analyst",
+    "date": "November 18, 2025"
   }
 ]
