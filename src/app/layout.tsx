@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://financialoutlook.xyz"),
+  metadataBase: new URL("https://www.financialoutlook.xyz"),
   title: {
     default: "Financial Outlook – Business, Wealth & Markets News 2025",
     template: "%s – Business & Wealth Markets",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Financial Outlook – Business & Wealth News 2025",
     description: "Your #1 source for financial markets, business trends, and wealth creation strategies – updated daily.",
-    url: "https://financialoutlook.xyz",
+    url: "https://www.financialoutlook.xyz",
     siteName: "Financial Outlook",
     images: [
       {
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://financialoutlook.xyz",
+    canonical: "https://www.financialoutlook.xyz",
   },
 };
 

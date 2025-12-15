@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     };
   }
 
-  const url = `https://financialoutlook.xyz/article/${slug}`;
+  const url = `https://www.financialoutlook.xyz/article/${slug}`;
 
   return {
     title: `${article.title} | financial outlook 2025`,
@@ -114,12 +114,12 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
               name: "financialoutlook",
               logo: {
                 "@type": "ImageObject",
-                url: "https://financialoutlook.xyz/logo.png",
+                url: "https://www.financialoutlook.xyz/logo.png",
               },
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://financialoutlook.xyz/article/${slug}`,
+              "@id": `https://www.financialoutlook.xyz/article/${slug}`,
             },
           }),
         }}

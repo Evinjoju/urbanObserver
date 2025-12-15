@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     };
   }
 
-  const url = `https://financialoutlook.xyz/${key}`;
+  const url = `https://www.financialoutlook.xyz/${key}`;
 
   return {
     title: `${config.title} | financial outlook 2025`,
@@ -152,7 +152,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             "@type": "CollectionPage",
             name: `${config.title} – financialoutlook`,
             description: config.description,
-            url: `https://financialoutlook.xyz/${key}`,
+            url: `https://www.financialoutlook.xyz/${key}`,
           }),
         }}
       />
